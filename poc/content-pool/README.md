@@ -1,6 +1,6 @@
 # 内容池：多关键词去重汇总
 
-这个目录把五组 Discovery 结果合并成一个可检索的候选池，用来保留选题多样性，而不是把账号收窄到“文化差异”一个方向。
+这个目录把多组 Discovery 结果合并成一个可检索的候选池，用来保留选题多样性，而不是把账号收窄到“文化差异”一个方向。
 
 ## 数据来源
 
@@ -54,8 +54,8 @@
 
 | 文件 | 内容 |
 | --- | --- |
-| [videos.jsonl](videos.jsonl) | 698 条去重视频，含 `pillars`、`primary_pillar`、`source_runs`、`source_keywords`、互动率 |
-| [creators.jsonl](creators.jsonl) | 544 个创作者聚合 |
+| [videos.jsonl](videos.jsonl) | 1248 条去重视频，含 `pillars`、`primary_pillar`、`source_runs`、`source_keywords`、互动率 |
+| [creators.jsonl](creators.jsonl) | 930 个创作者聚合 |
 | [metrics.json](metrics.json) | 来源、支柱、标签统计 |
 | [candidates.csv](candidates.csv) | 每个支柱按 score / share_rate 取的候选，需人工复核 |
 | [scripts/build_pool.py](scripts/build_pool.py) | 合并、去重、打标脚本 |
