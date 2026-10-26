@@ -8,7 +8,7 @@
 
 | # | 标题 | 时长目标 | scratch 时长 | 支柱 | 中文点 |
 | --- | --- | --- | --- | --- | --- |
-| 01 | 3 Things Normal in the US, Surprising in China | 54s | **50.75s** | 文化差异 | 长辈 zhǎngbèi |
+| 01 | Three Everyday Differences（v3） | 52s | 未配音 | 文化差异 | 长辈 / 先谢谢 / 小费 |
 | 02 | Why Chinese Offices Go Quiet After Lunch | 57–62s | **56.17s** | 日常生活/工作 | 午休 wǔxiū |
 | 03 | 29, Unmarried, and Home for the Holidays | 60–65s | **59.92s** | 家庭/代际 | 催婚 cuīhūn |
 
@@ -25,7 +25,7 @@
 
 | 集 | 脚本 | 旁白 | 镜头表 | scratch 字幕 |
 | --- | --- | --- | --- | --- |
-| 01 | [script](episodes/01-us-vs-china/script.md) | [vo](episodes/01-us-vs-china/vo_en.txt) | [shotlist](episodes/01-us-vs-china/shotlist.csv) | [srt](episodes/01-us-vs-china/scratch_en.srt) |
+| 01 | [script-v3](episodes/01-us-vs-china/script-v3.md) | [vo-v3](episodes/01-us-vs-china/vo_v3.txt) | [shotlist-v3](episodes/01-us-vs-china/shotlist-v3.csv) | —（未配音） |
 | 02 | [script](episodes/02-lunch-nap/script.md) | [vo](episodes/02-lunch-nap/vo_en.txt) | [shotlist](episodes/02-lunch-nap/shotlist.csv) | [srt](episodes/02-lunch-nap/scratch_en.srt) |
 | 03 | [script](episodes/03-marriage-pressure/script.md) | [vo](episodes/03-marriage-pressure/vo_en.txt) | [shotlist](episodes/03-marriage-pressure/shotlist.csv) | [srt](episodes/03-marriage-pressure/scratch_en.srt) |
 
@@ -35,16 +35,19 @@
 - [animatic README](episodes/01-us-vs-china/animatic/README.md)：验证目标、已知问题、重新生成方式
 - **明确结论：v1 的文案、SAPI 音色、静态卡片都不达发布标准；不再用这套方式迭代。**
 
-## 01 集 v2（已重写，等配音）
+## 01 集 v3（当前版本，科普介绍）
 
-针对反馈重写为“一个晚餐故事”，不再是三条并列知识点：
+按你的反馈回到“介绍科普”，不写剧情对话；用三条日常差异 + 更好的转场，修掉 v1 的清单感和绝对化表达：
 
-- [script-v2.md](episodes/01-us-vs-china/script-v2.md)：44 秒，Alex 叫错称呼 → 送礼物 → 付小费 → 走回家
-- [shotlist-v2.csv](episodes/01-us-vs-china/shotlist-v2.csv)：14 个镜头，每 2–4 秒一次视觉变化
-- [voice-casting.md](voice-casting.md)：Mei / Alex / Mom 的表演方向、试音句、技术规格
+- [script-v3.md](episodes/01-us-vs-china/script-v3.md)：52 秒，三条差异（称呼 / 礼物 / 小费）
+- [vo_v3.txt](episodes/01-us-vs-china/vo_v3.txt)：单人英文旁白，130 词，约 52–54 秒
+- [shotlist-v3.csv](episodes/01-us-vs-china/shotlist-v3.csv)：12 个镜头，每 3–5 秒一次视觉变化
+- [voice-casting.md](voice-casting.md)：配音路线 + GPT-SoVITS 评估
+
+v2 的故事稿（`script-v2.md`）保留作对照，但**不是当前方向**，不用于制作。
 
 **当前阻塞：没有高质量 TTS key，也没有真人录音。**  
-不再用 SAPI 渲染 v2；需要你选：真人配音 / ElevenLabs / OpenAI TTS / Azure Speech。
+不再用 SAPI；需要你选：真人配音 / ElevenLabs / OpenAI TTS / Azure Speech。
 
 ## 视觉系统
 
@@ -73,10 +76,11 @@
 
 ## 当前状态
 
-- 脚本/分镜：01 v2 重写完成；02/03 仍是初稿
-- scratch 配音：三集都有 SAPI 版本，但**只用于校对时长，v1 已判定不可发布**
-- 01 集 animatic v1：**仅管线测试**（8 张场景卡 + SAPI + 字幕，54s；文案/音色/画面均不达发布标准）
-- 01 集 v2：脚本/分镜完成，**等高质量配音**
+- 脚本/分镜：01 v3 科普介绍版完成；02/03 仍是初稿
+- scratch 配音：三集都有 SAPI 版本，但**只用于校对时长，已判定不可发布**
+- 01 集 animatic v1：**仅管线测试**（54s；文案/音色/画面均不达发布标准）
+- 01 集 v2 故事稿：**保留作对照，不是当前方向**
+- 01 集 v3：脚本/分镜完成，**等高质量配音**
 - 正式配音：未开始
 - 正式插画/动画：未开始
 - 正式字幕：未开始（等最终配音）
@@ -90,17 +94,17 @@ scratch 文件的用途：
 
 注意：SAPI 不会正确读中文关键词（会把“午休/催婚”读成英文），所以中文关键词只做画面卡片，不靠 scratch 音频。
 
-## 时长结论（scratch）
+## 时长结论
 
-- **01：50.75s**，比 54s 目标短 3.25s。结尾加 3 秒回顾/提问卡即可，不用加旁白。
-- **02：56.17s**，接近 57–62s 的下限；可加 1 秒环境停顿，不要拉长人声。
-- **03：59.92s**，正好在 60s；不要再加旁白，靠画面留白。
+- **01 v3：未配音**；130 词，按 145–150 wpm 约 52–54 秒，目标 52 秒。
+- **02：56.17s**（旧 SAPI），接近 57–62s 的下限；正式配音后重算。
+- **03：59.92s**（旧 SAPI），约 60s；正式配音后重算。
 
 ## 下一步需要定的事
 
-1. **配音路线**：真人 / ElevenLabs / OpenAI TTS / Azure Speech。SAPI 不再使用。
+1. **配音路线**：真人 / ElevenLabs / OpenAI TTS / Azure Speech。SAPI 不再使用；GPT-SoVITS 适合以后做品牌音色，不适合这 3 条样片的第一版。
 2. 三集是否共用同一套角色和色板（建议共用）。
-3. 01 v2 的视觉方向：2D 扁平插画 + 纸张纹理 + 有限色板；需要插画师或图像生成能力。
-4. 配音确定后：先做 01 v2 的 44 秒 animatic，再替换精稿。
+3. 01 v3 的视觉方向：2D 扁平插画 + 纸张纹理 + 有限色板；需要插画师或图像生成能力。
+4. 配音确定后：先做 01 v3 的 52 秒 animatic，再替换精稿。
 
-当前环境没有 ElevenLabs/OpenAI/Azure key；Edge TTS 连接失败。没有 key 的话，建议先找真人录 3 个角色的试音，或只录 Mei 的旁白做第一版。
+当前环境没有 ElevenLabs/OpenAI/Azure key；Edge TTS 连接失败。没有 key 的话，建议先找真人录 3 句英文旁白试音（单人即可，v3 不需要角色对话）。
