@@ -29,6 +29,12 @@
 | 02 | [script](episodes/02-lunch-nap/script.md) | [vo](episodes/02-lunch-nap/vo_en.txt) | [shotlist](episodes/02-lunch-nap/shotlist.csv) | [srt](episodes/02-lunch-nap/scratch_en.srt) |
 | 03 | [script](episodes/03-marriage-pressure/script.md) | [vo](episodes/03-marriage-pressure/vo_en.txt) | [shotlist](episodes/03-marriage-pressure/shotlist.csv) | [srt](episodes/03-marriage-pressure/scratch_en.srt) |
 
+## 01 集 animatic v1
+
+- [ep01_animatic_v1.mp4](episodes/01-us-vs-china/animatic/ep01_animatic_v1.mp4)：54 秒，1080×1920，30fps
+- [animatic README](episodes/01-us-vs-china/animatic/README.md)：验证目标、已知问题、重新生成方式
+- 画面是 8 张场景卡，不是最终插画；音轨是 scratch VO，不能发布
+
 ## 视觉系统
 
 - 画幅：9:16，1080×1920，30fps
@@ -60,7 +66,8 @@
 - scratch 配音：**三集都已完成**（Windows SAPI，仅校对时长，不可发布）
 - scratch 字幕：三集都有 `scratch_en.srt`，按实际音频生成
 - 正式配音：未开始
-- 插画/动画：未开始
+- 01 集 animatic v1：**完成**（8 张场景卡 + scratch 音轨 + 字幕，54s）
+- 正式插画/动画：未开始
 - 正式字幕：未开始（等最终配音）
 - 发布：未开始
 

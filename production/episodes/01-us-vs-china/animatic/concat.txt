@@ -1,0 +1,17 @@
+file 'E:/cnfieldnotes/production/episodes/01-us-vs-china/animatic/card_01.png'
+duration 5
+file 'E:/cnfieldnotes/production/episodes/01-us-vs-china/animatic/card_02.png'
+duration 7
+file 'E:/cnfieldnotes/production/episodes/01-us-vs-china/animatic/card_03.png'
+duration 6
+file 'E:/cnfieldnotes/production/episodes/01-us-vs-china/animatic/card_04.png'
+duration 7
+file 'E:/cnfieldnotes/production/episodes/01-us-vs-china/animatic/card_05.png'
+duration 7
+file 'E:/cnfieldnotes/production/episodes/01-us-vs-china/animatic/card_06.png'
+duration 6
+file 'E:/cnfieldnotes/production/episodes/01-us-vs-china/animatic/card_07.png'
+duration 7
+file 'E:/cnfieldnotes/production/episodes/01-us-vs-china/animatic/card_08.png'
+duration 9
+file 'E:/cnfieldnotes/production/episodes/01-us-vs-china/animatic/card_08.png'
