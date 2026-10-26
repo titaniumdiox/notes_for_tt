@@ -1,0 +1,43 @@
+{
+  "sample_size": 30,
+  "sampling": "random.Random(20261026).sample(videos.jsonl, 30)",
+  "labels": {
+    "2_relevant": 19,
+    "1_adjacent": 8,
+    "0_off_topic": 3
+  },
+  "rates": {
+    "relevant": 0.6333,
+    "adjacent": 0.2667,
+    "off_topic": 0.1,
+    "relevant_or_adjacent": 0.9
+  },
+  "by_page": {
+    "1": {
+      "2_relevant": 3,
+      "1_adjacent": 3,
+      "0_off_topic": 0
+    },
+    "2": {
+      "2_relevant": 7,
+      "1_adjacent": 1,
+      "0_off_topic": 0
+    },
+    "3": {
+      "2_relevant": 4,
+      "1_adjacent": 1,
+      "0_off_topic": 1
+    },
+    "4": {
+      "2_relevant": 5,
+      "1_adjacent": 3,
+      "0_off_topic": 2
+    }
+  },
+  "criteria": {
+    "2": "directly about daily life, culture, travel or lived experience in China",
+    "1": "China-adjacent but narrower (food, language learning, commerce) or weak context",
+    "0": "no China or daily-life signal, or generic content"
+  },
+  "review_file": "report/relevance_review.csv"
+}

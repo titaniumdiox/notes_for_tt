@@ -1,0 +1,77 @@
+{
+  "poc": "discovery-01",
+  "platform": "tiktok",
+  "endpoint": "/tiktok/search/general",
+  "keyword": "cultural differences China",
+  "requested_pages": 5,
+  "requested_count": 50,
+  "started_at": "2026-10-26T05:38:06+00:00",
+  "finished_at": "2026-10-26T05:38:17+00:00",
+  "service": {
+    "base_url": "http://127.0.0.1:3000"
+  },
+  "pages": [
+    {
+      "page": 1,
+      "request": {
+        "offset": "0",
+        "searchId": null
+      },
+      "request_url": "http://127.0.0.1:3000/tiktok/search/general?keyword=cultural+differences+China&count=50&offset=0",
+      "fetched_at": "2026-10-26T05:38:12+00:00",
+      "http_status": 200,
+      "elapsed_ms": 1543,
+      "bytes": 1078887,
+      "sha256": "50cf1c38c03a907e74a996a09d1d4af59cc579b5c1c3bd6c618f901e6fa68438",
+      "saved_as": "raw/page_001.json",
+      "app_status": 0,
+      "rows": 51,
+      "cursor_out": 50,
+      "has_more": 1,
+      "impr_id": "202610260538061AA5D98616FEBAD491B7",
+      "outcome": "success"
+    },
+    {
+      "page": 2,
+      "request": {
+        "offset": "50",
+        "searchId": "202610260538061AA5D98616FEBAD491B7"
+      },
+      "request_url": "http://127.0.0.1:3000/tiktok/search/general?keyword=cultural+differences+China&count=50&offset=50&searchId=202610260538061AA5D98616FEBAD491B7",
+      "fetched_at": "2026-10-26T05:38:15+00:00",
+      "http_status": 200,
+      "elapsed_ms": 858,
+      "bytes": 1015127,
+      "sha256": "9abf7685e6b6884d07e36ba9901d3bf49890081f4691d5fd5c00f50ac44c2b54",
+      "saved_as": "raw/page_002.json",
+      "app_status": 0,
+      "rows": 50,
+      "cursor_out": 100,
+      "has_more": 1,
+      "impr_id": "20261026053809037577A7A96F65E9AD04",
+      "outcome": "success"
+    },
+    {
+      "page": 3,
+      "request": {
+        "offset": "100",
+        "searchId": "202610260538061AA5D98616FEBAD491B7"
+      },
+      "request_url": "http://127.0.0.1:3000/tiktok/search/general?keyword=cultural+differences+China&count=50&offset=100&searchId=202610260538061AA5D98616FEBAD491B7",
+      "fetched_at": "2026-10-26T05:38:17+00:00",
+      "http_status": 200,
+      "elapsed_ms": 834,
+      "bytes": 1645762,
+      "sha256": "574f31a05d471f1b993df42e5b293422a3d1b274904b14f7a744fe3e5dc3e845",
+      "saved_as": "raw/page_003.json",
+      "app_status": 203,
+      "rows": 82,
+      "cursor_out": 150,
+      "has_more": 0,
+      "impr_id": "20261026053812BBAE6C3420A615E89DE3",
+      "outcome": "success_203"
+    }
+  ],
+  "stop_reason": "has_more_false",
+  "successful_pages": 3
+}

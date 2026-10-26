@@ -1,0 +1,57 @@
+{
+  "episode": "02-lunch-nap",
+  "voice": "Windows SAPI (scratch only; not publish voice)",
+  "total_seconds": 56.524,
+  "paragraphs": [
+    {
+      "paragraph": "At 2 p.m., a Chinese office can suddenly go quiet.",
+      "start": 0.0,
+      "end": 4.804,
+      "duration": 4.804
+    },
+    {
+      "paragraph": "Lights off. Chairs back. Someone pulls out a folding bed.",
+      "start": 5.154,
+      "end": 11.553,
+      "duration": 6.399
+    },
+    {
+      "paragraph": "This is 午休 — wǔxiū — the lunch-break nap.",
+      "start": 11.903,
+      "end": 14.737,
+      "duration": 2.834
+    },
+    {
+      "paragraph": "In many Chinese schools and offices, the break is long enough for a short sleep — usually twenty to thirty minutes.",
+      "start": 15.087,
+      "end": 22.87,
+      "duration": 7.783
+    },
+    {
+      "paragraph": "It's not laziness. Many people start early, commute far, and work late. A nap is a reset. The office doesn't stop. It just pauses.",
+      "start": 23.22,
+      "end": 37.148,
+      "duration": 13.928
+    },
+    {
+      "paragraph": "In some schools, students sleep at their desks. In some offices, folding beds live under the desk.",
+      "start": 37.498,
+      "end": 46.196,
+      "duration": 8.698
+    },
+    {
+      "paragraph": "Not everyone naps. But at the right time, the whole room can be asleep.",
+      "start": 46.546,
+      "end": 53.01,
+      "duration": 6.464
+    },
+    {
+      "paragraph": "Does your office have a nap time?",
+      "start": 53.36,
+      "end": 56.174,
+      "duration": 2.814
+    }
+  ],
+  "cues": 17,
+  "note": "Scratch timings; re-time against the final VO before publishing."
+}

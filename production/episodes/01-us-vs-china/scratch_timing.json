@@ -1,0 +1,63 @@
+{
+  "episode": "01-us-vs-china",
+  "voice": "Windows SAPI (scratch only; not publish voice)",
+  "total_seconds": 51.099,
+  "paragraphs": [
+    {
+      "paragraph": "In the US, calling your friend's mom by her first name is normal.",
+      "start": 0.0,
+      "end": 5.254,
+      "duration": 5.254
+    },
+    {
+      "paragraph": "In China, many people would use a kinship word instead — like \"auntie\" — even if she's not a relative.",
+      "start": 5.604,
+      "end": 12.277,
+      "duration": 6.673
+    },
+    {
+      "paragraph": "It's not about being formal. It's about marking the relationship.",
+      "start": 12.627,
+      "end": 18.061,
+      "duration": 5.434
+    },
+    {
+      "paragraph": "In the US, you open a gift right away. It shows you're excited.",
+      "start": 18.411,
+      "end": 24.309,
+      "duration": 5.899
+    },
+    {
+      "paragraph": "In many Chinese homes, it can feel more polite to thank the person first — and open it later.",
+      "start": 24.659,
+      "end": 31.228,
+      "duration": 6.569
+    },
+    {
+      "paragraph": "In the US, leaving a tip is expected.",
+      "start": 31.578,
+      "end": 35.252,
+      "duration": 3.674
+    },
+    {
+      "paragraph": "In China, most restaurants don't expect one. The menu price is usually the price.",
+      "start": 35.602,
+      "end": 42.936,
+      "duration": 7.334
+    },
+    {
+      "paragraph": "Different rules. Same everyday moment.",
+      "start": 43.286,
+      "end": 47.51,
+      "duration": 4.224
+    },
+    {
+      "paragraph": "Which one would surprise you most?",
+      "start": 47.86,
+      "end": 50.749,
+      "duration": 2.889
+    }
+  ],
+  "cues": 15,
+  "note": "Scratch timings; re-time against the final VO before publishing."
+}

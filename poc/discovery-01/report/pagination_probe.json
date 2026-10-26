@@ -1,0 +1,21 @@
+{
+  "purpose": "Check whether has_more=0 at offset=100 really means the result set is exhausted.",
+  "request": {
+    "endpoint": "/tiktok/search/general",
+    "keyword": "Chinese daily life",
+    "count": 50,
+    "offset": 150,
+    "searchId": "2026102605280209E7CDACC1E22AD4F2F6"
+  },
+  "response": {
+    "http_status": 200,
+    "bytes": 448,
+    "sha256": "430afea3e71e641ca5ccf04810e87f46223fb520d7310810515d178ab11ae3a0",
+    "app_status": 0,
+    "rows": 0,
+    "cursor": 200,
+    "has_more": 0,
+    "impr_id": "20261026053000F9A0A22F2FA296E9BEC3"
+  },
+  "conclusion": "Exhausted: zero rows at offset=150, confirming the page-3 has_more=0 stop."
+}

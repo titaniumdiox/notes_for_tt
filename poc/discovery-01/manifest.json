@@ -1,0 +1,77 @@
+{
+  "poc": "discovery-01",
+  "platform": "tiktok",
+  "endpoint": "/tiktok/search/general",
+  "keyword": "Chinese daily life",
+  "requested_pages": 5,
+  "requested_count": 50,
+  "started_at": "2026-10-26T05:28:05+00:00",
+  "finished_at": "2026-10-26T05:28:14+00:00",
+  "service": {
+    "base_url": "http://127.0.0.1:3000"
+  },
+  "pages": [
+    {
+      "page": 1,
+      "request": {
+        "offset": "0",
+        "searchId": null
+      },
+      "request_url": "http://127.0.0.1:3000/tiktok/search/general?keyword=Chinese+daily+life&count=50&offset=0",
+      "fetched_at": "2026-10-26T05:28:08+00:00",
+      "http_status": 200,
+      "elapsed_ms": 1705,
+      "bytes": 1105719,
+      "sha256": "41851078d85d0c9012028067fd71c920c5c244496bd113a4fe91f0a56737164d",
+      "saved_as": "raw/page_001.json",
+      "app_status": 0,
+      "rows": 53,
+      "cursor_out": 50,
+      "has_more": 1,
+      "impr_id": "2026102605280209E7CDACC1E22AD4F2F6",
+      "outcome": "success"
+    },
+    {
+      "page": 2,
+      "request": {
+        "offset": "50",
+        "searchId": "2026102605280209E7CDACC1E22AD4F2F6"
+      },
+      "request_url": "http://127.0.0.1:3000/tiktok/search/general?keyword=Chinese+daily+life&count=50&offset=50&searchId=2026102605280209E7CDACC1E22AD4F2F6",
+      "fetched_at": "2026-10-26T05:28:11+00:00",
+      "http_status": 200,
+      "elapsed_ms": 923,
+      "bytes": 959214,
+      "sha256": "938e904bd8cbd5d23e1a8e373f182c042666b14762bc4e6a84fbd25fa4380eb6",
+      "saved_as": "raw/page_002.json",
+      "app_status": 203,
+      "rows": 49,
+      "cursor_out": 100,
+      "has_more": 1,
+      "impr_id": "202610260528051E99E0E2DFA773EAF3A3",
+      "outcome": "success_203"
+    },
+    {
+      "page": 3,
+      "request": {
+        "offset": "100",
+        "searchId": "2026102605280209E7CDACC1E22AD4F2F6"
+      },
+      "request_url": "http://127.0.0.1:3000/tiktok/search/general?keyword=Chinese+daily+life&count=50&offset=100&searchId=2026102605280209E7CDACC1E22AD4F2F6",
+      "fetched_at": "2026-10-26T05:28:14+00:00",
+      "http_status": 200,
+      "elapsed_ms": 996,
+      "bytes": 1843377,
+      "sha256": "8be6201e5220c4c7a385b7b21d13e8ea356dad2b42c78d0091f82e1d3ed86888",
+      "saved_as": "raw/page_003.json",
+      "app_status": 203,
+      "rows": 90,
+      "cursor_out": 150,
+      "has_more": 0,
+      "impr_id": "20261026052808D8201EDE9B4A98E864B7",
+      "outcome": "success_203"
+    }
+  ],
+  "stop_reason": "has_more_false",
+  "successful_pages": 3
+}

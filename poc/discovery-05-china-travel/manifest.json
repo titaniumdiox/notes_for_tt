@@ -1,0 +1,97 @@
+{
+  "poc": "discovery-01",
+  "platform": "tiktok",
+  "endpoint": "/tiktok/search/general",
+  "keyword": "China travel",
+  "requested_pages": 5,
+  "requested_count": 50,
+  "started_at": "2026-10-26T06:35:22+00:00",
+  "finished_at": "2026-10-26T06:35:35+00:00",
+  "service": {
+    "base_url": "http://127.0.0.1:3000"
+  },
+  "pages": [
+    {
+      "page": 1,
+      "request": {
+        "offset": "0",
+        "searchId": null
+      },
+      "request_url": "http://127.0.0.1:3000/tiktok/search/general?keyword=China+travel&count=50&offset=0",
+      "fetched_at": "2026-10-26T06:35:26+00:00",
+      "http_status": 200,
+      "elapsed_ms": 2458,
+      "bytes": 992388,
+      "sha256": "1884625a003d5ebcd46618342f95c9957805df7226602654273ce887131171e9",
+      "saved_as": "raw/page_001.json",
+      "app_status": 0,
+      "rows": 51,
+      "cursor_out": 50,
+      "has_more": 1,
+      "impr_id": "202610260635195519E0D23F3DA8EC3AF0",
+      "outcome": "success"
+    },
+    {
+      "page": 2,
+      "request": {
+        "offset": "50",
+        "searchId": "202610260635195519E0D23F3DA8EC3AF0"
+      },
+      "request_url": "http://127.0.0.1:3000/tiktok/search/general?keyword=China+travel&count=50&offset=50&searchId=202610260635195519E0D23F3DA8EC3AF0",
+      "fetched_at": "2026-10-26T06:35:29+00:00",
+      "http_status": 200,
+      "elapsed_ms": 1045,
+      "bytes": 983317,
+      "sha256": "a3b2dff72748aaa5a49e5b0aa1a3718659f7a38f7dfc8879e935fea310afc6a9",
+      "saved_as": "raw/page_002.json",
+      "app_status": 0,
+      "rows": 50,
+      "cursor_out": 100,
+      "has_more": 1,
+      "impr_id": "20261026063524D0ADB9BB042D09D5E5A8",
+      "outcome": "success"
+    },
+    {
+      "page": 3,
+      "request": {
+        "offset": "100",
+        "searchId": "202610260635195519E0D23F3DA8EC3AF0"
+      },
+      "request_url": "http://127.0.0.1:3000/tiktok/search/general?keyword=China+travel&count=50&offset=100&searchId=202610260635195519E0D23F3DA8EC3AF0",
+      "fetched_at": "2026-10-26T06:35:32+00:00",
+      "http_status": 200,
+      "elapsed_ms": 925,
+      "bytes": 977200,
+      "sha256": "88eff73b63a06efe1b3a2e390f7d572a0b659eb10e62cfb17eff10353fbd2b42",
+      "saved_as": "raw/page_003.json",
+      "app_status": 203,
+      "rows": 50,
+      "cursor_out": 150,
+      "has_more": 1,
+      "impr_id": "20261026063527207D1C2FFD12BAEE55CE",
+      "outcome": "success_203"
+    },
+    {
+      "page": 4,
+      "request": {
+        "offset": "150",
+        "searchId": "202610260635195519E0D23F3DA8EC3AF0"
+      },
+      "request_url": "http://127.0.0.1:3000/tiktok/search/general?keyword=China+travel&count=50&offset=150&searchId=202610260635195519E0D23F3DA8EC3AF0",
+      "fetched_at": "2026-10-26T06:35:35+00:00",
+      "http_status": 200,
+      "elapsed_ms": 827,
+      "bytes": 1877867,
+      "sha256": "41ab6d9cb453aea80349bac6b452990c2b9580a1a74ef16f6d5266092cc403be",
+      "saved_as": "raw/page_004.json",
+      "app_status": 203,
+      "rows": 105,
+      "cursor_out": 200,
+      "has_more": 0,
+      "impr_id": "20261026063530F57DC51A2DC796EB9DE4",
+      "outcome": "success_203"
+    }
+  ],
+  "stop_reason": "has_more_false",
+  "successful_pages": 4
+}

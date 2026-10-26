@@ -1,0 +1,38 @@
+{
+  "sample_size": 30,
+  "sampling": "random.Random(20261026).sample(videos.jsonl, 30)",
+  "labels": {
+    "2_relevant": 8,
+    "1_adjacent": 16,
+    "0_off_topic": 6
+  },
+  "rates": {
+    "relevant": 0.2667,
+    "adjacent": 0.5333,
+    "off_topic": 0.2,
+    "relevant_or_adjacent": 0.8
+  },
+  "by_page": {
+    "1": {
+      "2_relevant": 1,
+      "1_adjacent": 5,
+      "0_off_topic": 1
+    },
+    "2": {
+      "2_relevant": 1,
+      "1_adjacent": 7,
+      "0_off_topic": 2
+    },
+    "3": {
+      "2_relevant": 6,
+      "1_adjacent": 4,
+      "0_off_topic": 3
+    }
+  },
+  "criteria": {
+    "2": "直接讲中国家庭关系、代际、婚育、育儿或亲属文化，或包含中外对比",
+    "1": "中国家庭日常 vlog/生活记录，但缺少解释或对比",
+    "0": "跑题：非中国家庭、影视剧、纯标签内容或其他国别"
+  },
+  "review_file": "report/relevance_review.csv"
+}

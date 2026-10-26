@@ -1,0 +1,77 @@
+{
+  "poc": "discovery-01",
+  "platform": "tiktok",
+  "endpoint": "/tiktok/search/general",
+  "keyword": "China culture shock",
+  "requested_pages": 5,
+  "requested_count": 50,
+  "started_at": "2026-10-26T06:36:42+00:00",
+  "finished_at": "2026-10-26T06:36:51+00:00",
+  "service": {
+    "base_url": "http://127.0.0.1:3000"
+  },
+  "pages": [
+    {
+      "page": 1,
+      "request": {
+        "offset": "0",
+        "searchId": null
+      },
+      "request_url": "http://127.0.0.1:3000/tiktok/search/general?keyword=China+culture+shock&count=50&offset=0",
+      "fetched_at": "2026-10-26T06:36:45+00:00",
+      "http_status": 200,
+      "elapsed_ms": 1707,
+      "bytes": 1073245,
+      "sha256": "65602ef1cd7269463e1297d031eda194fe4eb9d6b50984ec482b5dffc9cf93a2",
+      "saved_as": "raw/page_001.json",
+      "app_status": 203,
+      "rows": 51,
+      "cursor_out": 50,
+      "has_more": 1,
+      "impr_id": "202610260636395F83F973B446E9D68616",
+      "outcome": "success_203"
+    },
+    {
+      "page": 2,
+      "request": {
+        "offset": "50",
+        "searchId": "202610260636395F83F973B446E9D68616"
+      },
+      "request_url": "http://127.0.0.1:3000/tiktok/search/general?keyword=China+culture+shock&count=50&offset=50&searchId=202610260636395F83F973B446E9D68616",
+      "fetched_at": "2026-10-26T06:36:48+00:00",
+      "http_status": 200,
+      "elapsed_ms": 1101,
+      "bytes": 989460,
+      "sha256": "1c09fadd59dd9a62ac79e6755d0c517874ea397e817c9fc307510950d228387e",
+      "saved_as": "raw/page_002.json",
+      "app_status": 0,
+      "rows": 50,
+      "cursor_out": 100,
+      "has_more": 1,
+      "impr_id": "202610260636425BB68DB0BC3ED004989E",
+      "outcome": "success"
+    },
+    {
+      "page": 3,
+      "request": {
+        "offset": "100",
+        "searchId": "202610260636395F83F973B446E9D68616"
+      },
+      "request_url": "http://127.0.0.1:3000/tiktok/search/general?keyword=China+culture+shock&count=50&offset=100&searchId=202610260636395F83F973B446E9D68616",
+      "fetched_at": "2026-10-26T06:36:51+00:00",
+      "http_status": 200,
+      "elapsed_ms": 927,
+      "bytes": 1903774,
+      "sha256": "24c119efbb79f7a32c8b63c037e585d67a0be8b9538deef33c54edd42cf76890",
+      "saved_as": "raw/page_003.json",
+      "app_status": 0,
+      "rows": 103,
+      "cursor_out": 150,
+      "has_more": 0,
+      "impr_id": "2026102606364686E1ED2B34D8BDEA691F",
+      "outcome": "success"
+    }
+  ],
+  "stop_reason": "has_more_false",
+  "successful_pages": 3
+}

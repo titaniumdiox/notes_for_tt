@@ -1,0 +1,43 @@
+{
+  "sample_size": 30,
+  "sampling": "random.Random(20261026).sample(videos.jsonl, 30)",
+  "labels": {
+    "2_relevant": 9,
+    "1_adjacent": 19,
+    "0_off_topic": 2
+  },
+  "rates": {
+    "relevant": 0.3,
+    "adjacent": 0.6333,
+    "off_topic": 0.0667,
+    "relevant_or_adjacent": 0.9333
+  },
+  "by_page": {
+    "1": {
+      "2_relevant": 2,
+      "1_adjacent": 4,
+      "0_off_topic": 0
+    },
+    "2": {
+      "2_relevant": 2,
+      "1_adjacent": 4,
+      "0_off_topic": 1
+    },
+    "3": {
+      "2_relevant": 1,
+      "1_adjacent": 4,
+      "0_off_topic": 1
+    },
+    "4": {
+      "2_relevant": 4,
+      "1_adjacent": 7,
+      "0_off_topic": 0
+    }
+  },
+  "criteria": {
+    "2": "中国旅行内容，且包含文化/社会观察、实用差异或“第一次来中国”的反差",
+    "1": "风景、城市打卡、行程清单或纯旅行 montage，缺少文化解释",
+    "0": "跑题：非中国语境、纯广告或只有泛化画面"
+  },
+  "review_file": "report/relevance_review.csv"
+}

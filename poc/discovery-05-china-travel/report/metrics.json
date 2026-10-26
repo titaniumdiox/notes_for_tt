@@ -1,0 +1,273 @@
+{
+  "poc": "discovery-01",
+  "platform": "tiktok",
+  "endpoint": "/tiktok/search/general",
+  "keyword": "China travel",
+  "requested_pages": 5,
+  "requested_count": 50,
+  "pages_attempted": 4,
+  "successful_pages": 4,
+  "stop_reason": "has_more_false",
+  "raw_rows": 256,
+  "total_video_rows": 255,
+  "non_video_rows": 1,
+  "non_video_row_details": [
+    {
+      "page": 1,
+      "rank": 39,
+      "type": 4
+    }
+  ],
+  "missing_video_id_rows": 0,
+  "unique_videos": 255,
+  "duplicate_rows": 0,
+  "duplicate_rate": 0.0,
+  "duplicate_events": [],
+  "unique_creators": 213,
+  "ads": 5,
+  "image_posts": 100,
+  "http_status_counts": {
+    "200": 4
+  },
+  "app_status_counts": {
+    "0": 2,
+    "203": 2
+  },
+  "pagination": [
+    {
+      "page": 1,
+      "offset_in": "0",
+      "cursor_out": 50,
+      "has_more": 1,
+      "impr_id": "202610260635195519E0D23F3DA8EC3AF0",
+      "outcome": "success"
+    },
+    {
+      "page": 2,
+      "offset_in": "50",
+      "cursor_out": 100,
+      "has_more": 1,
+      "impr_id": "20261026063524D0ADB9BB042D09D5E5A8",
+      "outcome": "success"
+    },
+    {
+      "page": 3,
+      "offset_in": "100",
+      "cursor_out": 150,
+      "has_more": 1,
+      "impr_id": "20261026063527207D1C2FFD12BAEE55CE",
+      "outcome": "success_203"
+    },
+    {
+      "page": 4,
+      "offset_in": "150",
+      "cursor_out": 200,
+      "has_more": 0,
+      "impr_id": "20261026063530F57DC51A2DC796EB9DE4",
+      "outcome": "success_203"
+    }
+  ],
+  "pagination_advanced": true,
+  "request_failures": [],
+  "field_missing": {
+    "video_id": {
+      "missing": 0,
+      "rate": 0.0
+    },
+    "video_url": {
+      "missing": 0,
+      "rate": 0.0
+    },
+    "desc": {
+      "missing": 0,
+      "rate": 0.0
+    },
+    "create_time": {
+      "missing": 0,
+      "rate": 0.0
+    },
+    "creator_id": {
+      "missing": 0,
+      "rate": 0.0
+    },
+    "sec_uid": {
+      "missing": 0,
+      "rate": 0.0
+    },
+    "username": {
+      "missing": 0,
+      "rate": 0.0
+    },
+    "nickname": {
+      "missing": 0,
+      "rate": 0.0
+    },
+    "play_count": {
+      "missing": 0,
+      "rate": 0.0
+    },
+    "digg_count": {
+      "missing": 0,
+      "rate": 0.0
+    },
+    "comment_count": {
+      "missing": 0,
+      "rate": 0.0
+    },
+    "share_count": {
+      "missing": 0,
+      "rate": 0.0
+    },
+    "collect_count": {
+      "missing": 0,
+      "rate": 0.0
+    },
+    "hashtags": {
+      "missing": 14,
+      "rate": 0.0549
+    },
+    "music_id": {
+      "missing": 0,
+      "rate": 0.0
+    },
+    "duration_seconds": {
+      "missing": 0,
+      "rate": 0.0
+    },
+    "follower_count": {
+      "missing": 0,
+      "rate": 0.0
+    }
+  },
+  "create_time_range": {
+    "min": 1670015058,
+    "max": 1792995133,
+    "min_iso": "2022-12-02T21:04:18+00:00",
+    "max_iso": "2026-10-26T06:12:13+00:00"
+  },
+  "top_creators_by_videos": [
+    {
+      "creator": "suny04322",
+      "videos": 6
+    },
+    {
+      "creator": "omnifx",
+      "videos": 5
+    },
+    {
+      "creator": "grace.andrewsss",
+      "videos": 4
+    },
+    {
+      "creator": "xin.travel",
+      "videos": 4
+    },
+    {
+      "creator": "travelrached",
+      "videos": 3
+    },
+    {
+      "creator": "christian.grossi",
+      "videos": 3
+    },
+    {
+      "creator": "vickydeng_",
+      "videos": 3
+    },
+    {
+      "creator": "isabella.brown082",
+      "videos": 3
+    },
+    {
+      "creator": "alyssa.kelly35",
+      "videos": 3
+    },
+    {
+      "creator": "will.lee056",
+      "videos": 2
+    }
+  ],
+  "top_hashtags": [
+    {
+      "hashtag": "china",
+      "videos": 146
+    },
+    {
+      "hashtag": "chinatravel",
+      "videos": 115
+    },
+    {
+      "hashtag": "travel",
+      "videos": 68
+    },
+    {
+      "hashtag": "fyp",
+      "videos": 52
+    },
+    {
+      "hashtag": "shanghai",
+      "videos": 42
+    },
+    {
+      "hashtag": "chongqing",
+      "videos": 30
+    },
+    {
+      "hashtag": "travelchina",
+      "videos": 26
+    },
+    {
+      "hashtag": "traveltiktok",
+      "videos": 25
+    },
+    {
+      "hashtag": "beijing",
+      "videos": 21
+    },
+    {
+      "hashtag": "traveltips",
+      "videos": 19
+    },
+    {
+      "hashtag": "chinatrip",
+      "videos": 14
+    },
+    {
+      "hashtag": "traveltok",
+      "videos": 14
+    },
+    {
+      "hashtag": "shenzhen",
+      "videos": 12
+    },
+    {
+      "hashtag": "cyberpunk",
+      "videos": 12
+    },
+    {
+      "hashtag": "zhangjiajie",
+      "videos": 12
+    },
+    {
+      "hashtag": "guangzhou",
+      "videos": 11
+    },
+    {
+      "hashtag": "visitchina",
+      "videos": 10
+    },
+    {
+      "hashtag": "chengdu",
+      "videos": 8
+    },
+    {
+      "hashtag": "chinatiktok",
+      "videos": 8
+    },
+    {
+      "hashtag": "explorechina",
+      "videos": 7
+    }
+  ],
+  "generated_at": "2026-10-26T06:35:35+00:00"
+}

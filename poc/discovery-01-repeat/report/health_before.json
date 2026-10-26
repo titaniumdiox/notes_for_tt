@@ -1,0 +1,56 @@
+{
+  "status": "ok",
+  "transport": {
+    "configured": "undici",
+    "inUse": "undici",
+    "backend": "none",
+    "chromeHandshake": false,
+    "clientIdentifier": null,
+    "backends": [],
+    "note": "undici, Node/OpenSSL ClientHello. Six API paths refuse this handshake; see backends for why the Chrome-shaped options were rejected."
+  },
+  "session": {
+    "webId": "[redacted]",
+    "aid": 1988,
+    "region": "US",
+    "odinId": "[redacted]",
+    "nonce": "[redacted]",
+    "csrfToken": "[redacted]",
+    "botType": "others",
+    "abTestVersions": "70508271,73720540,76888534,76925199,77014443,77139461,77158155,77170269,77180103,77185848,77186133,77197071,77211090,77212294,77224700,77264360,77272164,77298109,77311578,77317016,77328047,77375400,77395982,77402727,77412892,77413131,70405643,71057832,71200802,72361743,73171280,73208420,74276218,74413136,74844724,75330961",
+    "msToken": "[redacted]",
+    "ttwid": "[redacted]",
+    "identityFromPage": true,
+    "createdAt": 1792992376094,
+    "expiresAt": 1792992976094,
+    "requestCount": 10,
+    "cookieNames": [
+      "ttwid",
+      "tt_csrf_token",
+      "tt_chain_token",
+      "msToken"
+    ]
+  },
+  "upstream": {
+    "reachable": true,
+    "logId": "20261026053102FD760281F7C4EDE99C4F",
+    "elapsedMs": 1367,
+    "signMs": 0
+  },
+  "pacing": {
+    "minIntervalMs": 1500,
+    "maxConcurrent": 2,
+    "inFlight": 0,
+    "queued": 0,
+    "retryOnThrottle": true,
+    "throttleBackoffBaseMs": 1500
+  },
+  "config": {
+    "origin": "https://www.tiktok.com",
+    "region": "US",
+    "proxy": true,
+    "timeoutMs": 15000,
+    "maxRetries": 0
+  },
+  "redaction_note": "Session tokens were redacted before versioning."
+}

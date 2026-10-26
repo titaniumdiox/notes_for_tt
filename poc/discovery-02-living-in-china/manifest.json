@@ -1,0 +1,97 @@
+{
+  "poc": "discovery-01",
+  "platform": "tiktok",
+  "endpoint": "/tiktok/search/general",
+  "keyword": "living in China",
+  "requested_pages": 5,
+  "requested_count": 50,
+  "started_at": "2026-10-26T05:32:04+00:00",
+  "finished_at": "2026-10-26T05:32:16+00:00",
+  "service": {
+    "base_url": "http://127.0.0.1:3000"
+  },
+  "pages": [
+    {
+      "page": 1,
+      "request": {
+        "offset": "0",
+        "searchId": null
+      },
+      "request_url": "http://127.0.0.1:3000/tiktok/search/general?keyword=living+in+China&count=50&offset=0",
+      "fetched_at": "2026-10-26T05:32:07+00:00",
+      "http_status": 200,
+      "elapsed_ms": 1646,
+      "bytes": 1096874,
+      "sha256": "3968186490a8916f59b5d4680d3a3b589fed109458f17e71064a9e92a04d235f",
+      "saved_as": "raw/page_001.json",
+      "app_status": 203,
+      "rows": 53,
+      "cursor_out": 50,
+      "has_more": 1,
+      "impr_id": "20261026053201C063F3D3AFF1E7D4B6F6",
+      "outcome": "success_203"
+    },
+    {
+      "page": 2,
+      "request": {
+        "offset": "50",
+        "searchId": "20261026053201C063F3D3AFF1E7D4B6F6"
+      },
+      "request_url": "http://127.0.0.1:3000/tiktok/search/general?keyword=living+in+China&count=50&offset=50&searchId=20261026053201C063F3D3AFF1E7D4B6F6",
+      "fetched_at": "2026-10-26T05:32:10+00:00",
+      "http_status": 200,
+      "elapsed_ms": 841,
+      "bytes": 1044488,
+      "sha256": "fa9670840c8690f43090425d05d5c5abe652b9b213fcad96200d9d370e986193",
+      "saved_as": "raw/page_002.json",
+      "app_status": 203,
+      "rows": 50,
+      "cursor_out": 100,
+      "has_more": 1,
+      "impr_id": "202610260532051783660C776E6A0503BE",
+      "outcome": "success_203"
+    },
+    {
+      "page": 3,
+      "request": {
+        "offset": "100",
+        "searchId": "20261026053201C063F3D3AFF1E7D4B6F6"
+      },
+      "request_url": "http://127.0.0.1:3000/tiktok/search/general?keyword=living+in+China&count=50&offset=100&searchId=20261026053201C063F3D3AFF1E7D4B6F6",
+      "fetched_at": "2026-10-26T05:32:13+00:00",
+      "http_status": 200,
+      "elapsed_ms": 1345,
+      "bytes": 1032007,
+      "sha256": "b43957636c62c51d9680db8d67f01b478370456405d637a5e1ea1548d788cce7",
+      "saved_as": "raw/page_003.json",
+      "app_status": 0,
+      "rows": 50,
+      "cursor_out": 150,
+      "has_more": 1,
+      "impr_id": "202610260532087A25F2E0683575E9427F",
+      "outcome": "success"
+    },
+    {
+      "page": 4,
+      "request": {
+        "offset": "150",
+        "searchId": "20261026053201C063F3D3AFF1E7D4B6F6"
+      },
+      "request_url": "http://127.0.0.1:3000/tiktok/search/general?keyword=living+in+China&count=50&offset=150&searchId=20261026053201C063F3D3AFF1E7D4B6F6",
+      "fetched_at": "2026-10-26T05:32:16+00:00",
+      "http_status": 200,
+      "elapsed_ms": 712,
+      "bytes": 916100,
+      "sha256": "7005a735353051474012b0d52152cf236e527973989f651f0cdb3f57200cf5a2",
+      "saved_as": "raw/page_004.json",
+      "app_status": 0,
+      "rows": 56,
+      "cursor_out": 200,
+      "has_more": 0,
+      "impr_id": "202610260532112BD501DAFB4B6BD17489",
+      "outcome": "success"
+    }
+  ],
+  "stop_reason": "has_more_false",
+  "successful_pages": 4
+}

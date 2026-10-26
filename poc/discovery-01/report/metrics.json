@@ -1,0 +1,265 @@
+{
+  "poc": "discovery-01",
+  "platform": "tiktok",
+  "endpoint": "/tiktok/search/general",
+  "keyword": "Chinese daily life",
+  "requested_pages": 5,
+  "requested_count": 50,
+  "pages_attempted": 3,
+  "successful_pages": 3,
+  "stop_reason": "has_more_false",
+  "raw_rows": 192,
+  "total_video_rows": 191,
+  "non_video_rows": 1,
+  "non_video_row_details": [
+    {
+      "page": 1,
+      "rank": 41,
+      "type": 4
+    }
+  ],
+  "missing_video_id_rows": 0,
+  "unique_videos": 191,
+  "duplicate_rows": 0,
+  "duplicate_rate": 0.0,
+  "duplicate_events": [],
+  "unique_creators": 163,
+  "ads": 2,
+  "image_posts": 44,
+  "http_status_counts": {
+    "200": 3
+  },
+  "app_status_counts": {
+    "0": 1,
+    "203": 2
+  },
+  "pagination": [
+    {
+      "page": 1,
+      "offset_in": "0",
+      "cursor_out": 50,
+      "has_more": 1,
+      "impr_id": "2026102605280209E7CDACC1E22AD4F2F6",
+      "outcome": "success"
+    },
+    {
+      "page": 2,
+      "offset_in": "50",
+      "cursor_out": 100,
+      "has_more": 1,
+      "impr_id": "202610260528051E99E0E2DFA773EAF3A3",
+      "outcome": "success_203"
+    },
+    {
+      "page": 3,
+      "offset_in": "100",
+      "cursor_out": 150,
+      "has_more": 0,
+      "impr_id": "20261026052808D8201EDE9B4A98E864B7",
+      "outcome": "success_203"
+    }
+  ],
+  "pagination_advanced": true,
+  "request_failures": [],
+  "field_missing": {
+    "video_id": {
+      "missing": 0,
+      "rate": 0.0
+    },
+    "video_url": {
+      "missing": 0,
+      "rate": 0.0
+    },
+    "desc": {
+      "missing": 1,
+      "rate": 0.0052
+    },
+    "create_time": {
+      "missing": 0,
+      "rate": 0.0
+    },
+    "creator_id": {
+      "missing": 0,
+      "rate": 0.0
+    },
+    "sec_uid": {
+      "missing": 0,
+      "rate": 0.0
+    },
+    "username": {
+      "missing": 0,
+      "rate": 0.0
+    },
+    "nickname": {
+      "missing": 0,
+      "rate": 0.0
+    },
+    "play_count": {
+      "missing": 0,
+      "rate": 0.0
+    },
+    "digg_count": {
+      "missing": 0,
+      "rate": 0.0
+    },
+    "comment_count": {
+      "missing": 0,
+      "rate": 0.0
+    },
+    "share_count": {
+      "missing": 0,
+      "rate": 0.0
+    },
+    "collect_count": {
+      "missing": 0,
+      "rate": 0.0
+    },
+    "hashtags": {
+      "missing": 19,
+      "rate": 0.0995
+    },
+    "music_id": {
+      "missing": 0,
+      "rate": 0.0
+    },
+    "duration_seconds": {
+      "missing": 0,
+      "rate": 0.0
+    },
+    "follower_count": {
+      "missing": 0,
+      "rate": 0.0
+    }
+  },
+  "create_time_range": {
+    "min": 1691399439,
+    "max": 1792976400,
+    "min_iso": "2023-08-07T09:10:39+00:00",
+    "max_iso": "2026-10-26T01:00:00+00:00"
+  },
+  "top_creators_by_videos": [
+    {
+      "creator": "chinesefooddelivery0",
+      "videos": 4
+    },
+    {
+      "creator": "tingchinalife",
+      "videos": 3
+    },
+    {
+      "creator": "ty.in.china",
+      "videos": 3
+    },
+    {
+      "creator": "xiaoyan1555",
+      "videos": 3
+    },
+    {
+      "creator": "xiaobaobeiching",
+      "videos": 3
+    },
+    {
+      "creator": "sunny19sunny28",
+      "videos": 3
+    },
+    {
+      "creator": "xixi.original",
+      "videos": 2
+    },
+    {
+      "creator": "nickita_tikhonov",
+      "videos": 2
+    },
+    {
+      "creator": "username18312982",
+      "videos": 2
+    },
+    {
+      "creator": "fedsmith.inc",
+      "videos": 2
+    }
+  ],
+  "top_hashtags": [
+    {
+      "hashtag": "china",
+      "videos": 90
+    },
+    {
+      "hashtag": "chinese",
+      "videos": 28
+    },
+    {
+      "hashtag": "fyp",
+      "videos": 27
+    },
+    {
+      "hashtag": "chinalife",
+      "videos": 23
+    },
+    {
+      "hashtag": "Vlog",
+      "videos": 20
+    },
+    {
+      "hashtag": "lifeinchina",
+      "videos": 18
+    },
+    {
+      "hashtag": "dailylife",
+      "videos": 15
+    },
+    {
+      "hashtag": "livinginchina",
+      "videos": 13
+    },
+    {
+      "hashtag": "chinatravel",
+      "videos": 12
+    },
+    {
+      "hashtag": "chinavlog",
+      "videos": 11
+    },
+    {
+      "hashtag": "chinesefood",
+      "videos": 10
+    },
+    {
+      "hashtag": "internationalstudent",
+      "videos": 10
+    },
+    {
+      "hashtag": "daily",
+      "videos": 9
+    },
+    {
+      "hashtag": "studyinchina",
+      "videos": 8
+    },
+    {
+      "hashtag": "dailyvlog",
+      "videos": 8
+    },
+    {
+      "hashtag": "dayinmylife",
+      "videos": 7
+    },
+    {
+      "hashtag": "adayinmylife",
+      "videos": 7
+    },
+    {
+      "hashtag": "Lifestyle",
+      "videos": 6
+    },
+    {
+      "hashtag": "mandarin",
+      "videos": 6
+    },
+    {
+      "hashtag": "chineseculture",
+      "videos": 6
+    }
+  ],
+  "generated_at": "2026-10-26T05:28:57+00:00"
+}

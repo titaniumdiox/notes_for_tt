@@ -1,0 +1,9 @@
+scene,start,end,visual,on_screen,vo,sfx,notes
+1,0:00,0:05,"Vertical office; wall clock 2:00; lights switch off row by row","2:00 PM","At 2 p.m., a Chinese office can suddenly go quiet.","fluorescent click","Open on silence, not music"
+2,0:05,0:12,"Colleague reclines chair, unfolds compact bed, puts on eye mask","Lights off. Chairs back.","Lights off. Chairs back. Someone pulls out a folding bed.","bed unfold","Keep motions slow"
+3,0:12,0:22,"Top-down office; everyone resting; big Chinese characters appear","午休 wǔxiū","This is 午休 — wǔxiū — the lunch-break nap.","music softens","One keyword only"
+4,0:22,0:32,"Split: students asleep on desks / office folding bed / early commute train","20–30 min","In many Chinese schools and offices, the break is long enough for a short sleep — usually twenty to thirty minutes.","train ambience","Say 'many', not 'all'"
+5,0:32,0:42,"Mei rubs eyes at computer; colleague hands coffee; clock moves 12:30 to 13:30","Not lazy. A reset.","It's not laziness. Many people start early, commute far, and work late. A nap is a reset. The office doesn't stop. It just pauses.","keyboard, clock tick","Avoid moralizing"
+6,0:42,0:50,"School classroom / bed under desk / one colleague with headphones working","Some schools. Some offices.","In some schools, students sleep at their desks. In some offices, folding beds live under the desk.","light music","Show non-nappers"
+7,0:50,0:57,"Wide office, quiet; phone alarm vibrates; people wake gradually","Not everyone.","Not everyone naps. But at the right time, the whole room can be asleep.","phone alarm","Alarm is the turn"
+8,0:57,1:02,"Mei stretches; question card","Does your office nap? 👇","Does your office have a nap time?","music resolves","Leave 3s for comments"

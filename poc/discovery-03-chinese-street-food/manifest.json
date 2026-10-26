@@ -1,0 +1,77 @@
+{
+  "poc": "discovery-01",
+  "platform": "tiktok",
+  "endpoint": "/tiktok/search/general",
+  "keyword": "Chinese street food",
+  "requested_pages": 5,
+  "requested_count": 50,
+  "started_at": "2026-10-26T06:32:22+00:00",
+  "finished_at": "2026-10-26T06:32:32+00:00",
+  "service": {
+    "base_url": "http://127.0.0.1:3000"
+  },
+  "pages": [
+    {
+      "page": 1,
+      "request": {
+        "offset": "0",
+        "searchId": null
+      },
+      "request_url": "http://127.0.0.1:3000/tiktok/search/general?keyword=Chinese+street+food&count=50&offset=0",
+      "fetched_at": "2026-10-26T06:32:26+00:00",
+      "http_status": 200,
+      "elapsed_ms": 1605,
+      "bytes": 1154209,
+      "sha256": "76e6d08a41ee12db4902dc80b05eeb9eb0e06b28c0f6a7d7c33b859459c88771",
+      "saved_as": "raw/page_001.json",
+      "app_status": 0,
+      "rows": 51,
+      "cursor_out": 50,
+      "has_more": 1,
+      "impr_id": "20261026063220A0C8463D77BEC9D55B99",
+      "outcome": "success"
+    },
+    {
+      "page": 2,
+      "request": {
+        "offset": "50",
+        "searchId": "20261026063220A0C8463D77BEC9D55B99"
+      },
+      "request_url": "http://127.0.0.1:3000/tiktok/search/general?keyword=Chinese+street+food&count=50&offset=50&searchId=20261026063220A0C8463D77BEC9D55B99",
+      "fetched_at": "2026-10-26T06:32:29+00:00",
+      "http_status": 200,
+      "elapsed_ms": 929,
+      "bytes": 1218937,
+      "sha256": "4e84d2ef45b1117a21914af35c699268dc358e66472fd7e8849e939da6ce3f62",
+      "saved_as": "raw/page_002.json",
+      "app_status": 203,
+      "rows": 50,
+      "cursor_out": 100,
+      "has_more": 1,
+      "impr_id": "20261026063224D9FD999626CE70278F18",
+      "outcome": "success_203"
+    },
+    {
+      "page": 3,
+      "request": {
+        "offset": "100",
+        "searchId": "20261026063220A0C8463D77BEC9D55B99"
+      },
+      "request_url": "http://127.0.0.1:3000/tiktok/search/general?keyword=Chinese+street+food&count=50&offset=100&searchId=20261026063220A0C8463D77BEC9D55B99",
+      "fetched_at": "2026-10-26T06:32:32+00:00",
+      "http_status": 200,
+      "elapsed_ms": 1023,
+      "bytes": 2223131,
+      "sha256": "e22d977663de5b72e80f9cfe899aea33bf0f3bef8f074f0dcc74ccc73ff2e007",
+      "saved_as": "raw/page_003.json",
+      "app_status": 203,
+      "rows": 102,
+      "cursor_out": 150,
+      "has_more": 0,
+      "impr_id": "20261026063227FA7F86660E8C39D842B1",
+      "outcome": "success_203"
+    }
+  ],
+  "stop_reason": "has_more_false",
+  "successful_pages": 3
+}

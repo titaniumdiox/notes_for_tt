@@ -1,0 +1,179 @@
+{
+  "generated_at": "2026-10-26T06:36:03+00:00",
+  "runs": [
+    {
+      "run": "discovery-01",
+      "rows": 191
+    },
+    {
+      "run": "discovery-01-repeat",
+      "rows": 192
+    },
+    {
+      "run": "discovery-02-living-in-china",
+      "rows": 208
+    },
+    {
+      "run": "culture-differences-01",
+      "rows": 202
+    },
+    {
+      "run": "culture-differences-02",
+      "rows": 183
+    },
+    {
+      "run": "discovery-03-chinese-street-food",
+      "rows": 202
+    },
+    {
+      "run": "discovery-04-chinese-family-life",
+      "rows": 172
+    },
+    {
+      "run": "discovery-05-china-travel",
+      "rows": 255
+    }
+  ],
+  "raw_rows": 1605,
+  "duplicate_rows_removed": 357,
+  "unique_videos": 1248,
+  "unique_creators": 930,
+  "multi_pillar_videos": 613,
+  "no_pillar_videos": 155,
+  "per_primary_pillar": {
+    "other": 155,
+    "food": 160,
+    "travel": 369,
+    "family_social": 60,
+    "rural_nature": 10,
+    "culture_difference": 287,
+    "daily_life": 175,
+    "language": 14,
+    "work_money": 12,
+    "tech_convenience": 6
+  },
+  "top_hashtags": [
+    {
+      "hashtag": "china",
+      "videos": 542
+    },
+    {
+      "hashtag": "fyp",
+      "videos": 216
+    },
+    {
+      "hashtag": "chinatravel",
+      "videos": 202
+    },
+    {
+      "hashtag": "chinese",
+      "videos": 121
+    },
+    {
+      "hashtag": "travel",
+      "videos": 117
+    },
+    {
+      "hashtag": "chinesefood",
+      "videos": 96
+    },
+    {
+      "hashtag": "streetfood",
+      "videos": 95
+    },
+    {
+      "hashtag": "shanghai",
+      "videos": 79
+    },
+    {
+      "hashtag": "lifeinchina",
+      "videos": 73
+    },
+    {
+      "hashtag": "chineseculture",
+      "videos": 72
+    },
+    {
+      "hashtag": "chinalife",
+      "videos": 65
+    },
+    {
+      "hashtag": "livinginchina",
+      "videos": 59
+    },
+    {
+      "hashtag": "cultureshock",
+      "videos": 52
+    },
+    {
+      "hashtag": "travelchina",
+      "videos": 52
+    },
+    {
+      "hashtag": "chinatiktok",
+      "videos": 51
+    },
+    {
+      "hashtag": "viral",
+      "videos": 47
+    },
+    {
+      "hashtag": "traveltiktok",
+      "videos": 44
+    },
+    {
+      "hashtag": "chongqing",
+      "videos": 40
+    },
+    {
+      "hashtag": "beijing",
+      "videos": 36
+    },
+    {
+      "hashtag": "Vlog",
+      "videos": 36
+    },
+    {
+      "hashtag": "foryou",
+      "videos": 33
+    },
+    {
+      "hashtag": "FoodTok",
+      "videos": 31
+    },
+    {
+      "hashtag": "Foodie",
+      "videos": 29
+    },
+    {
+      "hashtag": "studyinchina",
+      "videos": 29
+    },
+    {
+      "hashtag": "chinafood",
+      "videos": 28
+    },
+    {
+      "hashtag": "traveltips",
+      "videos": 28
+    },
+    {
+      "hashtag": "trending",
+      "videos": 26
+    },
+    {
+      "hashtag": "guangzhou",
+      "videos": 25
+    },
+    {
+      "hashtag": "culture",
+      "videos": 25
+    },
+    {
+      "hashtag": "food",
+      "videos": 24
+    }
+  ],
+  "candidates": 44,
+  "note": "Pillars are keyword heuristics; review candidates before editorial use."
+}

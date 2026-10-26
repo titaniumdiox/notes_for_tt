@@ -1,0 +1,259 @@
+{
+  "poc": "discovery-01",
+  "platform": "tiktok",
+  "endpoint": "/tiktok/search/general",
+  "keyword": "China culture shock",
+  "requested_pages": 5,
+  "requested_count": 50,
+  "pages_attempted": 3,
+  "successful_pages": 3,
+  "stop_reason": "has_more_false",
+  "raw_rows": 202,
+  "total_video_rows": 202,
+  "non_video_rows": 0,
+  "non_video_row_details": [],
+  "missing_video_id_rows": 0,
+  "unique_videos": 202,
+  "duplicate_rows": 0,
+  "duplicate_rate": 0.0,
+  "duplicate_events": [],
+  "unique_creators": 176,
+  "ads": 2,
+  "image_posts": 64,
+  "http_status_counts": {
+    "200": 3
+  },
+  "app_status_counts": {
+    "203": 1,
+    "0": 2
+  },
+  "pagination": [
+    {
+      "page": 1,
+      "offset_in": "0",
+      "cursor_out": 50,
+      "has_more": 1,
+      "impr_id": "20261026053657D09114D42C8E09EA6B0C",
+      "outcome": "success_203"
+    },
+    {
+      "page": 2,
+      "offset_in": "50",
+      "cursor_out": 100,
+      "has_more": 1,
+      "impr_id": "2026102605370108E4BA2671B60AE8BA36",
+      "outcome": "success"
+    },
+    {
+      "page": 3,
+      "offset_in": "100",
+      "cursor_out": 150,
+      "has_more": 0,
+      "impr_id": "2026102605370434C1A516258289E9A4E8",
+      "outcome": "success"
+    }
+  ],
+  "pagination_advanced": true,
+  "request_failures": [],
+  "field_missing": {
+    "video_id": {
+      "missing": 0,
+      "rate": 0.0
+    },
+    "video_url": {
+      "missing": 0,
+      "rate": 0.0
+    },
+    "desc": {
+      "missing": 2,
+      "rate": 0.0099
+    },
+    "create_time": {
+      "missing": 0,
+      "rate": 0.0
+    },
+    "creator_id": {
+      "missing": 0,
+      "rate": 0.0
+    },
+    "sec_uid": {
+      "missing": 0,
+      "rate": 0.0
+    },
+    "username": {
+      "missing": 0,
+      "rate": 0.0
+    },
+    "nickname": {
+      "missing": 0,
+      "rate": 0.0
+    },
+    "play_count": {
+      "missing": 0,
+      "rate": 0.0
+    },
+    "digg_count": {
+      "missing": 0,
+      "rate": 0.0
+    },
+    "comment_count": {
+      "missing": 0,
+      "rate": 0.0
+    },
+    "share_count": {
+      "missing": 0,
+      "rate": 0.0
+    },
+    "collect_count": {
+      "missing": 0,
+      "rate": 0.0
+    },
+    "hashtags": {
+      "missing": 26,
+      "rate": 0.1287
+    },
+    "music_id": {
+      "missing": 0,
+      "rate": 0.0
+    },
+    "duration_seconds": {
+      "missing": 0,
+      "rate": 0.0
+    },
+    "follower_count": {
+      "missing": 0,
+      "rate": 0.0
+    }
+  },
+  "create_time_range": {
+    "min": 1630769046,
+    "max": 1792990740,
+    "min_iso": "2021-09-04T15:24:06+00:00",
+    "max_iso": "2026-10-26T04:59:00+00:00"
+  },
+  "top_creators_by_videos": [
+    {
+      "creator": "dreamasmr60",
+      "videos": 4
+    },
+    {
+      "creator": "julieinchina_",
+      "videos": 4
+    },
+    {
+      "creator": "christian.grossi",
+      "videos": 4
+    },
+    {
+      "creator": "emma.lifeinchina",
+      "videos": 3
+    },
+    {
+      "creator": "kkimin3",
+      "videos": 3
+    },
+    {
+      "creator": "trumpbyryan",
+      "videos": 3
+    },
+    {
+      "creator": "stephanieofe",
+      "videos": 3
+    },
+    {
+      "creator": "livingwlevi",
+      "videos": 2
+    },
+    {
+      "creator": "julikram083",
+      "videos": 2
+    },
+    {
+      "creator": "yoedu.id",
+      "videos": 2
+    }
+  ],
+  "top_hashtags": [
+    {
+      "hashtag": "china",
+      "videos": 107
+    },
+    {
+      "hashtag": "cultureshock",
+      "videos": 49
+    },
+    {
+      "hashtag": "fyp",
+      "videos": 41
+    },
+    {
+      "hashtag": "chinatravel",
+      "videos": 35
+    },
+    {
+      "hashtag": "travel",
+      "videos": 27
+    },
+    {
+      "hashtag": "chineseculture",
+      "videos": 25
+    },
+    {
+      "hashtag": "chinese",
+      "videos": 21
+    },
+    {
+      "hashtag": "lifeinchina",
+      "videos": 17
+    },
+    {
+      "hashtag": "foreignerinchina",
+      "videos": 12
+    },
+    {
+      "hashtag": "chinalife",
+      "videos": 12
+    },
+    {
+      "hashtag": "traveltiktok",
+      "videos": 12
+    },
+    {
+      "hashtag": "travelchina",
+      "videos": 12
+    },
+    {
+      "hashtag": "culture",
+      "videos": 11
+    },
+    {
+      "hashtag": "chinatiktok",
+      "videos": 10
+    },
+    {
+      "hashtag": "livinginchina",
+      "videos": 10
+    },
+    {
+      "hashtag": "shanghai",
+      "videos": 9
+    },
+    {
+      "hashtag": "studyinchina",
+      "videos": 8
+    },
+    {
+      "hashtag": "chongqing",
+      "videos": 8
+    },
+    {
+      "hashtag": "culturalshock",
+      "videos": 7
+    },
+    {
+      "hashtag": "asia",
+      "videos": 7
+    }
+  ],
+  "generated_at": "2026-10-26T05:37:10+00:00"
+}

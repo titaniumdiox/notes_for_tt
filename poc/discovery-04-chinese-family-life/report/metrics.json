@@ -1,0 +1,265 @@
+{
+  "poc": "discovery-01",
+  "platform": "tiktok",
+  "endpoint": "/tiktok/search/general",
+  "keyword": "Chinese family life",
+  "requested_pages": 5,
+  "requested_count": 50,
+  "pages_attempted": 3,
+  "successful_pages": 3,
+  "stop_reason": "has_more_false",
+  "raw_rows": 173,
+  "total_video_rows": 172,
+  "non_video_rows": 1,
+  "non_video_row_details": [
+    {
+      "page": 1,
+      "rank": 41,
+      "type": 4
+    }
+  ],
+  "missing_video_id_rows": 0,
+  "unique_videos": 172,
+  "duplicate_rows": 0,
+  "duplicate_rate": 0.0,
+  "duplicate_events": [],
+  "unique_creators": 137,
+  "ads": 1,
+  "image_posts": 24,
+  "http_status_counts": {
+    "200": 3
+  },
+  "app_status_counts": {
+    "203": 1,
+    "0": 2
+  },
+  "pagination": [
+    {
+      "page": 1,
+      "offset_in": "0",
+      "cursor_out": 50,
+      "has_more": 1,
+      "impr_id": "20261026063351DAF04210B5A6C9041920",
+      "outcome": "success_203"
+    },
+    {
+      "page": 2,
+      "offset_in": "50",
+      "cursor_out": 100,
+      "has_more": 1,
+      "impr_id": "20261026063355E3599028697FDA26C023",
+      "outcome": "success"
+    },
+    {
+      "page": 3,
+      "offset_in": "100",
+      "cursor_out": 150,
+      "has_more": 0,
+      "impr_id": "202610260633585174E5F6C05AF7D74F33",
+      "outcome": "success"
+    }
+  ],
+  "pagination_advanced": true,
+  "request_failures": [],
+  "field_missing": {
+    "video_id": {
+      "missing": 0,
+      "rate": 0.0
+    },
+    "video_url": {
+      "missing": 0,
+      "rate": 0.0
+    },
+    "desc": {
+      "missing": 3,
+      "rate": 0.0174
+    },
+    "create_time": {
+      "missing": 0,
+      "rate": 0.0
+    },
+    "creator_id": {
+      "missing": 0,
+      "rate": 0.0
+    },
+    "sec_uid": {
+      "missing": 0,
+      "rate": 0.0
+    },
+    "username": {
+      "missing": 0,
+      "rate": 0.0
+    },
+    "nickname": {
+      "missing": 0,
+      "rate": 0.0
+    },
+    "play_count": {
+      "missing": 0,
+      "rate": 0.0
+    },
+    "digg_count": {
+      "missing": 0,
+      "rate": 0.0
+    },
+    "comment_count": {
+      "missing": 0,
+      "rate": 0.0
+    },
+    "share_count": {
+      "missing": 0,
+      "rate": 0.0
+    },
+    "collect_count": {
+      "missing": 0,
+      "rate": 0.0
+    },
+    "hashtags": {
+      "missing": 33,
+      "rate": 0.1919
+    },
+    "music_id": {
+      "missing": 0,
+      "rate": 0.0
+    },
+    "duration_seconds": {
+      "missing": 0,
+      "rate": 0.0
+    },
+    "follower_count": {
+      "missing": 0,
+      "rate": 0.0
+    }
+  },
+  "create_time_range": {
+    "min": 1661788202,
+    "max": 1792896627,
+    "min_iso": "2022-08-29T15:50:02+00:00",
+    "max_iso": "2026-10-25T02:50:27+00:00"
+  },
+  "top_creators_by_videos": [
+    {
+      "creator": "damaoermao",
+      "videos": 13
+    },
+    {
+      "creator": "andy.meng68",
+      "videos": 8
+    },
+    {
+      "creator": "juliiachinaa",
+      "videos": 4
+    },
+    {
+      "creator": "dairayner",
+      "videos": 3
+    },
+    {
+      "creator": "marissainchina",
+      "videos": 3
+    },
+    {
+      "creator": "fisherzhangs_in_china",
+      "videos": 2
+    },
+    {
+      "creator": "lixiaoai1",
+      "videos": 2
+    },
+    {
+      "creator": "fedsmith.inc",
+      "videos": 2
+    },
+    {
+      "creator": "chenmeo",
+      "videos": 2
+    },
+    {
+      "creator": "shylachineselife",
+      "videos": 2
+    }
+  ],
+  "top_hashtags": [
+    {
+      "hashtag": "china",
+      "videos": 42
+    },
+    {
+      "hashtag": "fyp",
+      "videos": 27
+    },
+    {
+      "hashtag": "chinese",
+      "videos": 22
+    },
+    {
+      "hashtag": "family",
+      "videos": 19
+    },
+    {
+      "hashtag": "Vlog",
+      "videos": 16
+    },
+    {
+      "hashtag": "chinesefamily",
+      "videos": 15
+    },
+    {
+      "hashtag": "parentchild",
+      "videos": 12
+    },
+    {
+      "hashtag": "kids",
+      "videos": 12
+    },
+    {
+      "hashtag": "viral",
+      "videos": 11
+    },
+    {
+      "hashtag": "chinalife",
+      "videos": 10
+    },
+    {
+      "hashtag": "familydaily",
+      "videos": 10
+    },
+    {
+      "hashtag": "lifeinchina",
+      "videos": 9
+    },
+    {
+      "hashtag": "trending",
+      "videos": 9
+    },
+    {
+      "hashtag": "chinesefood",
+      "videos": 6
+    },
+    {
+      "hashtag": "livinginchina",
+      "videos": 5
+    },
+    {
+      "hashtag": "asian",
+      "videos": 5
+    },
+    {
+      "hashtag": "life",
+      "videos": 5
+    },
+    {
+      "hashtag": "Love",
+      "videos": 5
+    },
+    {
+      "hashtag": "dailyvlog",
+      "videos": 5
+    },
+    {
+      "hashtag": "chineseculture",
+      "videos": 5
+    }
+  ],
+  "generated_at": "2026-10-26T06:34:03+00:00"
+}

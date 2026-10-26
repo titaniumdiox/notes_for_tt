@@ -1,0 +1,259 @@
+{
+  "poc": "discovery-01",
+  "platform": "tiktok",
+  "endpoint": "/tiktok/search/general",
+  "keyword": "cultural differences China",
+  "requested_pages": 5,
+  "requested_count": 50,
+  "pages_attempted": 3,
+  "successful_pages": 3,
+  "stop_reason": "has_more_false",
+  "raw_rows": 183,
+  "total_video_rows": 183,
+  "non_video_rows": 0,
+  "non_video_row_details": [],
+  "missing_video_id_rows": 0,
+  "unique_videos": 183,
+  "duplicate_rows": 0,
+  "duplicate_rate": 0.0,
+  "duplicate_events": [],
+  "unique_creators": 164,
+  "ads": 1,
+  "image_posts": 39,
+  "http_status_counts": {
+    "200": 3
+  },
+  "app_status_counts": {
+    "0": 2,
+    "203": 1
+  },
+  "pagination": [
+    {
+      "page": 1,
+      "offset_in": "0",
+      "cursor_out": 50,
+      "has_more": 1,
+      "impr_id": "202610260538061AA5D98616FEBAD491B7",
+      "outcome": "success"
+    },
+    {
+      "page": 2,
+      "offset_in": "50",
+      "cursor_out": 100,
+      "has_more": 1,
+      "impr_id": "20261026053809037577A7A96F65E9AD04",
+      "outcome": "success"
+    },
+    {
+      "page": 3,
+      "offset_in": "100",
+      "cursor_out": 150,
+      "has_more": 0,
+      "impr_id": "20261026053812BBAE6C3420A615E89DE3",
+      "outcome": "success_203"
+    }
+  ],
+  "pagination_advanced": true,
+  "request_failures": [],
+  "field_missing": {
+    "video_id": {
+      "missing": 0,
+      "rate": 0.0
+    },
+    "video_url": {
+      "missing": 0,
+      "rate": 0.0
+    },
+    "desc": {
+      "missing": 2,
+      "rate": 0.0109
+    },
+    "create_time": {
+      "missing": 0,
+      "rate": 0.0
+    },
+    "creator_id": {
+      "missing": 0,
+      "rate": 0.0
+    },
+    "sec_uid": {
+      "missing": 0,
+      "rate": 0.0
+    },
+    "username": {
+      "missing": 0,
+      "rate": 0.0
+    },
+    "nickname": {
+      "missing": 0,
+      "rate": 0.0
+    },
+    "play_count": {
+      "missing": 0,
+      "rate": 0.0
+    },
+    "digg_count": {
+      "missing": 0,
+      "rate": 0.0
+    },
+    "comment_count": {
+      "missing": 0,
+      "rate": 0.0
+    },
+    "share_count": {
+      "missing": 0,
+      "rate": 0.0
+    },
+    "collect_count": {
+      "missing": 0,
+      "rate": 0.0
+    },
+    "hashtags": {
+      "missing": 14,
+      "rate": 0.0765
+    },
+    "music_id": {
+      "missing": 0,
+      "rate": 0.0
+    },
+    "duration_seconds": {
+      "missing": 0,
+      "rate": 0.0
+    },
+    "follower_count": {
+      "missing": 0,
+      "rate": 0.0
+    }
+  },
+  "create_time_range": {
+    "min": 1624037359,
+    "max": 1792973700,
+    "min_iso": "2021-06-18T17:29:19+00:00",
+    "max_iso": "2026-10-26T00:15:00+00:00"
+  },
+  "top_creators_by_videos": [
+    {
+      "creator": "a.great.soul",
+      "videos": 3
+    },
+    {
+      "creator": "marissainchina",
+      "videos": 2
+    },
+    {
+      "creator": "amieinchina",
+      "videos": 2
+    },
+    {
+      "creator": "chinesewithlia",
+      "videos": 2
+    },
+    {
+      "creator": "dana_chat",
+      "videos": 2
+    },
+    {
+      "creator": "candiselin86",
+      "videos": 2
+    },
+    {
+      "creator": "yuanunpackschina",
+      "videos": 2
+    },
+    {
+      "creator": "sherryxiiruii",
+      "videos": 2
+    },
+    {
+      "creator": "moving507",
+      "videos": 2
+    },
+    {
+      "creator": "becomingsuga",
+      "videos": 2
+    }
+  ],
+  "top_hashtags": [
+    {
+      "hashtag": "china",
+      "videos": 88
+    },
+    {
+      "hashtag": "chineseculture",
+      "videos": 38
+    },
+    {
+      "hashtag": "chinese",
+      "videos": 35
+    },
+    {
+      "hashtag": "fyp",
+      "videos": 34
+    },
+    {
+      "hashtag": "chinatravel",
+      "videos": 28
+    },
+    {
+      "hashtag": "culture",
+      "videos": 15
+    },
+    {
+      "hashtag": "cultureshock",
+      "videos": 13
+    },
+    {
+      "hashtag": "travel",
+      "videos": 12
+    },
+    {
+      "hashtag": "hanfu",
+      "videos": 11
+    },
+    {
+      "hashtag": "chinatiktok",
+      "videos": 10
+    },
+    {
+      "hashtag": "viral",
+      "videos": 7
+    },
+    {
+      "hashtag": "History",
+      "videos": 7
+    },
+    {
+      "hashtag": "lifeinchina",
+      "videos": 6
+    },
+    {
+      "hashtag": "chinaculture",
+      "videos": 6
+    },
+    {
+      "hashtag": "ethnic",
+      "videos": 6
+    },
+    {
+      "hashtag": "中国",
+      "videos": 6
+    },
+    {
+      "hashtag": "chinalife",
+      "videos": 6
+    },
+    {
+      "hashtag": "culturaldifferences",
+      "videos": 5
+    },
+    {
+      "hashtag": "🇨🇳",
+      "videos": 5
+    },
+    {
+      "hashtag": "travelchina",
+      "videos": 5
+    }
+  ],
+  "generated_at": "2026-10-26T05:38:18+00:00"
+}

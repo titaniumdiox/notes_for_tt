@@ -1,0 +1,273 @@
+{
+  "poc": "discovery-01",
+  "platform": "tiktok",
+  "endpoint": "/tiktok/search/general",
+  "keyword": "living in China",
+  "requested_pages": 5,
+  "requested_count": 50,
+  "pages_attempted": 4,
+  "successful_pages": 4,
+  "stop_reason": "has_more_false",
+  "raw_rows": 209,
+  "total_video_rows": 208,
+  "non_video_rows": 1,
+  "non_video_row_details": [
+    {
+      "page": 1,
+      "rank": 40,
+      "type": 4
+    }
+  ],
+  "missing_video_id_rows": 0,
+  "unique_videos": 208,
+  "duplicate_rows": 0,
+  "duplicate_rate": 0.0,
+  "duplicate_events": [],
+  "unique_creators": 157,
+  "ads": 1,
+  "image_posts": 56,
+  "http_status_counts": {
+    "200": 4
+  },
+  "app_status_counts": {
+    "203": 2,
+    "0": 2
+  },
+  "pagination": [
+    {
+      "page": 1,
+      "offset_in": "0",
+      "cursor_out": 50,
+      "has_more": 1,
+      "impr_id": "20261026053201C063F3D3AFF1E7D4B6F6",
+      "outcome": "success_203"
+    },
+    {
+      "page": 2,
+      "offset_in": "50",
+      "cursor_out": 100,
+      "has_more": 1,
+      "impr_id": "202610260532051783660C776E6A0503BE",
+      "outcome": "success_203"
+    },
+    {
+      "page": 3,
+      "offset_in": "100",
+      "cursor_out": 150,
+      "has_more": 1,
+      "impr_id": "202610260532087A25F2E0683575E9427F",
+      "outcome": "success"
+    },
+    {
+      "page": 4,
+      "offset_in": "150",
+      "cursor_out": 200,
+      "has_more": 0,
+      "impr_id": "202610260532112BD501DAFB4B6BD17489",
+      "outcome": "success"
+    }
+  ],
+  "pagination_advanced": true,
+  "request_failures": [],
+  "field_missing": {
+    "video_id": {
+      "missing": 0,
+      "rate": 0.0
+    },
+    "video_url": {
+      "missing": 0,
+      "rate": 0.0
+    },
+    "desc": {
+      "missing": 2,
+      "rate": 0.0096
+    },
+    "create_time": {
+      "missing": 0,
+      "rate": 0.0
+    },
+    "creator_id": {
+      "missing": 0,
+      "rate": 0.0
+    },
+    "sec_uid": {
+      "missing": 0,
+      "rate": 0.0
+    },
+    "username": {
+      "missing": 0,
+      "rate": 0.0
+    },
+    "nickname": {
+      "missing": 0,
+      "rate": 0.0
+    },
+    "play_count": {
+      "missing": 0,
+      "rate": 0.0
+    },
+    "digg_count": {
+      "missing": 0,
+      "rate": 0.0
+    },
+    "comment_count": {
+      "missing": 0,
+      "rate": 0.0
+    },
+    "share_count": {
+      "missing": 0,
+      "rate": 0.0
+    },
+    "collect_count": {
+      "missing": 0,
+      "rate": 0.0
+    },
+    "hashtags": {
+      "missing": 21,
+      "rate": 0.101
+    },
+    "music_id": {
+      "missing": 0,
+      "rate": 0.0
+    },
+    "duration_seconds": {
+      "missing": 0,
+      "rate": 0.0
+    },
+    "follower_count": {
+      "missing": 0,
+      "rate": 0.0
+    }
+  },
+  "create_time_range": {
+    "min": 1663697154,
+    "max": 1792930226,
+    "min_iso": "2022-09-20T18:05:54+00:00",
+    "max_iso": "2026-10-25T12:10:26+00:00"
+  },
+  "top_creators_by_videos": [
+    {
+      "creator": "offciallybonnie",
+      "videos": 5
+    },
+    {
+      "creator": "cheypope",
+      "videos": 5
+    },
+    {
+      "creator": "iss.nelle",
+      "videos": 5
+    },
+    {
+      "creator": "josinchina",
+      "videos": 4
+    },
+    {
+      "creator": "fisherzhangs_in_china",
+      "videos": 3
+    },
+    {
+      "creator": "marissainchina",
+      "videos": 3
+    },
+    {
+      "creator": "its.so.soph",
+      "videos": 3
+    },
+    {
+      "creator": "chiefneeece",
+      "videos": 3
+    },
+    {
+      "creator": "petermic1_",
+      "videos": 3
+    },
+    {
+      "creator": "keshnarakc",
+      "videos": 3
+    }
+  ],
+  "top_hashtags": [
+    {
+      "hashtag": "china",
+      "videos": 111
+    },
+    {
+      "hashtag": "livinginchina",
+      "videos": 43
+    },
+    {
+      "hashtag": "lifeinchina",
+      "videos": 40
+    },
+    {
+      "hashtag": "fyp",
+      "videos": 32
+    },
+    {
+      "hashtag": "chinalife",
+      "videos": 31
+    },
+    {
+      "hashtag": "chinatravel",
+      "videos": 27
+    },
+    {
+      "hashtag": "chinatiktok",
+      "videos": 17
+    },
+    {
+      "hashtag": "livingabroad",
+      "videos": 16
+    },
+    {
+      "hashtag": "studyinchina",
+      "videos": 13
+    },
+    {
+      "hashtag": "shanghai",
+      "videos": 10
+    },
+    {
+      "hashtag": "Vlog",
+      "videos": 9
+    },
+    {
+      "hashtag": "chinese",
+      "videos": 9
+    },
+    {
+      "hashtag": "chinavlog",
+      "videos": 8
+    },
+    {
+      "hashtag": "travelchina",
+      "videos": 7
+    },
+    {
+      "hashtag": "travel",
+      "videos": 7
+    },
+    {
+      "hashtag": "chineseculture",
+      "videos": 7
+    },
+    {
+      "hashtag": "expatlife",
+      "videos": 7
+    },
+    {
+      "hashtag": "foryou",
+      "videos": 7
+    },
+    {
+      "hashtag": "chinesefood",
+      "videos": 7
+    },
+    {
+      "hashtag": "expat",
+      "videos": 6
+    }
+  ],
+  "generated_at": "2026-10-26T05:32:16+00:00"
+}

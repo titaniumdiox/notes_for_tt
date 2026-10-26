@@ -1,0 +1,38 @@
+{
+  "sample_size": 30,
+  "sampling": "random.Random(20261026).sample(videos.jsonl, 30)",
+  "labels": {
+    "2_relevant": 17,
+    "1_adjacent": 8,
+    "0_off_topic": 5
+  },
+  "rates": {
+    "relevant": 0.5667,
+    "adjacent": 0.2667,
+    "off_topic": 0.1667,
+    "relevant_or_adjacent": 0.8333
+  },
+  "by_page": {
+    "1": {
+      "2_relevant": 6,
+      "1_adjacent": 0,
+      "0_off_topic": 0
+    },
+    "2": {
+      "2_relevant": 3,
+      "1_adjacent": 3,
+      "0_off_topic": 2
+    },
+    "3": {
+      "2_relevant": 8,
+      "1_adjacent": 5,
+      "0_off_topic": 3
+    }
+  },
+  "criteria": {
+    "2": "直接比较或解释中外文化差异、culture shock、社交/生活习惯反差",
+    "1": "中国文化或日常生活内容，但没有做差异比较",
+    "0": "跑题：纯旅行、美食、新闻事件、泛化审美或缺少中国语境"
+  },
+  "review_file": "report/relevance_review.csv"
+}
