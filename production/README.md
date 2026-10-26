@@ -62,6 +62,16 @@ v2 的故事稿（`script-v2.md`）保留作对照，但**不是当前方向**�
 
 下一步：看 v3 animatic 的节奏/字幕/画面；通过后再做正式插画和转场。
 
+## 视觉工具验证：Frametell
+
+交接包里同作者后来做的 [whiteboard-teacher-video](https://github.com/liangdabiao/whiteboard-teacher-video) 已在本机跑通单页测试：
+
+- [out/auntie-test-portrait-with-subtitles.mp4](experiments/frametell-01/out/auntie-test-portrait-with-subtitles.mp4)：16.2s，1080×1920，`warm-story`，Bella 配音
+- [README](experiments/frametell-01/README.md)：安装踩坑、竖屏 lint 误报、结论
+
+结论：**用它做 v3 的图解动画，不再用 Pillow 画最终画面。**  
+它仍不是角色插画；角色场景要 AI 生图或插画师。
+
 ## 视觉系统
 
 - 画幅：9:16，1080×1920，30fps
@@ -115,9 +125,10 @@ scratch 文件的用途：
 
 ## 下一步需要定的事
 
-1. **看 v3 animatic**：重点判断 Bella 的语速/停顿、52 秒节奏、字幕是否挡画面。
-2. 定 3 张 style frame（门口 / 餐桌 / 餐馆），再替换 12 张场景卡。
-3. 三集是否共用同一套角色和色板（建议共用）。
-4. 通过后加转场、音效、背景音乐，再做 02/03。
+1. **看两个测试**：v3 animatic（节奏/字幕）+ Frametell 单页（视觉语言）。
+2. 用 Frametell 重做 12 页图解；先做称呼/礼物/小费三页，确认风格一致。
+3. 角色场景（门口、餐桌）用 AI 生图或插画师做 3 张 style frame，再决定是否替换 Frametell 的剪影。
+4. 三集是否共用同一套角色和色板（建议共用）。
+5. 通过后加转场、音效、背景音乐，再做 02/03。
 
 ElevenLabs 已接入：key 在 `.env.local`（尾号 bdd7，已 gitignore）。Bella 已选，George 备选；详见 [tts/README.md](tts/README.md)。
