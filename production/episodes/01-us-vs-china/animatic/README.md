@@ -1,4 +1,7 @@
-# Episode 01 Animatic v1
+# Episode 01 Animatic v1（已判定不达发布标准）
+
+> 这版只保留作管线记录：文案是清单式、SAPI 音色机械、静态卡片粗糙。  
+> 不再基于这一版迭代；v2 见 [script-v2.md](../script-v2.md) 和 [shotlist-v2.csv](../shotlist-v2.csv)。
 
 - 文件：`ep01_animatic_v1.mp4`
 - 时长：54.00s

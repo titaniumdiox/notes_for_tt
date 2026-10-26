@@ -29,11 +29,22 @@
 | 02 | [script](episodes/02-lunch-nap/script.md) | [vo](episodes/02-lunch-nap/vo_en.txt) | [shotlist](episodes/02-lunch-nap/shotlist.csv) | [srt](episodes/02-lunch-nap/scratch_en.srt) |
 | 03 | [script](episodes/03-marriage-pressure/script.md) | [vo](episodes/03-marriage-pressure/vo_en.txt) | [shotlist](episodes/03-marriage-pressure/shotlist.csv) | [srt](episodes/03-marriage-pressure/scratch_en.srt) |
 
-## 01 集 animatic v1
+## 01 集 animatic v1（仅管线测试，不发布）
 
 - [ep01_animatic_v1.mp4](episodes/01-us-vs-china/animatic/ep01_animatic_v1.mp4)：54 秒，1080×1920，30fps
 - [animatic README](episodes/01-us-vs-china/animatic/README.md)：验证目标、已知问题、重新生成方式
-- 画面是 8 张场景卡，不是最终插画；音轨是 scratch VO，不能发布
+- **明确结论：v1 的文案、SAPI 音色、静态卡片都不达发布标准；不再用这套方式迭代。**
+
+## 01 集 v2（已重写，等配音）
+
+针对反馈重写为“一个晚餐故事”，不再是三条并列知识点：
+
+- [script-v2.md](episodes/01-us-vs-china/script-v2.md)：44 秒，Alex 叫错称呼 → 送礼物 → 付小费 → 走回家
+- [shotlist-v2.csv](episodes/01-us-vs-china/shotlist-v2.csv)：14 个镜头，每 2–4 秒一次视觉变化
+- [voice-casting.md](voice-casting.md)：Mei / Alex / Mom 的表演方向、试音句、技术规格
+
+**当前阻塞：没有高质量 TTS key，也没有真人录音。**  
+不再用 SAPI 渲染 v2；需要你选：真人配音 / ElevenLabs / OpenAI TTS / Azure Speech。
 
 ## 视觉系统
 
@@ -62,11 +73,11 @@
 
 ## 当前状态
 
-- 脚本/分镜：完成初稿
-- scratch 配音：**三集都已完成**（Windows SAPI，仅校对时长，不可发布）
-- scratch 字幕：三集都有 `scratch_en.srt`，按实际音频生成
+- 脚本/分镜：01 v2 重写完成；02/03 仍是初稿
+- scratch 配音：三集都有 SAPI 版本，但**只用于校对时长，v1 已判定不可发布**
+- 01 集 animatic v1：**仅管线测试**（8 张场景卡 + SAPI + 字幕，54s；文案/音色/画面均不达发布标准）
+- 01 集 v2：脚本/分镜完成，**等高质量配音**
 - 正式配音：未开始
-- 01 集 animatic v1：**完成**（8 张场景卡 + scratch 音轨 + 字幕，54s）
 - 正式插画/动画：未开始
 - 正式字幕：未开始（等最终配音）
 - 发布：未开始
@@ -87,7 +98,9 @@ scratch 文件的用途：
 
 ## 下一步需要定的事
 
-1. 正式英文配音用真人还是 TTS；如果是 TTS，选温暖、中性、不过度戏剧化的声音。
+1. **配音路线**：真人 / ElevenLabs / OpenAI TTS / Azure Speech。SAPI 不再使用。
 2. 三集是否共用同一套角色和色板（建议共用）。
-3. 先做哪一集：建议 01 → 02 → 03，先易后难。
-4. 下一步制作动作：先用 scratch 音轨做 01 的 animatic（色块/剪影），检查前 3 秒和中段节奏。
+3. 01 v2 的视觉方向：2D 扁平插画 + 纸张纹理 + 有限色板；需要插画师或图像生成能力。
+4. 配音确定后：先做 01 v2 的 44 秒 animatic，再替换精稿。
+
+当前环境没有 ElevenLabs/OpenAI/Azure key；Edge TTS 连接失败。没有 key 的话，建议先找真人录 3 个角色的试音，或只录 Mei 的旁白做第一版。
