@@ -44,10 +44,15 @@
 - [shotlist-v3.csv](episodes/01-us-vs-china/shotlist-v3.csv)：12 个镜头，每 3–5 秒一次视觉变化
 - [voice-casting.md](voice-casting.md)：配音路线 + GPT-SoVITS 评估
 
+配音样本（ElevenLabs 免费账户，`eleven_multilingual_v2`）：
+
+- [Bella（女声，48.20s）](episodes/01-us-vs-china/tts/bella.mp3)
+- [George（男声，48.61s）](episodes/01-us-vs-china/tts/george.mp3)
+- 说明：[production/tts/README.md](tts/README.md)。免费账户不能通过 API 用 Charlotte/Rachel（402）；Bella/George 可用。
+
 v2 的故事稿（`script-v2.md`）保留作对照，但**不是当前方向**，不用于制作。
 
-**当前阻塞：没有高质量 TTS key，也没有真人录音。**  
-不再用 SAPI；需要你选：真人配音 / ElevenLabs / OpenAI TTS / Azure Speech。
+下一步：选 Bella 或 George，然后用 `convertWithTimestamps` 生成带时间戳的版本，重建 52 秒 animatic。
 
 ## 视觉系统
 
@@ -80,10 +85,10 @@ v2 的故事稿（`script-v2.md`）保留作对照，但**不是当前方向**�
 - scratch 配音：三集都有 SAPI 版本，但**只用于校对时长，已判定不可发布**
 - 01 集 animatic v1：**仅管线测试**（54s；文案/音色/画面均不达发布标准）
 - 01 集 v2 故事稿：**保留作对照，不是当前方向**
-- 01 集 v3：脚本/分镜完成，**等高质量配音**
-- 正式配音：未开始
+- 01 集 v3：脚本/分镜完成；**ElevenLabs Bella/George 样本已生成**
+- 正式配音：待选音色（Bella 推荐）
+- 正式字幕：待用 ElevenLabs 时间戳重做
 - 正式插画/动画：未开始
-- 正式字幕：未开始（等最终配音）
 - 发布：未开始
 
 scratch 文件的用途：
@@ -96,15 +101,15 @@ scratch 文件的用途：
 
 ## 时长结论
 
-- **01 v3：未配音**；130 词，按 145–150 wpm 约 52–54 秒，目标 52 秒。
+- **01 v3：Bella 48.20s / George 48.61s**；目标 52 秒，留约 3–4 秒结尾卡。
 - **02：56.17s**（旧 SAPI），接近 57–62s 的下限；正式配音后重算。
 - **03：59.92s**（旧 SAPI），约 60s；正式配音后重算。
 
 ## 下一步需要定的事
 
-1. **配音路线**：真人 / ElevenLabs / OpenAI TTS / Azure Speech。SAPI 不再使用；GPT-SoVITS 适合以后做品牌音色，不适合这 3 条样片的第一版。
+1. **选音色**：Bella（女声，推荐）或 George（男声）；也可以和真人试音对比。
 2. 三集是否共用同一套角色和色板（建议共用）。
 3. 01 v3 的视觉方向：2D 扁平插画 + 纸张纹理 + 有限色板；需要插画师或图像生成能力。
-4. 配音确定后：先做 01 v3 的 52 秒 animatic，再替换精稿。
+4. 选定后用 ElevenLabs `convertWithTimestamps` 生成“音频 + 字幕时间戳”，再做 01 v3 的 52 秒 animatic。
 
-当前环境没有 ElevenLabs/OpenAI/Azure key；Edge TTS 连接失败。没有 key 的话，建议先找真人录 3 句英文旁白试音（单人即可，v3 不需要角色对话）。
+ElevenLabs 已接入：key 在 `.env.local`（尾号 bdd7，已 gitignore）。免费账户不能用 Charlotte/Rachel，Bella/George 可用；详见 [tts/README.md](tts/README.md)。
