@@ -1,0 +1,30 @@
+[Script Info]
+ScriptType: v4.00+
+PlayResX: 1080
+PlayResY: 1920
+WrapStyle: 0
+ScaledBorderAndShadow: yes
+
+[V4+ Styles]
+Format: Name, Fontname, Fontsize, PrimaryColour, SecondaryColour, OutlineColour, BackColour, Bold, Italic, Underline, StrikeOut, ScaleX, ScaleY, Spacing, Angle, BorderStyle, Outline, Shadow, Alignment, MarginL, MarginR, MarginV, Encoding
+Style: Default,Arial,44,&H00FFFFFF,&H000000FF,&H80000000,&H80000000,-1,0,0,0,100,100,0,0,3,2,0,2,80,80,160,1
+
+[Events]
+Format: Layer, Start, End, Style, Name, MarginL, MarginR, MarginV, Effect, Text
+Dialogue: 0,0:00:00.00,0:00:03.52,Default,,0,0,0,,Three everyday moments in China that aren't about being polite.
+Dialogue: 0,0:00:03.84,0:00:05.03,Default,,0,0,0,,Names first.
+Dialogue: 0,0:00:05.47,0:00:09.31,Default,,0,0,0,,In the US, using your friend's mom's first name sounds friendly.
+Dialogue: 0,0:00:09.59,0:00:14.06,Default,,0,0,0,,In many Chinese families, the name you choose maps the relationship.
+Dialogue: 0,0:00:14.44,0:00:17.80,Default,,0,0,0,,"Auntie" places you; a first name skips a step.
+Dialogue: 0,0:00:18.12,0:00:20.28,Default,,0,0,0,,At the door, the same logic applies.
+Dialogue: 0,0:00:20.53,0:00:23.78,Default,,0,0,0,,In the US, tearing the paper off a gift is fun.
+Dialogue: 0,0:00:24.10,0:00:28.21,Default,,0,0,0,,In many Chinese homes, the thank-you comes first; the gift can wait.
+Dialogue: 0,0:00:28.60,0:00:29.85,Default,,0,0,0,,It's not about the gift.
+Dialogue: 0,0:00:30.06,0:00:31.30,Default,,0,0,0,,It's about the person.
+Dialogue: 0,0:00:31.62,0:00:33.45,Default,,0,0,0,,At the table, it changes again.
+Dialogue: 0,0:00:33.77,0:00:36.44,Default,,0,0,0,,In the US, a tip is part of the service.
+Dialogue: 0,0:00:36.69,0:00:39.75,Default,,0,0,0,,In China, the menu price is usually the whole price.
+Dialogue: 0,0:00:40.19,0:00:43.91,Default,,0,0,0,,Extra can feel less like generosity — more like charity.
+Dialogue: 0,0:00:44.23,0:00:45.19,Default,,0,0,0,,Different rules.
+Dialogue: 0,0:00:45.40,0:00:47.31,Default,,0,0,0,,Same instinct: respect.
+Dialogue: 0,0:00:47.75,0:00:49.46,Default,,0,0,0,,Which one would you have gotten wrong?

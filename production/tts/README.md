@@ -28,6 +28,19 @@ Model: `eleven_multilingual_v2`；MP3 44.1kHz/128kbps；voice settings: stabilit
 
 These are internal review samples. Check ElevenLabs plan terms before publishing or using them commercially.
 
+## Timed Bella version
+
+The selected v3 track uses `convertWithTimestamps`, so subtitles come from actual character timings:
+
+| File | Purpose |
+| --- | --- |
+| `bella_timed.mp3` | Bella audio, 49.46s |
+| `bella_alignment.json` | character-level start/end times |
+| `bella.srt` | 17 cues, generated from alignment |
+| `bella.ass` | 1080×1920 burned-in subtitle style |
+
+George remains an alternate voice; his `george.mp3` is not timestamped.
+
 ## Regenerate
 
 From this folder:

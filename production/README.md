@@ -50,9 +50,17 @@
 - [George（男声，48.61s）](episodes/01-us-vs-china/tts/george.mp3)
 - 说明：[production/tts/README.md](tts/README.md)。免费账户不能通过 API 用 Charlotte/Rachel（402）；Bella/George 可用。
 
+已选 **Bella**，并生成带时间戳的版本：
+
+- [ep01_v3_animatic_v1.mp4](episodes/01-us-vs-china/animatic-v3/ep01_v3_animatic_v1.mp4)：52 秒，12 个镜头，Bella 配音，字符级时间戳字幕
+- [animatic-v3/README.md](episodes/01-us-vs-china/animatic-v3/README.md)
+- `bella_timed.mp3` 49.46s；`bella.srt` 17 条 cue；`bella.ass` 1080×1920
+
+George 保留为备选，不做时间戳。
+
 v2 的故事稿（`script-v2.md`）保留作对照，但**不是当前方向**，不用于制作。
 
-下一步：选 Bella 或 George，然后用 `convertWithTimestamps` 生成带时间戳的版本，重建 52 秒 animatic。
+下一步：看 v3 animatic 的节奏/字幕/画面；通过后再做正式插画和转场。
 
 ## 视觉系统
 
@@ -85,10 +93,10 @@ v2 的故事稿（`script-v2.md`）保留作对照，但**不是当前方向**�
 - scratch 配音：三集都有 SAPI 版本，但**只用于校对时长，已判定不可发布**
 - 01 集 animatic v1：**仅管线测试**（54s；文案/音色/画面均不达发布标准）
 - 01 集 v2 故事稿：**保留作对照，不是当前方向**
-- 01 集 v3：脚本/分镜完成；**ElevenLabs Bella/George 样本已生成**
-- 正式配音：待选音色（Bella 推荐）
-- 正式字幕：待用 ElevenLabs 时间戳重做
-- 正式插画/动画：未开始
+- 01 集 v3：脚本/分镜完成；**Bella 配音 + 52s animatic 完成**
+- 正式配音：Bella 已选定；George 备选
+- 正式字幕：字符级时间戳 v1 完成（`bella.srt` / `bella.ass`）
+- 正式插画/动画：未开始（animatic 仍是场景卡）
 - 发布：未开始
 
 scratch 文件的用途：
@@ -107,9 +115,9 @@ scratch 文件的用途：
 
 ## 下一步需要定的事
 
-1. **选音色**：Bella（女声，推荐）或 George（男声）；也可以和真人试音对比。
-2. 三集是否共用同一套角色和色板（建议共用）。
-3. 01 v3 的视觉方向：2D 扁平插画 + 纸张纹理 + 有限色板；需要插画师或图像生成能力。
-4. 选定后用 ElevenLabs `convertWithTimestamps` 生成“音频 + 字幕时间戳”，再做 01 v3 的 52 秒 animatic。
+1. **看 v3 animatic**：重点判断 Bella 的语速/停顿、52 秒节奏、字幕是否挡画面。
+2. 定 3 张 style frame（门口 / 餐桌 / 餐馆），再替换 12 张场景卡。
+3. 三集是否共用同一套角色和色板（建议共用）。
+4. 通过后加转场、音效、背景音乐，再做 02/03。
 
-ElevenLabs 已接入：key 在 `.env.local`（尾号 bdd7，已 gitignore）。免费账户不能用 Charlotte/Rachel，Bella/George 可用；详见 [tts/README.md](tts/README.md)。
+ElevenLabs 已接入：key 在 `.env.local`（尾号 bdd7，已 gitignore）。Bella 已选，George 备选；详见 [tts/README.md](tts/README.md)。

@@ -3,7 +3,8 @@
   "private": true,
   "type": "module",
   "scripts": {
-    "generate:v3": "node --env-file=../../.env.local generate_vo.mjs ../../episodes/01-us-vs-china/vo_v3.txt ../../episodes/01-us-vs-china/tts eleven_multilingual_v2"
+    "generate:v3": "node --env-file=../../.env.local generate_vo.mjs ../../episodes/01-us-vs-china/vo_v3.txt ../../episodes/01-us-vs-china/tts eleven_multilingual_v2",
+    "generate:v3-timed": "node --env-file=../../.env.local generate_timed_vo.mjs ../../episodes/01-us-vs-china/vo_v3.txt ../../episodes/01-us-vs-china/tts"
   },
   "dependencies": {
     "@elevenlabs/elevenlabs-js": "^2.74.0"
