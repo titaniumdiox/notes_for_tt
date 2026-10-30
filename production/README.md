@@ -10,6 +10,7 @@
 
 - 04 · 奶茶点单：[完整场景版](episodes/04-milk-tea-order/out/milk-tea-v3-scenes-demo.mp4)
 - [封面](assets/mascot/cover.png)
+- [账号头像](assets/mascot/avatar/README.md)
 - [制作说明](episodes/04-milk-tea-order/README.md)
 - [场景素材库](assets/mascot/scenes/README.md)
 - [视频生产 skill](../skills/sinofieldnotes-video/SKILL.md)
