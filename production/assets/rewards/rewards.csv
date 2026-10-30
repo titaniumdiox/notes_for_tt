@@ -1,0 +1,37 @@
+﻿id,category,zh,pinyin,en,es,energy,tts_rate,target_sec,scene,position,voice,visual,notes
+R01,calm,对了。,duì le.,That's right.,Correcto.,2,-2%,0.40,teaching,after_answer,calm,check,Light confirmation; good for harder words.
+R02,calm,很好。,hěn hǎo.,Very good.,Muy bien.,2,-2%,0.45,teaching,after_answer,calm,check,Neutral and adult-friendly.
+R03,calm,记住了。,jì zhù le.,You remembered it.,Lo recordaste.,2,-2%,0.55,teaching,after_answer,calm,star,Emphasizes memory not cuteness.
+R04,calm,就是这样。,jiù shì zhè yàng.,That's it.,Así es.,2,-4%,0.60,teaching,after_answer,calm,underline,Use when the sentence is fully correct.
+R05,calm,不错。,bù cuò.,Not bad.,Nada mal.,2,0%,0.40,teaching,after_answer,calm,check,Casual; do not overuse.
+R06,calm,进步了。,jìn bù le.,You're improving.,Estás mejorando.,2,-2%,0.50,teaching,after_answer,calm,arrow,Good for review episodes.
+R07,warm,真棒！,zhēn bàng!,Great!,¡Genial!,3,+4%,0.45,food,after_answer,warm,star,The default Candy-Crush-style praise; rotate it.
+R08,warm,太棒了！,tài bàng le!,Awesome!,¡Excelente!,3,+5%,0.50,food,after_answer,bright,star,Stronger than R07; use once per video.
+R09,warm,继续！,jì xù!,Keep going!,¡Sigue!,3,+6%,0.40,neutral,transition,bright,arrow,Transition prompt; not praise.
+R10,warm,再来一个！,zài lái yī ge!,One more!,¡Otro más!,3,+6%,0.55,neutral,transition,bright,arrow,Use before the next word; good final transition.
+R11,warm,完全正确！,wán quán zhèng què!,Exactly right!,¡Exacto!,3,+4%,0.60,teaching,after_answer,warm,check,Use when the whole sentence is correct.
+R12,warm,你做到了！,nǐ zuò dào le!,You did it!,¡Lo lograste!,3,+4%,0.55,teaching,final,warm,star,Good for the end of a hard set.
+R13,food,点单成功！,diǎn dān chéng gōng!,Order placed!,¡Pedido hecho!,3,+5%,0.55,food,after_answer,bright,receipt,Scene-specific; milk tea / restaurant.
+R14,food,这单稳了！,zhè dān wěn le!,This order is solid.,Este pedido está listo.,3,+5%,0.50,food,after_answer,bright,check,Casual; good for younger audience.
+R15,food,好喝！,hǎo hē!,Tasty!,¡Qué rico!,3,+4%,0.40,food,after_answer,playful,cup,Praises the drink not the learner; use sparingly.
+R16,food,真香！,zhēn xiāng!,Smells great!,¡Qué rico!,3,+6%,0.40,food,after_answer,playful,star,Internet meme; avoid in formal lessons.
+R17,food,下一杯！,xià yī bēi!,Next cup!,¡La siguiente!,3,+6%,0.50,food,transition,bright,arrow,Good for a drinks series.
+R18,sports,漂亮！,piào liang!,Nice!,¡Bien!,4,+10%,0.40,sports,after_answer,punchy,confetti,Short and punchy; sports or game scenes.
+R19,sports,好球！,hǎo qiú!,Good shot!,¡Buen tiro!,4,+12%,0.40,sports,after_answer,punchy,confetti,Ball sports only; do not use for food.
+R20,sports,得分！,dé fēn!,Score!,¡Punto!,4,+12%,0.40,sports,after_answer,punchy,confetti,Game-show energy.
+R21,sports,再来一分！,zài lái yī fēn!,One more point!,¡Un punto más!,4,+10%,0.50,sports,transition,punchy,arrow,Competition transition.
+R22,sports,稳住！,wěn zhù!,Hold steady!,¡Mantén el ritmo!,3,+8%,0.40,sports,after_answer,punchy,check,For a hard word; not a celebration.
+R23,sports,赢了！,yíng le!,Won!,¡Ganamos!,4,+12%,0.45,sports,final,punchy,confetti,Use at the end of a competition set only.
+R24,sports,就这么打！,jiù zhè me dǎ!,That's how you play!,¡Así se juega!,4,+10%,0.50,sports,after_answer,punchy,confetti,Sports-specific; avoid elsewhere.
+R25,travel,出发！,chū fā!,Let's go!,¡Vamos!,3,+8%,0.35,travel,transition,bright,arrow,Travel / airport / street scenes.
+R26,travel,走起！,zǒu qǐ!,Let's go!,¡Vamos!,3,+8%,0.35,travel,transition,playful,arrow,Casual; younger tone.
+R27,travel,顺利！,shùn lì!,Smooth sailing!,¡Todo bien!,3,+4%,0.40,travel,after_answer,warm,check,Travel checkpoint.
+R28,travel,到站！,dào zhàn!,Arrived!,¡Llegamos!,3,+6%,0.40,travel,after_answer,bright,arrow,Train / bus / itinerary scenes.
+R29,travel,一路顺风！,yī lù shùn fēng!,Have a good trip!,¡Buen viaje!,2,0%,0.60,travel,final,calm,wave,Farewell; not a correct-answer reward.
+R30,final,五词通关！,wǔ cí tōng guān!,Five-word clear!,¡Cinco palabras superadas!,4,+8%,0.60,final,final,bright,stamp,End-of-episode summary.
+R31,final,全对！,quán duì!,All correct!,¡Todo correcto!,4,+8%,0.50,final,final,bright,stamp,Use only if the recap is fully correct.
+R32,final,收下小票！,shōu xià xiǎo piào!,Take the receipt!,¡Toma el recibo!,3,+5%,0.50,final,final,warm,receipt,Matches the receipt end card.
+R33,final,明天见！,míng tiān jiàn!,See you tomorrow!,¡Hasta mañana!,2,0%,0.50,final,final,calm,wave,Series sign-off.
+R34,final,收工！,shōu gōng!,Done for today!,¡Terminamos!,3,+6%,0.45,final,final,playful,stamp,Casual; not for formal courses.
+R35,cute,喵！对了！,miāo! duì le!,Meow! Right!,¡Miau! ¡Correcto!,3,+8%,0.50,cute,after_answer,playful,star,Only if Momo has a character voice; do not mix with teacher voice.
+R36,cute,太棒了喵！,tài bàng le miāo!,Awesome, meow!,¡Genial, miau!,4,+8%,0.55,cute,after_answer,playful,star,Use at most once per episode.

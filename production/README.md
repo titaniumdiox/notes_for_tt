@@ -83,6 +83,14 @@ v2 的故事稿（`script-v2.md`）保留作对照，但**不是当前方向**�
 
 这是“字 + 音 + 倒计时 + 小票”格式的 first cut；下一步用真人录音替换 Edge TTS，再做 2–3 条同类场景验证留存。
 
+## 奖励语词库
+
+- [rewards.csv](assets/rewards/rewards.csv)：36 条，按 calm / warm / food / sports / travel / final / cute 分类
+- [README](assets/rewards/README.md)：语速规则、轮换规则、推荐套组、脚本引用格式
+- 词、例句、奖励语分三种语速：词 0.95×，例句 0.90×，奖励 1.04–1.12×
+- 运动/比赛套组更短更冲；教学套组更平静；食物/旅行有场景词
+- 脚本只引用 `R01`–`R36`，不直接写句子
+
 ## 视觉系统
 
 - 画幅：9:16，1080×1920，30fps
