@@ -36,7 +36,7 @@ production/
 
 | 项 | 值 |
 |---|---|
-| 时长 | 56.6s |
+| 时长 | 60.3s |
 | 画幅 | 1080×1920，30fps |
 | 中文音色 | 火山 `zh_female_meilinvyou_uranus_bigtts` |
 | 英文开场 | ElevenLabs Bella |

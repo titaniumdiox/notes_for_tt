@@ -33,7 +33,7 @@ Milk tea example:
 
 | Page | Seconds | Beat |
 |---|---|---|
-| p01 | 2–3 | one English hook + thinking Momo; Chinese only as text |
+| p01 | 3–4 | one English hook + thinking Momo; Chinese only as text |
 | p02 | 7–8 | word 1 + full-sentence answer |
 | p03 | 7–8 | word 2 + short answer |
 | p04 | 7–8 | word 3 + short answer |

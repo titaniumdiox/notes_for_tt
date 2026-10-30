@@ -4,9 +4,9 @@ SCRIPT.VOICE = {
   "pages": [
     [
       {
-        "t": "You want milk tea in China. But how do you order it?",
+        "t": "When you walk into a milk tea shop, how do you order in Chinese?",
         "f": "audio/p01-c00.wav",
-        "d": 2.574,
+        "d": 2.76,
         "o": 0.0
       }
     ],
