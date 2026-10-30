@@ -19,7 +19,7 @@ Score each:
 | Cultural specificity | generic | mild | clear | uniquely Chinese |
 | Level fit | too hard | mixed | mostly HSK1–2 | exactly HSK1–2 |
 
-Total 0–13. Pick **≥10**. If none hit 10, change the angle, not the words.
+Total 0–15 (5 dimensions × 0–3). Pick **≥12**. If none hit 12, change the angle, not the words.
 
 ## Good topic shape
 

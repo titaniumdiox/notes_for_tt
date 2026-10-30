@@ -34,8 +34,8 @@ Read `references/07-efficiency.md` before production. The expensive part is repe
 
 Read `references/01-topic.md`.
 
-- Propose 3 topics; score 0–13.
-- Pick only ≥10 and only if it can fit one scene / 5 words / 1 sentence.
+- Propose 3 topics; score 0–15 (5 dimensions × 0–3).
+- Pick only ≥12 and only if it can fit one scene / 5 words / 1 sentence.
 - Write a one-line promise: “After this video, the learner can ___ in Chinese.”
 
 Gate: topic promise is concrete and sayable in 60 seconds.
