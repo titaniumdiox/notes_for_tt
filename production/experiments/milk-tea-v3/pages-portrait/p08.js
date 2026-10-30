@@ -96,7 +96,7 @@ ENGINE.visual('p08', (P) => {
 
     // Learned stamp.
     ctx.save();
-    ctx.translate(785, 400);
+    ctx.translate(785, 460);
     ctx.rotate((-8 * Math.PI) / 180);
     ctx.strokeStyle = '#C95845';
     ctx.lineWidth = 8;
@@ -151,8 +151,9 @@ ENGINE.visual('p08', (P) => {
   P.text('You can order a milk tea in Chinese now.', {
     x: 120, y: 1262, w: 840, size: 24, color: 'green', weight: 600, at: tr + 0.65, mode: 'fade',
   });
-  P.text('Congratulations!', {
-    x: 760, y: 1408, w: 430, align: 'c', size: 34, color: 'green', weight: 600, at: tr + 0.7, mode: 'fade',
+  P.text('CONGRATULATIONS!', {
+    x: 700, y: 346, w: 340, align: 'c', size: 36, color: 'green', weight: 800,
+    font: 'latin', rot: -3, at: tr + 0.3, mode: 'fade',
   });
   P.text('PAUSE TO READ / 截图保存', {
     x: 540, y: 1518, w: 900, align: 'c', size: 26, color: 'red', weight: 600, at: tr + 0.8, mode: 'fade',
