@@ -16,6 +16,7 @@
 
 ## Voice
 
+- [ ] `check_voice_assets.py` passes
 - [ ] word 0.95
 - [ ] question/answer 0.92
 - [ ] reward 1.08 / pitch +2
@@ -49,10 +50,11 @@
 
 ## Output
 
+- [ ] contact sheet reviewed; full-res only failures
 - [ ] 1080×1920
 - [ ] 30fps
 - [ ] final MP4
-- [ ] cover PNG
+- [ ] designed cover PNG (not an intro frame)
 - [ ] README
 - [ ] jobs CSV
 - [ ] scene images

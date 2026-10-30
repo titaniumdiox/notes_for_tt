@@ -2,7 +2,16 @@
 
 ## Frame checks
 
-Extract at least:
+First make one contact sheet:
+
+```powershell
+python skills/sinofieldnotes-video/scripts/qa_contact_sheet.py `
+  --video out/final.mp4 --out out/qa-contact-sheet.png
+```
+
+Read the contact sheet. Open a full-res frame only if that tile shows a problem.
+
+Cover at least:
 
 - hook: 4s
 - first word: first word + 2s
@@ -47,6 +56,7 @@ Extract at least:
 
 ### Audio
 
+- [ ] `check_voice_assets.py` passes (files exist; durations match `voice.js`)
 - [ ] no BGM
 - [ ] no SFX
 - [ ] 1.1s pause before reward

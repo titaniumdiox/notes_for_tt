@@ -20,6 +20,13 @@ One episode = **one scene, one transaction/dialogue, 5 words, 1 full sentence, 6
 9. Every page has top/bottom `SINOFIELDNOTES` branding and a small watermark.
 10. Archive all versions; never delete a rejected variant without moving it to an archive folder.
 11. **Intro Momo is scene-specific**: p01 gets one Momo pose that reacts to this episode's situation (thinking, checking a map, holding a ticket, etc.), not a generic mascot sticker.
+12. **Render in place**: use `scripts/setup_render.ps1` and render inside `production/episodes/NN-slug/`. Never ship from a stale mirrored runtime copy.
+13. **Cover is a separate design**: title + full-body Momo + scene + number/name badge. Never use a video frame or the intro page as the cover.
+14. **QA cheaply but fully**: render once, inspect one contact sheet, then open only failing frames at full resolution.
+
+## Cost control
+
+Read `references/07-efficiency.md` before production. The expensive part is repeated full-res image review and re-rendering. Batch scene/audio work, render in place, and use `scripts/qa_contact_sheet.py` + `scripts/check_voice_assets.py`.
 
 ## Pipeline
 
@@ -53,6 +60,7 @@ Read `references/03-tone-visual.md`.
 - One scene image per page, 1440×2560, no text, right/top space reserved for UI.
 - **p01 intro Momo**: generate one pose specific to this scene; put it in the lower warm-cream area under the title. It should look like Momo is also wondering about the episode question. No thought bubble by default.
 - **Pose variation**: every page needs a different Momo action tied to that word (pour, hold, point, taste, pack, carry, look). Do not reuse the intro pose or the same standing pose across pages.
+- **Batch generation**: generate 3–5 scenes per command. Inspect one contact sheet; open full-res only for failures.
 - Reject any image with generated text; either mask it or regenerate.
 
 Gate: 3 style frames (hook, word page, receipt) before producing all pages.
@@ -83,10 +91,12 @@ Gate: one word page composited and reviewed before applying to all pages.
 
 Read `references/06-qa-archive.md`.
 
-- Render with `--fps 30 --skip-subs --workers 3`.
-- Check frames at hook, each word, sentence, receipt.
+- Run `scripts/setup_render.ps1 -Episode <episode>` once, then render from the episode folder with `--fps 30 --skip-subs --workers 3`.
+- Run `scripts/check_voice_assets.py --episode <episode>` before rendering.
+- Render once; make `scripts/qa_contact_sheet.py` from the MP4.
+- Read the contact sheet, then open only failing frames at full resolution.
 - Check pinyin, tone marks, answer blank, brand, watermark, stamp.
-- Export MP4; copy into the episode `out/`.
+- Export MP4 into the episode `out/`.
 
 ### 7. Archive
 
@@ -108,6 +118,9 @@ Read `references/06-qa-archive.md`.
 - [ ] First answer full; later answers short
 - [ ] Reward stamp appears after 1.1s pause, outside the glass card
 - [ ] Top/bottom brand and watermark on every page
+- [ ] Audio files match `voice.js` durations
+- [ ] Cover is designed, not an intro frame
+- [ ] Contact sheet reviewed; only failures opened full-res
 - [ ] Cover + final MP4 + README archived
 
 ## Canonical example

@@ -100,24 +100,28 @@ Do not use muted gray for pinyin/English; use `red` / `ink`.
 ## Render
 
 ```powershell
-$node = "C:\Users\...\node.exe"
+powershell -File skills/sinofieldnotes-video/scripts/setup_render.ps1 `
+  -Episode production/episodes/05-breakfast
+cd production/episodes/05-breakfast
 $env:PORTRAIT = "1"
-Push-Location .runtime\research\milk-tea-v3
-& $node ..\whiteboard\engine\tools\render.mjs --fps 30 --skip-subs --workers 3
-Pop-Location
+node <workspace>/.runtime/research/whiteboard/engine/tools/render.mjs --fps 30 --skip-subs --workers 3
 ```
 
+- Render **in the episode folder**. Do not mirror to `.runtime`; stale audio is the classic failure.
 - Always `--workers 3` for 1080×1920; 12 workers runs out of memory.
 - Use `--skip-subs` unless subtitles are explicitly requested.
 - Cache means a one-page change rerenders only that page's segments.
+- Run `scripts/check_voice_assets.py` before rendering.
 
 ## Cover
 
 - 1080×1920
-- use the preferred p01 variant
-- mask any generated shop name with a paper title block
-- add `SINOFIELDNOTES`, title, one stamp, bottom brand
+- **designed composition, not a video frame and not the intro page**
+- top block: `SINOFIELDNOTES · EP.NN`, `5 个词，60 秒`, scene subtitle, English line
+- lower: full-body Momo, feet visible, holding the episode's key prop/tray
+- number badge (`05 / BREAKFAST`), `MOMO` tag, bottom `MOMO / 场景`
 - render from HTML with Playwright/Chrome
+- review the cover at full resolution once
 
 ## No BGM / SFX
 

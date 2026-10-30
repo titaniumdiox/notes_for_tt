@@ -15,3 +15,5 @@ production/assets/mascot/scenes/*.json
 production/episodes/*/assets/mascot/scenes/*.json
 
 production/episodes/*/assets/mascot/*.json
+production/episodes/*/engine
+production/episodes/*/engine_modules
