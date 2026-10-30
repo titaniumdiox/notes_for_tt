@@ -4,6 +4,7 @@ Short vertical Chinese-learning videos for an overseas audience: **one scene, 5 
 
 ## Watch
 
+- [05 · Breakfast in China](production/episodes/05-breakfast/out/breakfast-v1.mp4) — 60.5s, 1080×1920
 - [04 · Milk Tea Order — full scene cut](production/episodes/04-milk-tea-order/out/milk-tea-v3-scenes-demo.mp4) — 60.3s, 1080×1920
 - [Cover](production/assets/mascot/cover.png)
 - [Episode notes](production/episodes/04-milk-tea-order/README.md)
@@ -40,9 +41,10 @@ The reusable workflow lives at [skills/sinofieldnotes-video/SKILL.md](skills/sin
 
 - Channel renamed: **Sinofieldnotes**
 - Episode 04: **v1.0 demo frozen** (`v1.0-demo` tag)
+- Episode 05: **Breakfast in China — complete** (60.5s)
 - Format: 5 words + 1 sentence, 60s, 9:16, no BGM/SFX
-- Known gaps: paper wipe not implemented; p02 has no straw; p04/p06/p08 use counter half-body while p03/p05/p07 are full-body
-- Next: run the skill on episode 05; keep episode 04 frozen as the reference build
+- Known gaps: paper wipe not implemented; EP.05 p02 answer card covers the table edge; p04 bubble touches Momo's ear
+- Next: run the skill on episode 06; keep 04 frozen as the reference build
 
 ## Reproduce
 

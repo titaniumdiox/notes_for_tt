@@ -11,3 +11,5 @@ production/episodes/*/scratch_vo.wav
 production/episodes/*/scratch_part_*.wav
 production/assets/mascot/avatar/*.json
 production/assets/mascot/scenes/*.json
+
+production/episodes/*/assets/mascot/scenes/*.json
