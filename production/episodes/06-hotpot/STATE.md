@@ -21,10 +21,10 @@
 
 ## Audio
 
-- cues: not recorded
-- total: -
+- cues: 24
+- total: 36.22s
 - voice: volc + Bella
-- sync checked: no
+- sync checked: yes (check_voice_assets OK)
 
 ## Render
 
@@ -34,4 +34,4 @@
 
 ## Next action
 
-- record 24 cues, build voice.js, check_voice_assets
+- build script.js + pages, tune to 60s, render in place
