@@ -1,13 +1,19 @@
 #!/usr/bin/env python3
-"""Generate one scene image with a character reference (Ark Seedream)."""
+"""Generate one scene image with a character reference (Ark Seedream).
+
+Example:
+  python production/assets/mascot/generate_scene.py \
+    --prompt production/assets/mascot/scene-p01-prompt.txt \
+    --out production/assets/mascot/scenes/p01-v1.png
+"""
 
 from __future__ import annotations
 
+import argparse
 import base64
 import io
 import json
 import os
-import sys
 import urllib.error
 import urllib.request
 from pathlib import Path
@@ -17,7 +23,6 @@ from PIL import Image
 ROOT = Path.cwd()
 ENV = ROOT / ".env.local"
 REF = ROOT / "production/assets/mascot/reference/momo-character-sheet-v1.png"
-OUT_DIR = ROOT / ".runtime/ark-test"
 
 
 def load_env(path: Path) -> None:
@@ -42,21 +47,26 @@ def data_uri(path: Path, max_side: int = 1024) -> str:
 
 
 def main() -> int:
+    ap = argparse.ArgumentParser()
+    ap.add_argument("--prompt", required=True)
+    ap.add_argument("--out", required=True)
+    ap.add_argument("--size", default="1440x2560")
+    ap.add_argument("--ref", default=str(REF))
+    args = ap.parse_args()
+
     load_env(ENV)
     key = os.environ["ARK_API_KEY"]
     model = os.environ["ARK_IMAGE_MODEL"]
     endpoint = os.environ["ARK_BASE_URL"]
-    prompt_path = Path(sys.argv[1] if len(sys.argv) > 1 else "production/assets/mascot/scene-p02-prompt.txt")
-    prompt = prompt_path.read_text(encoding="utf-8").strip()
-    out_dir = Path(sys.argv[2] if len(sys.argv) > 2 else ".runtime/ark-test")
-    out_dir.mkdir(parents=True, exist_ok=True)
-    size = sys.argv[3] if len(sys.argv) > 3 else "1440x2560"
+    prompt = Path(args.prompt).read_text(encoding="utf-8").strip()
+    out = Path(args.out)
+    out.parent.mkdir(parents=True, exist_ok=True)
 
     body = {
         "model": model,
         "prompt": prompt,
-        "image": data_uri(REF),
-        "size": size,
+        "image": data_uri(Path(args.ref)),
+        "size": args.size,
         "output_format": "png",
         "response_format": "url",
         "watermark": False,
@@ -76,14 +86,14 @@ def main() -> int:
         print(exc.read().decode("utf-8", errors="replace")[:2500])
         return 1
     obj = json.loads(raw.decode("utf-8"))
-    (out_dir / "p02-response.json").write_text(json.dumps(obj, ensure_ascii=False, indent=2), encoding="utf-8")
+    meta = out.with_suffix(".json")
+    meta.write_text(json.dumps(obj, ensure_ascii=False, indent=2), encoding="utf-8")
     data = obj.get("data") or []
     if not data or not data[0].get("url"):
         print(json.dumps(obj, ensure_ascii=False)[:1500])
         return 1
     with urllib.request.urlopen(data[0]["url"], timeout=180) as resp:
         image = resp.read()
-    out = out_dir / "p02-scene.png"
     out.write_bytes(image)
     print("saved", out, len(image), "bytes")
     print("size", data[0].get("size"), "format", data[0].get("output_format"))
