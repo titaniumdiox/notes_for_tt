@@ -27,6 +27,8 @@ Extract at least:
 
 - [ ] no generated text in any image
 - [ ] Momo face/outfit consistent
+- [ ] p01 intro Momo pose matches the episode situation, not a generic sticker
+- [ ] p01 intro Momo stays in the lower cream area, title area clear
 - [ ] straw present where needed
 - [ ] right/top space clean for UI
 - [ ] no extra fingers/limbs

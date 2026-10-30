@@ -48,6 +48,14 @@ English:
 - mood:
 - props:
 
+## Intro Momo (p01)
+
+- pose:
+- expression:
+- looking at:
+- prop (optional):
+- why it fits this episode:
+
 ## Reward
 
 - reward ID:

@@ -18,6 +18,29 @@ Use the approved Momo reference image as image input:
 禁止：竖起手指、比数字、人类手指、多余肢体；复刻设定图网格；3D、照片、复杂渐变、发光、强投影、毛发细节、裁切。
 ```
 
+## Intro Momo prompt (p01)
+
+Use the same character sheet. This is a portrait intro asset, not a full scene.
+
+```text
+以参考图中的同一只奶油色猫店长为唯一角色，严格保持脸型、点状深墨眼、小三角赭红鼻、短嘴、短圆耳、鼠尾草绿领巾、赭红围裙、胸前小杯子徽章、粗墨线和平涂风格。参考图只提供角色设定，不要复刻四视图排版。
+
+竖版 9:10 角色引导图：Momo 位于画面下半部中央，{{intro_pose}}，{{intro_expression}}，看向{{intro_direction}}。上半部保持纯净暖奶油色空白，给标题和英文问题使用。不要奶茶杯、纸袋、柜台或任何道具，除了{{intro_prop}}。背景是暖奶油色 #F4E9D8，轻微纸张颗粒。扁平 2D 矢量插画，粗而干净的深墨线，有限色板，平涂，无渐变，无 3D，无写实光影。角色完整入画，脚和头顶不被裁切。
+
+绝对不要出现任何文字：不要对话气泡、不要问号、不要字母、不要数字、不要汉字、不要标签、不要水印。no text, no speech bubble, no question mark, no letters, no numbers.
+
+禁止：复刻设定图四视图排版；正面呆站；竖起手指、比数字、人类手指、多余肢体；3D、照片、复杂渐变、发光、强投影、毛发细节、裁切。
+```
+
+Example pose values:
+
+- 奶茶 / 点单：一只爪子托下巴，仰头看向右上方，好奇
+- 旅行：低头看手里的车票，微微皱眉
+- 餐厅：拿着菜单，抬头看店员
+- 诊所：一只手轻碰脸颊，担心
+- 办公室：端着马克杯，思考
+- 购物：拎着纸袋，看价签
+
 ## Filled example
 
 ```text

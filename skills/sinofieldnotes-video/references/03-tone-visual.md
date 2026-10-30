@@ -39,6 +39,39 @@ Rules:
 
 Do not let the model redraw the character sheet layout.
 
+## Intro Momo (p01)
+
+p01 needs one **scene-specific** Momo before the teaching starts. It is not a generic mascot sticker; it should look like Momo is also wondering about this episode's question.
+
+Placement:
+
+- lower half of p01, centered
+- about 400–450px wide on a 1080px canvas
+- warm cream area below the title; not on top of the title
+- keep the top 700px clear for title + hook
+- no thought bubble by default; the pose carries the thought
+
+Pose library:
+
+| Episode type | Intro pose |
+|---|---|
+| ordering food / milk tea | one paw at chin, looking up-right |
+| travel / train / hotel | holding ticket or key card, looking at it |
+| restaurant / family dinner | holding menu or chopsticks, slightly puzzled |
+| clinic / pharmacy | touching cheek, worried look |
+| office / cowork | holding mug, thinking |
+| shopping / market | holding a shopping bag, looking at price tag |
+| language confusion | head tilt, one ear down, looking at viewer |
+
+Rules:
+
+- generate from `momo-character-sheet-v1.png`
+- 3/4 view, face and outfit identical to the sheet
+- no text, no speech bubble, no question mark
+- one pose only; do not reproduce the four-view sheet
+- if face/eyes/proportions are off, regenerate with the sheet as reference; do not hand-paint features
+- keep the sharp Momo separate from the blurred background; the blur stays atmospheric
+
 ## Scene image spec
 
 - 1440×2560 PNG (9:16)

@@ -19,6 +19,7 @@ One episode = **one scene, one transaction/dialogue, 5 words, 1 full sentence, 6
 8. Reward beat needs a **1.1s pause** after the answer; reward appears as a separate pop-out stamp, not inside the answer card.
 9. Every page has top/bottom `SINOFIELDNOTES` branding and a small watermark.
 10. Archive all versions; never delete a rejected variant without moving it to an archive folder.
+11. **Intro Momo is scene-specific**: p01 gets one Momo pose that reacts to this episode's situation (thinking, checking a map, holding a ticket, etc.), not a generic mascot sticker.
 
 ## Pipeline
 
@@ -50,6 +51,7 @@ Read `references/03-tone-visual.md`.
 - Pick a palette by scene temperature.
 - Generate Momo scene references from `production/assets/mascot/reference/momo-character-sheet-v1.png`.
 - One scene image per page, 1440×2560, no text, right/top space reserved for UI.
+- **p01 intro Momo**: generate one pose specific to this scene; put it in the lower warm-cream area under the title. It should look like Momo is also wondering about the episode question. No thought bubble by default.
 - Reject any image with generated text; either mask it or regenerate.
 
 Gate: 3 style frames (hook, word page, receipt) before producing all pages.
@@ -70,7 +72,7 @@ Gate: native-speaker check on polyphonic words; no wrong tone shipped.
 Read `references/05-build.md`.
 
 - Use Frametell `study`, portrait.
-- Reuse `production/experiments/...`? No — copy the canonical `extras/word.js` and `pages-portrait/` patterns from `production/episodes/04-milk-tea-order/`.
+- Copy the canonical `extras/word.js` and `pages-portrait/` patterns from `production/episodes/04-milk-tea-order/`.
 - Use canvas for anything that must sit above `P.img` (bubbles, dots, eraser block, stamps).
 - Use an HTML glass div for the answer card.
 
@@ -99,6 +101,7 @@ Read `references/06-qa-archive.md`.
 - [ ] No BGM/SFX
 - [ ] No generated text in images
 - [ ] Momo consistent across pages
+- [ ] p01 has a scene-specific intro Momo, not a generic sticker
 - [ ] Pinyin correct; polyphonic words verified
 - [ ] First answer full; later answers short
 - [ ] Reward stamp appears after 1.1s pause, outside the glass card

@@ -39,7 +39,7 @@ The reusable workflow lives at [skills/sinofieldnotes-video/SKILL.md](skills/sin
 ## Status
 
 - Channel renamed: **Sinofieldnotes**
-- Episode 04: demo complete
+- Episode 04: **v1.0 demo frozen** (`v1.0-demo` tag)
 - Format: 5 words + 1 sentence, 60s, 9:16, no BGM/SFX
 - Known gaps: paper wipe not implemented; p02 has no straw; p04/p06/p08 use counter half-body while p03/p05/p07 are full-body
 - Next: run the skill on episode 05; keep episode 04 frozen as the reference build

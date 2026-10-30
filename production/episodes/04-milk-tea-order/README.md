@@ -1,5 +1,7 @@
 # 奶茶点单 v3 · 火山 TTS + AI 场景
 
+> 状态：**v1.0 demo 定稿，冻结**。后续只做新集，不在本集上继续改画面。
+
 - 完整场景版：[out/milk-tea-v3-scenes-demo.mp4](out/milk-tea-v3-scenes-demo.mp4)
 - 旧占位版：[out/milk-tea-v3-demo.mp4](out/milk-tea-v3-demo.mp4)
 - 封面：[assets/mascot/cover.png](assets/mascot/cover.png)

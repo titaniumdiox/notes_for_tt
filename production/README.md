@@ -6,6 +6,8 @@
 
 ## 当前成片
 
+> 状态：**v1.0 demo 定稿，冻结**。
+
 - 04 · 奶茶点单：[完整场景版](episodes/04-milk-tea-order/out/milk-tea-v3-scenes-demo.mp4)
 - [封面](assets/mascot/cover.png)
 - [制作说明](episodes/04-milk-tea-order/README.md)
