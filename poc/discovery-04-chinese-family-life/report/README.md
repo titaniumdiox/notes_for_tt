@@ -65,7 +65,7 @@
 7. **Chinese childcare + culturedifference**：育儿方式对比
 8. **Random Chinese things + culturedifferences**：生活细节对比
 
-这些比“三孩家庭日常”更适合 CN Fieldnotes，因为它们有**关系张力**或**文化解释**。
+这些比“三孩家庭日常”更适合 Sinofieldnotes，因为它们有**关系张力**或**文化解释**。
 
 ## 关键发现
 

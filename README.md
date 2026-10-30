@@ -1,4 +1,4 @@
-# CN Fieldnotes
+# Sinofieldnotes
 
 Chinese culture, daily life, travel, and cross-cultural observations for an overseas audience. The working format is short vertical video (9:16), with 2D illustration/light animation, English voiceover, and one lightweight Chinese keyword per episode.
 

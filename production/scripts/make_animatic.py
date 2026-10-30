@@ -53,7 +53,7 @@ def center(draw: ImageDraw.ImageDraw, xy: tuple[float, float], text: str, f, ink
 
 
 def header(draw: ImageDraw.ImageDraw, index: int, total: int):
-    draw.text((64, 54), "CN FIELDNOTES", font=font(FONT_EN, 26), fill=INK)
+    draw.text((64, 54), "SINOFIELDNOTES", font=font(FONT_EN, 26), fill=INK)
     label = f"EP 01 / {index:02d} of {total:02d}"
     f = font(FONT_EN, 24)
     box = draw.textbbox((0, 0), label, font=f)
