@@ -22,6 +22,18 @@ Default Sinofieldnotes palette:
 
 Only 4–5 colors. No gradients, no 3D, no photographic texture.
 
+**Cream is the EP.04/05 default, not a permanent brand rule.** Future episodes can shift the overall palette, as long as it stays low-saturation and limited to 4–5 colors. Pick by scene:
+
+| Episode mood | Low-saturation main colors |
+|---|---|
+| morning market / breakfast | oat, sage, clay, muted mustard |
+| night street / convenience store | slate, muted teal, warm amber |
+| travel / station / hotel | dusty blue, sand, brick, paper |
+| clinic / office / formal | paper white, sage, ink, pale clay |
+| family / kitchen | cream, terracotta, olive, warm gray |
+
+Do not default every episode to the same cream; repeated cream is a series choice for these first two episodes, not a requirement.
+
 ## Character consistency
 
 Use the approved character sheet as **image reference** for every scene:
@@ -71,6 +83,28 @@ Rules:
 - one pose only; do not reproduce the four-view sheet
 - if face/eyes/proportions are off, regenerate with the sheet as reference; do not hand-paint features
 - keep the sharp Momo separate from the blurred background; the blur stays atmospheric
+
+## Pose variation across pages
+
+Momo should feel like a participant, not a logo. Every page gets one clear action:
+
+| Page | Action examples |
+|---|---|
+| p02 | sitting at table, holding chopsticks or a menu |
+| p03 | pouring soy milk / holding a cup with steam |
+| p04 | lifting a youtiao from the fryer / holding it with two paws |
+| p05 | picking up a tea egg / peeling it |
+| p06 | holding a sugar jar / tasting |
+| p07 | carrying the full tray |
+| p08 | small thumbs-up or leaning on the receipt edge (optional) |
+
+Rules:
+
+- Do not repeat the intro pose.
+- Do not use the same standing pose on every word page.
+- Keep the face/outfit identical; only pose and action change.
+- If the action hides the face too much, choose a simpler action.
+- Remove hands/props that do not belong to the action.
 
 ## Scene image spec
 

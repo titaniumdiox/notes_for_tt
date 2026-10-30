@@ -14,7 +14,7 @@ One episode = **one scene, one transaction/dialogue, 5 words, 1 full sentence, 6
 3. Exactly **5 words + 1 sentence**; the sentence must use all 5 words.
 4. One scene, one situation; do not cut across unrelated locations.
 5. Chinese text, pinyin, and English are **always code overlays** — never generated inside an AI image.
-6. One character (Momo) across scenes; use the character sheet as image reference for every generation.
+6. One character (Momo) across scenes; use the character sheet as image reference for every generation, but **change Momo's pose and action on every page** — no repeated chin-tap, standing sticker, or identical pose.
 7. First answer may be a full sentence; later answers stay short. Do not force every answer into a full sentence.
 8. Reward beat needs a **1.1s pause** after the answer; reward appears as a separate pop-out stamp, not inside the answer card.
 9. Every page has top/bottom `SINOFIELDNOTES` branding and a small watermark.
@@ -52,6 +52,7 @@ Read `references/03-tone-visual.md`.
 - Generate Momo scene references from `production/assets/mascot/reference/momo-character-sheet-v1.png`.
 - One scene image per page, 1440×2560, no text, right/top space reserved for UI.
 - **p01 intro Momo**: generate one pose specific to this scene; put it in the lower warm-cream area under the title. It should look like Momo is also wondering about the episode question. No thought bubble by default.
+- **Pose variation**: every page needs a different Momo action tied to that word (pour, hold, point, taste, pack, carry, look). Do not reuse the intro pose or the same standing pose across pages.
 - Reject any image with generated text; either mask it or regenerate.
 
 Gate: 3 style frames (hook, word page, receipt) before producing all pages.
@@ -101,6 +102,7 @@ Read `references/06-qa-archive.md`.
 - [ ] No BGM/SFX
 - [ ] No generated text in images
 - [ ] Momo consistent across pages
+- [ ] Momo pose changes page to page; no repeated chin-tap/standing sticker
 - [ ] p01 has a scene-specific intro Momo, not a generic sticker
 - [ ] Pinyin correct; polyphonic words verified
 - [ ] First answer full; later answers short

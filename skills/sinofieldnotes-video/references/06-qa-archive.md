@@ -29,6 +29,7 @@ Extract at least:
 - [ ] Momo face/outfit consistent
 - [ ] p01 intro Momo pose matches the episode situation, not a generic sticker
 - [ ] p01 intro Momo stays in the lower cream area, title area clear
+- [ ] Momo pose changes page to page; no repeated chin-tap/standing sticker
 - [ ] straw present where needed
 - [ ] right/top space clean for UI
 - [ ] no extra fingers/limbs

@@ -29,6 +29,7 @@
 - [ ] Momo consistent
 - [ ] p01 intro Momo pose is specific to this episode, not a generic sticker
 - [ ] p01 intro Momo sits in the lower cream area, title stays clear
+- [ ] Momo pose changes page to page; no repeated chin-tap/standing sticker
 - [ ] no generated text in image
 - [ ] straw/prop present
 - [ ] right/top UI space clean

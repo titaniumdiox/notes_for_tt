@@ -24,6 +24,7 @@ Copy the canonical pattern from `production/episodes/04-milk-tea-order/`. Do not
 - portrait 1080×1920
 - 8 pages: hook, 5 words, sentence, receipt
 - **p01 = 3–4s**: blurred Momo background + title + one English hook + a **scene-specific intro Momo** in the lower cream area; pose changes per episode (chin-tap, ticket, menu, mug, etc.); no Chinese VO on p01; no thought bubble by default
+- **Momo pose changes on every page**: assign one action per word before generating; never reuse the intro pose or the same standing pose
 - p02 full-sentence answer; p03–p06 short answers
 - answer hold 1.1s; reward stamp at t3
 
