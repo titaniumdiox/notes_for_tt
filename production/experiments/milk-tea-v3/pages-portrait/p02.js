@@ -1,6 +1,7 @@
 ENGINE.visual('p02', (P) => {
-  renderWordPage(P, {
+  renderSceneWordPage(P, {
     index: 1,
+    scene: 'assets/mascot/scenes/p02-v1.png',
     hanzi: '奶茶',
     pinyin: 'nǎichá',
     meaning: 'milk tea',

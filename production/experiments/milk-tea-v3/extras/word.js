@@ -8,7 +8,7 @@
 
     // Header + progress.
     P.text('MILK TEA · ' + data.index + '/5', {
-      x: 540, y: 95, w: 700, align: 'c', size: 24, color: 'muted', at: t0,
+      x: 540, y: 95, w: 700, align: 'c', size: 27, color: 'soft', at: t0,
     });
     for (let i = 0; i < 5; i++) {
       P.circle(390 + i * 75, 152, 20, {
@@ -21,10 +21,10 @@
       x: 540, y: 225, w: 900, align: 'c', size: 210, color: 'ink', weight: 700, at: t0, cps: 8,
     });
     P.text(data.pinyin, {
-      x: 540, y: 540, w: 900, align: 'c', size: 54, color: 'red', at: t0 + 0.15, cps: 8,
+      x: 540, y: 545, w: 900, align: 'c', size: 64, color: 'red', weight: 600, at: t0 + 0.15, cps: 8,
     });
     P.text(data.meaning, {
-      x: 540, y: 625, w: 900, align: 'c', size: 34, color: 'muted', at: t0 + 0.3, mode: 'fade',
+      x: 540, y: 635, w: 900, align: 'c', size: 42, color: 'ink', weight: 600, at: t0 + 0.3, mode: 'fade',
     });
     if (data.note) {
       P.text(data.note, {
@@ -90,7 +90,7 @@
       x: 540, y: 1400, w: 900, align: 'c', size: 82, color: 'green', weight: 700, at: t2, cps: 8,
     });
     P.text('say it', {
-      x: 540, y: 1490, w: 900, align: 'c', size: 24, color: 'muted', at: t2 + 0.2, mode: 'fade',
+      x: 540, y: 1490, w: 900, align: 'c', size: 27, color: 'soft', at: t2 + 0.2, mode: 'fade',
     });
     if (data.reward) {
       P.text('★', {
@@ -103,5 +103,123 @@
 
     // Paper wipe is intentionally deferred: the in-page flash sat above the
     // cat layer and produced a blank frame. It will be post-processed later.
+  };
+
+  root.renderSceneWordPage = function (P, data) {
+    const t0 = P.c(0);
+    const t1 = P.c(1);
+    const t2 = P.c(2);
+    const t3 = P.c(3);
+    const { clamp } = PV;
+
+    // Full-bleed AI scene; text overlays sit in the clean right/top areas.
+    P.img(data.scene, 0, 0, 1080, 1920, { fit: 'cover', at: 0 });
+
+    P.canvas(650, 84, 340, 52, (ctx) => {
+      ctx.clearRect(0, 0, 340, 52);
+      for (let i = 0; i < 5; i++) {
+        ctx.beginPath();
+        ctx.arc(24 + i * 58, 26, 9, 0, Math.PI * 2);
+        ctx.fillStyle = i < data.index ? '#C95845' : '#F4E9D8';
+        ctx.fill();
+        ctx.lineWidth = 2;
+        ctx.strokeStyle = '#B9AA96';
+        ctx.stroke();
+      }
+    });
+
+    P.text('MILK TEA · ' + data.index + '/5', {
+      x: 820, y: 66, w: 360, align: 'c', size: 27, color: 'soft', at: t0,
+    });
+
+    P.text(data.hanzi, {
+      x: 520, y: 205, w: 860, align: 'c', size: 180, color: 'ink', weight: 700, at: t0, cps: 8,
+    });
+    P.text(data.pinyin, {
+      x: 520, y: 430, w: 860, align: 'c', size: 62, color: 'red', weight: 600, at: t0 + 0.15, cps: 8,
+    });
+    P.text(data.meaning, {
+      x: 520, y: 510, w: 860, align: 'c', size: 40, color: 'ink', weight: 600, at: t0 + 0.3, mode: 'fade',
+    });
+
+    // Question bubble in the right-hand clean area. Drawn on a canvas, because
+    // P.img lives in the HTML layer and would cover an SVG P.box.
+    P.canvas(580, 680, 460, 220, (ctx, lt) => {
+      ctx.clearRect(0, 0, 460, 220);
+      if (lt < t1 + 0.15) return;
+      const k = Math.min(1, (lt - (t1 + 0.15)) / 0.25);
+      ctx.globalAlpha = k;
+      ctx.fillStyle = '#FFF9EF';
+      ctx.strokeStyle = '#22304A';
+      ctx.lineWidth = 6;
+      ctx.beginPath();
+      const x = 50, y = 0, w = 410, h = 190, r = 24;
+      ctx.moveTo(x + r, y);
+      ctx.lineTo(x + w - r, y);
+      ctx.quadraticCurveTo(x + w, y, x + w, y + r);
+      ctx.lineTo(x + w, y + h - r);
+      ctx.quadraticCurveTo(x + w, y + h, x + w - r, y + h);
+      ctx.lineTo(x + r, y + h);
+      ctx.quadraticCurveTo(x, y + h, x, y + h - r);
+      ctx.lineTo(x, y + r);
+      ctx.quadraticCurveTo(x, y, x + r, y);
+      ctx.closePath();
+      ctx.fill();
+      ctx.stroke();
+      ctx.beginPath();
+      ctx.moveTo(50, 78);
+      ctx.lineTo(10, 105);
+      ctx.lineTo(50, 132);
+      ctx.closePath();
+      ctx.fill();
+      ctx.stroke();
+      ctx.globalAlpha = 1;
+    });
+    P.text(data.question, {
+      x: 835, y: 785, w: 350, align: 'c', size: 31, color: 'ink', at: t1 + 0.4, cps: 10,
+    });
+
+    P.text(data.answerLine, {
+      x: 660, y: 930, w: 380, align: 'l', size: 34, color: 'ink', at: t1 + 0.4, cps: 10,
+    });
+
+    const qEnd = P.ce(1);
+    const aStart = P.c(2);
+    P.canvas(870, 1080, 180, 180, (ctx, lt) => {
+      ctx.clearRect(0, 0, 180, 180);
+      if (lt < qEnd || lt > aStart) return;
+      const total = Math.max(0.01, aStart - qEnd);
+      const remain = Math.max(0, aStart - lt);
+      const frac = clamp(1 - remain / total);
+      ctx.lineWidth = 11;
+      ctx.strokeStyle = '#D8CBB8';
+      ctx.beginPath();
+      ctx.arc(90, 90, 70, 0, Math.PI * 2);
+      ctx.stroke();
+      ctx.strokeStyle = '#C94C3B';
+      ctx.beginPath();
+      ctx.arc(90, 90, 70, -Math.PI / 2, -Math.PI / 2 + Math.PI * 2 * frac);
+      ctx.stroke();
+      ctx.fillStyle = '#1F2A44';
+      ctx.font = '700 74px Arial';
+      ctx.textAlign = 'center';
+      ctx.textBaseline = 'middle';
+      ctx.fillText(String(Math.ceil(remain)), 90, 94);
+    });
+
+    P.text(data.answer, {
+      x: 840, y: 1275, w: 360, align: 'c', size: 92, color: 'green', weight: 700, at: t2, cps: 8,
+    });
+    P.text('say it', {
+      x: 840, y: 1375, w: 360, align: 'c', size: 27, color: 'soft', at: t2 + 0.2, mode: 'fade',
+    });
+    if (data.reward) {
+      P.text('★', {
+        x: 728, y: 1460, w: 54, align: 'c', size: 28, color: 'orange', at: t3, mode: 'fade',
+      });
+      P.text(data.reward, {
+        x: 860, y: 1460, w: 290, align: 'c', size: 29, color: 'red', weight: 700, at: t3, mode: 'fade',
+      });
+    }
   };
 })(typeof window !== 'undefined' ? window : globalThis);
