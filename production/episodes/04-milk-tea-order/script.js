@@ -11,9 +11,8 @@
   };
 
   const PAGES = [
-    { id: 'p01', section: '开场', title: 'When you walk into a milk tea shop', after: 0.1, cues: [
-      { t: 'When you walk into a milk tea shop, how do you order in Chinese?', hold: 0.2 },
-      { t: '当你走进一家奶茶店，如何使用汉语点单？', hold: 0.4 },
+    { id: 'p01', section: '开场', title: 'You want milk tea in China', after: 0.12, cues: [
+      { t: 'You want milk tea in China. But how do you order it?', hold: 0.15 },
     ] },
     { id: 'p02', section: '5 个词', title: '奶茶', after: 0.6, cues: [
       { t: '奶茶。', hold: 1.0 },

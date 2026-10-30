@@ -3,12 +3,12 @@
 - 完整场景版：[out/milk-tea-v3-scenes-demo.mp4](out/milk-tea-v3-scenes-demo.mp4)
 - 旧占位版：[out/milk-tea-v3-demo.mp4](out/milk-tea-v3-demo.mp4)
 - 封面：[assets/mascot/cover.png](assets/mascot/cover.png)
-- 时长：**60.3s**
+- 时长：**56.6s**
 - 画幅：1080×1920，30fps
 - 风格：Frametell `study`
 - 中文音色：火山 `zh_female_meilinvyou_uranus_bigtts`
 - 英文开场：ElevenLabs Bella
-- 角色：AI 生成的 Momo；p01 用封面图模糊背景，无独立场景
+- 角色：AI 生成的 Momo；p01 = 虚化 Momo 背景 + 下方的思考 Momo
 
 ## v3 相对 v2 的改动
 
@@ -22,14 +22,14 @@
 
 | 时间 | 页面 | 内容 |
 |---|---|---|
-| 0–6.8s | p01 | 英文开场 + 中文译读 |
-| 6.8–14.6s | p02 | 奶茶 nǎichá |
-| 14.6–22.4s | p03 | 半糖 bàntáng |
-| 22.4–30.1s | p04 | 少冰 shǎo bīng |
-| 30.1–37.4s | p05 | 打包 dǎbāo |
-| 37.4–45.5s | p06 | 谢谢 xièxie |
-| 45.5–51.5s | p07 | 完整句 |
-| 51.5–60.3s | p08 | 5/5 + 小票 |
+| 0–3.1s | p01 | 标题 + 英文钩子 + 思考 Momo |
+| 3.1–10.9s | p02 | 奶茶 nǎichá |
+| 10.9–18.8s | p03 | 半糖 bàntáng |
+| 18.8–26.5s | p04 | 少冰 shǎo bīng |
+| 26.5–33.8s | p05 | 打包 dǎbāo |
+| 33.8–41.8s | p06 | 谢谢 xièxie |
+| 41.8–47.8s | p07 | 完整句 |
+| 47.8–56.6s | p08 | 5/5 + 小票 |
 
 ## 音频参数
 
@@ -44,7 +44,7 @@
 
 ## 已知问题
 
-- p01 用封面图模糊背景，没有独立 Momo 场景；p02–p08 已换 AI 场景。
+- p01 是引入页，不是完整奶茶店场景；p02–p08 已换 AI 场景。
 - **纸色擦除仍未接好**：目前还是 Frametell 页面过渡，不是纸色 wipe。
 - p02 杯子没吸管（已确认无伤大雅）。
 - 按规则不做 BGM / 音效；奖励只有人声 + 印花。

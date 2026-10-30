@@ -4,7 +4,7 @@ Short vertical Chinese-learning videos for an overseas audience: **one scene, 5 
 
 ## Watch
 
-- [04 · Milk Tea Order — full scene cut](production/episodes/04-milk-tea-order/out/milk-tea-v3-scenes-demo.mp4) — 60.3s, 1080×1920
+- [04 · Milk Tea Order — full scene cut](production/episodes/04-milk-tea-order/out/milk-tea-v3-scenes-demo.mp4) — 56.6s, 1080×1920
 - [Cover](production/assets/mascot/cover.png)
 - [Episode notes](production/episodes/04-milk-tea-order/README.md)
 - [Scene bank](production/assets/mascot/scenes/README.md)

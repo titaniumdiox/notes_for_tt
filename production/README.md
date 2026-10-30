@@ -36,11 +36,11 @@ production/
 
 | 项 | 值 |
 |---|---|
-| 时长 | 60.3s |
+| 时长 | 56.6s |
 | 画幅 | 1080×1920，30fps |
 | 中文音色 | 火山 `zh_female_meilinvyou_uranus_bigtts` |
 | 英文开场 | ElevenLabs Bella |
-| 场景 | p02–p08 为 AI 场景；p01 为封面模糊背景 |
+| 场景 | p02–p08 为 AI 场景；p01 为虚化背景 + 思考 Momo |
 | 转场 | 仍是 Frametell 页面过渡，纸色擦除未接 |
 | 声音 | 仅人声，无 BGM / 音效 |
 
