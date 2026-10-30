@@ -263,9 +263,9 @@
     Object.assign(glass.style, {
       position: 'absolute',
       left: '74px',
-      top: '1350px',
+      top: '1320px',
       width: '932px',
-      height: '240px',
+      height: '290px',
       borderRadius: '26px',
       background: 'rgba(255,249,239,.52)',
       backdropFilter: 'blur(12px) saturate(1.08)',
@@ -277,18 +277,18 @@
     P.html.appendChild(glass);
 
     const blankA = P.text(data.answerLine, {
-      x: 540, y: 1386, w: 900, align: 'c', size: 48, color: 'ink', weight: 700, at: t1 + 0.4, cps: 10,
+      x: 540, y: 1352, w: 900, align: 'c', size: 96, color: 'ink', weight: 800, at: t1 + 0.4, cps: 10,
     });
     const blankP = P.text(data.answerPinyinBlank, {
-      x: 540, y: 1458, w: 900, align: 'c', size: 26, color: 'red', weight: 600, at: t1 + 0.5, mode: 'fade',
+      x: 540, y: 1470, w: 900, align: 'c', size: 38, color: 'red', weight: 600, at: t1 + 0.5, mode: 'fade',
     });
     blankA.hide(t2, 0.18);
     blankP.hide(t2, 0.18);
     P.text(data.fullAnswer, {
-      x: 540, y: 1386, w: 900, align: 'c', size: 48, color: 'ink', weight: 700, at: t2, cps: 10,
+      x: 540, y: 1352, w: 900, align: 'c', size: 96, color: 'ink', weight: 800, at: t2, cps: 10,
     });
     P.text(data.answerPinyin, {
-      x: 540, y: 1458, w: 900, align: 'c', size: 26, color: 'red', weight: 600, at: t2 + 0.08, mode: 'fade',
+      x: 540, y: 1470, w: 900, align: 'c', size: 38, color: 'red', weight: 600, at: t2 + 0.08, mode: 'fade',
     });
 
     const qEnd = P.ce(1);
@@ -317,10 +317,10 @@
 
     if (data.reward) {
       P.text('★', {
-        x: 474, y: 1512, w: 54, align: 'c', size: 28, color: 'orange', at: t3, mode: 'fade',
+        x: 452, y: 1552, w: 60, align: 'c', size: 34, color: 'orange', at: t3, mode: 'fade',
       });
       P.text(data.reward, {
-        x: 560, y: 1512, w: 300, align: 'c', size: 29, color: 'red', weight: 700, at: t3, mode: 'fade',
+        x: 560, y: 1552, w: 320, align: 'c', size: 36, color: 'red', weight: 700, at: t3, mode: 'fade',
       });
     }
 
