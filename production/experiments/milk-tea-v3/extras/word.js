@@ -316,11 +316,36 @@
     });
 
     if (data.reward) {
-      P.text('★', {
-        x: 452, y: 1552, w: 60, align: 'c', size: 34, color: 'orange', at: t3, mode: 'fade',
-      });
-      P.text(data.reward, {
-        x: 560, y: 1552, w: 320, align: 'c', size: 36, color: 'red', weight: 700, at: t3, mode: 'fade',
+      P.canvas(690, 1550, 330, 140, (ctx, lt) => {
+        ctx.clearRect(0, 0, 330, 140);
+        const k = PV.K(lt, t3, 0.32);
+        if (k <= 0) return;
+        const s = 0.68 + 0.32 * k;
+        ctx.save();
+        ctx.translate(165, 70);
+        ctx.rotate((-5 * Math.PI) / 180);
+        ctx.scale(s, s);
+        ctx.globalAlpha = Math.min(1, k * 1.6);
+        ctx.shadowColor = 'rgba(34,48,74,.22)';
+        ctx.shadowBlur = 14;
+        ctx.shadowOffsetY = 9;
+        ctx.fillStyle = 'rgba(255,249,239,.95)';
+        ctx.strokeStyle = '#C95845';
+        ctx.lineWidth = 5;
+        rr(ctx, -150, -52, 300, 104, 18);
+        ctx.fill();
+        ctx.stroke();
+        ctx.shadowColor = 'transparent';
+        ctx.strokeStyle = 'rgba(201,88,69,.45)';
+        ctx.lineWidth = 2;
+        rr(ctx, -141, -43, 282, 86, 14);
+        ctx.stroke();
+        ctx.fillStyle = '#C95845';
+        ctx.font = '700 34px "Microsoft YaHei", sans-serif';
+        ctx.textAlign = 'center';
+        ctx.textBaseline = 'middle';
+        ctx.fillText('★ ' + data.reward, 0, 4);
+        ctx.restore();
       });
     }
 
