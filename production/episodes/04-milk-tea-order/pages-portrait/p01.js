@@ -1,3 +1,4 @@
+// p01 asset: p01-thinking-cutout (dot eyes, no highlights)
 ENGINE.visual('p01', (P) => {
   const t0 = P.c(0);
   const t1 = t0 + 1.35;
