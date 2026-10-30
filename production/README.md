@@ -72,6 +72,17 @@ v2 的故事稿（`script-v2.md`）保留作对照，但**不是当前方向**�
 结论：**用它做 v3 的图解动画，不再用 Pillow 画最终画面。**  
 它仍不是角色插画；角色场景要 AI 生图或插画师。
 
+## 奶茶点单 60 秒 animatic
+
+按“5 个词 + 2 秒倒计时 + 完整对话 + 5/5 奖励 + 小票总结”做的第一条样品：
+
+- [milk-tea-animatic-v1.mp4](experiments/milk-tea-animatic/out/milk-tea-animatic-v1.mp4)：59.9s，1080×1920，Xiaoxiao 中文配音
+- [README](experiments/milk-tea-animatic/README.md)：时间轴、5 个问句、小票文案、已知问题
+- 词：奶茶 / 半糖 / 少冰 / 打包 / 谢谢
+- 最终句：一杯奶茶，半糖少冰，打包，谢谢
+
+这是“字 + 音 + 倒计时 + 小票”格式的 first cut；下一步用真人录音替换 Edge TTS，再做 2–3 条同类场景验证留存。
+
 ## 视觉系统
 
 - 画幅：9:16，1080×1920，30fps
