@@ -112,48 +112,8 @@
     const t3 = P.c(3);
     const { clamp } = PV;
 
-    // Full-bleed AI scene; text overlays sit in the clean right/top areas.
-    P.img(data.scene, 0, 0, 1080, 1920, { fit: 'cover', at: 0 });
-
-    P.canvas(650, 84, 340, 52, (ctx) => {
-      ctx.clearRect(0, 0, 340, 52);
-      for (let i = 0; i < 5; i++) {
-        ctx.beginPath();
-        ctx.arc(24 + i * 58, 26, 9, 0, Math.PI * 2);
-        ctx.fillStyle = i < data.index ? '#C95845' : '#F4E9D8';
-        ctx.fill();
-        ctx.lineWidth = 2;
-        ctx.strokeStyle = '#B9AA96';
-        ctx.stroke();
-      }
-    });
-
-    P.text('MILK TEA · ' + data.index + '/5', {
-      x: 820, y: 66, w: 360, align: 'c', size: 27, color: 'soft', at: t0,
-    });
-
-    P.text(data.hanzi, {
-      x: 520, y: 205, w: 860, align: 'c', size: 180, color: 'ink', weight: 700, at: t0, cps: 8,
-    });
-    P.text(data.pinyin, {
-      x: 520, y: 430, w: 860, align: 'c', size: 62, color: 'red', weight: 600, at: t0 + 0.15, cps: 8,
-    });
-    P.text(data.meaning, {
-      x: 520, y: 510, w: 860, align: 'c', size: 40, color: 'ink', weight: 600, at: t0 + 0.3, mode: 'fade',
-    });
-
-    // Question bubble in the right-hand clean area. Drawn on a canvas, because
-    // P.img lives in the HTML layer and would cover an SVG P.box.
-    P.canvas(580, 680, 460, 220, (ctx, lt) => {
-      ctx.clearRect(0, 0, 460, 220);
-      if (lt < t1 + 0.15) return;
-      const k = Math.min(1, (lt - (t1 + 0.15)) / 0.25);
-      ctx.globalAlpha = k;
-      ctx.fillStyle = '#FFF9EF';
-      ctx.strokeStyle = '#22304A';
-      ctx.lineWidth = 6;
+    const rr = (ctx, x, y, w, h, r) => {
       ctx.beginPath();
-      const x = 50, y = 0, w = 410, h = 190, r = 24;
       ctx.moveTo(x + r, y);
       ctx.lineTo(x + w - r, y);
       ctx.quadraticCurveTo(x + w, y, x + w, y + r);
@@ -164,29 +124,145 @@
       ctx.lineTo(x, y + r);
       ctx.quadraticCurveTo(x, y, x + r, y);
       ctx.closePath();
+    };
+
+    P.img(data.scene, 0, 0, 1080, 1920, { fit: 'cover', at: 0 });
+
+    // Small corner watermark; keep it out of the character's face.
+    P.canvas(720, 1738, 310, 36, (ctx) => {
+      ctx.clearRect(0, 0, 310, 36);
+      ctx.globalAlpha = 0.32;
+      ctx.fillStyle = '#22304A';
+      ctx.font = '700 18px Arial';
+      ctx.textAlign = 'right';
+      ctx.textBaseline = 'middle';
+      ctx.fillText('SINOFIELDNOTES', 300, 18);
+      ctx.globalAlpha = 1;
+    });
+
+    // Top and bottom channel strips.
+    P.canvas(0, 0, 1080, 106, (ctx) => {
+      ctx.clearRect(0, 0, 1080, 106);
+      ctx.fillStyle = 'rgba(244,233,216,.94)';
+      ctx.fillRect(0, 0, 1080, 106);
+      ctx.fillStyle = 'rgba(34,48,74,.12)';
+      ctx.fillRect(0, 103, 1080, 3);
+    });
+    P.canvas(0, 1810, 1080, 110, (ctx) => {
+      ctx.clearRect(0, 0, 1080, 110);
+      ctx.fillStyle = 'rgba(244,233,216,.94)';
+      ctx.fillRect(0, 0, 1080, 110);
+      ctx.fillStyle = 'rgba(34,48,74,.12)';
+      ctx.fillRect(0, 0, 1080, 3);
+    });
+
+    P.text('SINOFIELDNOTES', {
+      x: 64, y: 34, w: 620, align: 'l', size: 30, color: 'ink', weight: 700, at: t0,
+    });
+    P.text('EP.01', {
+      x: 1016, y: 44, w: 160, align: 'r', size: 22, color: 'soft', at: t0,
+    });
+    P.canvas(600, 30, 280, 46, (ctx) => {
+      ctx.clearRect(0, 0, 280, 46);
+      for (let i = 0; i < 5; i++) {
+        ctx.beginPath();
+        ctx.arc(22 + i * 50, 23, 8, 0, Math.PI * 2);
+        ctx.fillStyle = i < data.index ? '#C95845' : '#F4E9D8';
+        ctx.fill();
+        ctx.lineWidth = 2;
+        ctx.strokeStyle = '#B9AA96';
+        ctx.stroke();
+      }
+    });
+
+    // Erased/faded paper block behind word + pinyin + English.
+    P.canvas(40, 120, 1000, 470, (ctx) => {
+      ctx.clearRect(0, 0, 1000, 470);
+      ctx.save();
+      ctx.filter = 'blur(13px)';
+      ctx.fillStyle = 'rgba(244,233,216,.96)';
+      rr(ctx, 34, 24, 932, 422, 38);
+      ctx.fill();
+      ctx.restore();
+      ctx.save();
+      ctx.filter = 'blur(2.5px)';
+      ctx.fillStyle = 'rgba(244,233,216,.86)';
+      rr(ctx, 34, 24, 932, 422, 38);
+      ctx.fill();
+      ctx.restore();
+      ctx.fillStyle = 'rgba(201,88,69,.55)';
+      ctx.fillRect(64, 438, 360, 4);
+    });
+
+    P.text(data.hanzi, {
+      x: 520, y: 238, w: 860, align: 'c', size: 180, color: 'ink', weight: 700, at: t0, cps: 8,
+    });
+    P.text(data.pinyin, {
+      x: 520, y: 446, w: 860, align: 'c', size: 62, color: 'red', weight: 600, at: t0 + 0.15, cps: 8,
+    });
+    P.text(data.meaning, {
+      x: 520, y: 526, w: 860, align: 'c', size: 40, color: 'ink', weight: 600, at: t0 + 0.3, mode: 'fade',
+    });
+
+    // Opaque bubble mat + bubble; the mat kills any background line at the edge.
+    P.canvas(560, 620, 500, 280, (ctx, lt) => {
+      ctx.clearRect(0, 0, 500, 280);
+      if (lt < t1 + 0.15) return;
+      const k = Math.min(1, (lt - (t1 + 0.15)) / 0.25);
+      ctx.globalAlpha = k;
+      ctx.fillStyle = '#FFF9EF';
+      ctx.strokeStyle = '#22304A';
+      ctx.lineWidth = 6;
+      rr(ctx, 38, -6, 452, 246, 30);
+      ctx.fill();
+      rr(ctx, 50, 0, 430, 232, 24);
       ctx.fill();
       ctx.stroke();
       ctx.beginPath();
-      ctx.moveTo(50, 78);
-      ctx.lineTo(10, 105);
-      ctx.lineTo(50, 132);
+      ctx.moveTo(50, 92);
+      ctx.lineTo(10, 118);
+      ctx.lineTo(50, 144);
       ctx.closePath();
       ctx.fill();
       ctx.stroke();
       ctx.globalAlpha = 1;
     });
     P.text(data.question, {
-      x: 835, y: 785, w: 350, align: 'c', size: 31, color: 'ink', at: t1 + 0.4, cps: 10,
+      x: 825, y: 690, w: 430, align: 'c', size: 43, color: 'ink', weight: 600, at: t1 + 0.4, cps: 10,
+    });
+    P.text(data.questionPinyin, {
+      x: 825, y: 754, w: 430, align: 'c', size: 24, color: 'red', weight: 600, at: t1 + 0.5, mode: 'fade',
     });
 
-    P.text(data.answerLine, {
-      x: 660, y: 930, w: 380, align: 'l', size: 34, color: 'ink', at: t1 + 0.4, cps: 10,
+    // Answer card, centre-right and slightly lower.
+    P.canvas(610, 930, 450, 290, (ctx) => {
+      ctx.clearRect(0, 0, 450, 290);
+      ctx.fillStyle = 'rgba(255,249,239,.97)';
+      ctx.strokeStyle = '#22304A';
+      ctx.lineWidth = 6;
+      rr(ctx, 10, 8, 430, 270, 28);
+      ctx.fill();
+      ctx.stroke();
+    });
+    const blankA = P.text(data.answerLine, {
+      x: 835, y: 1035, w: 420, align: 'c', size: 54, color: 'ink', weight: 700, at: t1 + 0.4, cps: 10,
+    });
+    const blankP = P.text(data.answerPinyinBlank, {
+      x: 835, y: 1107, w: 420, align: 'c', size: 24, color: 'red', weight: 600, at: t1 + 0.5, mode: 'fade',
+    });
+    blankA.hide(t2, 0.18);
+    blankP.hide(t2, 0.18);
+    P.text(data.fullAnswer, {
+      x: 835, y: 1035, w: 420, align: 'c', size: 54, color: 'ink', weight: 700, at: t2, cps: 10,
+    });
+    P.text(data.answerPinyin, {
+      x: 835, y: 1107, w: 420, align: 'c', size: 24, color: 'red', weight: 600, at: t2 + 0.08, mode: 'fade',
     });
 
     const qEnd = P.ce(1);
     const aStart = P.c(2);
-    P.canvas(870, 1080, 180, 180, (ctx, lt) => {
-      ctx.clearRect(0, 0, 180, 180);
+    P.canvas(880, 1280, 190, 190, (ctx, lt) => {
+      ctx.clearRect(0, 0, 190, 190);
       if (lt < qEnd || lt > aStart) return;
       const total = Math.max(0.01, aStart - qEnd);
       const remain = Math.max(0, aStart - lt);
@@ -194,32 +270,31 @@
       ctx.lineWidth = 11;
       ctx.strokeStyle = '#D8CBB8';
       ctx.beginPath();
-      ctx.arc(90, 90, 70, 0, Math.PI * 2);
+      ctx.arc(95, 95, 72, 0, Math.PI * 2);
       ctx.stroke();
       ctx.strokeStyle = '#C94C3B';
       ctx.beginPath();
-      ctx.arc(90, 90, 70, -Math.PI / 2, -Math.PI / 2 + Math.PI * 2 * frac);
+      ctx.arc(95, 95, 72, -Math.PI / 2, -Math.PI / 2 + Math.PI * 2 * frac);
       ctx.stroke();
       ctx.fillStyle = '#1F2A44';
-      ctx.font = '700 74px Arial';
+      ctx.font = '700 76px Arial';
       ctx.textAlign = 'center';
       ctx.textBaseline = 'middle';
-      ctx.fillText(String(Math.ceil(remain)), 90, 94);
+      ctx.fillText(String(Math.ceil(remain)), 95, 99);
     });
 
-    P.text(data.answer, {
-      x: 840, y: 1275, w: 360, align: 'c', size: 92, color: 'green', weight: 700, at: t2, cps: 8,
-    });
-    P.text('say it', {
-      x: 840, y: 1375, w: 360, align: 'c', size: 27, color: 'soft', at: t2 + 0.2, mode: 'fade',
-    });
     if (data.reward) {
       P.text('★', {
-        x: 728, y: 1460, w: 54, align: 'c', size: 28, color: 'orange', at: t3, mode: 'fade',
+        x: 760, y: 1510, w: 54, align: 'c', size: 28, color: 'orange', at: t3, mode: 'fade',
       });
       P.text(data.reward, {
-        x: 860, y: 1460, w: 290, align: 'c', size: 29, color: 'red', weight: 700, at: t3, mode: 'fade',
+        x: 890, y: 1510, w: 300, align: 'c', size: 29, color: 'red', weight: 700, at: t3, mode: 'fade',
       });
     }
+
+    P.text('SINOFIELDNOTES · 奶茶点单', {
+      x: 540, y: 1844, w: 900, align: 'c', size: 22, color: 'soft', at: 0, mode: 'fade',
+    });
   };
+
 })(typeof window !== 'undefined' ? window : globalThis);
