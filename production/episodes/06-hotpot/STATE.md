@@ -28,10 +28,10 @@
 
 ## Render
 
-- project: not built
-- duration: -
-- QA contact sheet: -
+- project: production/episodes/06-hotpot (in place)
+- duration: 60.4s
+- QA contact sheet: out/qa-contact-sheet.png
 
 ## Next action
 
-- build script.js + pages, tune to 60s, render in place
+- completed; archive and tag

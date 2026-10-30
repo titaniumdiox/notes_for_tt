@@ -1,6 +1,6 @@
 # EP.06 · Momo Wants Hotpot Today!
 
-状态：**8 页场景已齐；待配音与页面合成**。
+状态：**v1 成片完成**；见 [README](README.md)。
 
 ## 标题
 
