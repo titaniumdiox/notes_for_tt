@@ -1,4 +1,4 @@
-// p01 asset: p01-thinking-cutout (dot eyes v4, left inward)
+// p01 asset: p01-thinking-cutout (v2 regen, dot eyes, diagonal)
 ENGINE.visual('p01', (P) => {
   const t0 = P.c(0);
   const t1 = t0 + 1.35;
