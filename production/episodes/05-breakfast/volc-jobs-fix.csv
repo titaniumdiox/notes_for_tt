@@ -1,0 +1,7 @@
+job_id,text,out,speed,pitch
+p02-c00,早餐。,production/episodes/05-breakfast/audio/p02-c00.mp3,0.95,0
+p02-c01,你早餐吃什么？,production/episodes/05-breakfast/audio/p02-c01.mp3,0.92,0
+p02-c02,我早餐喝豆浆，吃油条。,production/episodes/05-breakfast/audio/p02-c02.mp3,0.92,0
+p06-c01,豆浆要甜的吗？,production/episodes/05-breakfast/audio/p06-c01.mp3,0.92,0
+p06-c02,我要甜的。,production/episodes/05-breakfast/audio/p06-c02.mp3,0.92,0
+p07-c00,我早餐喝甜豆浆，吃油条和茶叶蛋。,production/episodes/05-breakfast/audio/p07-c00.mp3,0.92,0

@@ -66,22 +66,22 @@ ENGINE.visual('p07', (P) => {
   P.text('PUT IT TOGETHER', {
     x: 540, y: 390, w: 900, align: 'c', size: 32, color: 'soft', weight: 600, at: t0, mode: 'fade',
   });
-  P.text('早饭我要一杯甜豆浆，', {
+  P.text('我早餐喝甜豆浆，', {
     x: 540, y: 455, w: 900, align: 'c', size: 58, color: 'ink', weight: 700, at: t0 + 0.1, cps: 8,
   });
-  P.text('一根油条，一个茶叶蛋。', {
+  P.text('吃油条和茶叶蛋。', {
     x: 540, y: 525, w: 900, align: 'c', size: 58, color: 'red', weight: 700, at: t0 + 0.55, cps: 8,
   });
-  P.text('zǎofàn wǒ yào yì bēi tián dòujiāng,', {
+  P.text('wǒ zǎocān hē tián dòujiāng,', {
     x: 540, y: 610, w: 900, align: 'c', size: 26, color: 'red', weight: 600, at: t0 + 0.3, mode: 'fade',
   });
-  P.text('yì gēn yóutiáo, yí gè cháyèdàn.', {
+  P.text('chī yóutiáo hé cháyèdàn.', {
     x: 540, y: 646, w: 900, align: 'c', size: 26, color: 'red', weight: 600, at: t0 + 0.75, mode: 'fade',
   });
-  P.text('For breakfast, I’d like a sweet soy milk,', {
+  P.text('For breakfast, I drink sweet soy milk,', {
     x: 540, y: 705, w: 900, align: 'c', size: 26, color: 'ink', weight: 600, at: t0 + 1.0, mode: 'fade',
   });
-  P.text('one youtiao, and one tea egg.', {
+  P.text('and eat youtiao and a tea egg.', {
     x: 540, y: 740, w: 900, align: 'c', size: 26, color: 'ink', weight: 600, at: t0 + 1.06, mode: 'fade',
   });
   P.text('✓', {

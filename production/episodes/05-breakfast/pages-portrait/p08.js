@@ -117,11 +117,11 @@ ENGINE.visual('p08', (P) => {
   });
 
   const rows = [
-    { hanzi: '早饭', pinyin: 'zǎofàn', meaning: 'breakfast', example: '我早饭吃豆浆。' },
+    { hanzi: '早餐', pinyin: 'zǎocān', meaning: 'breakfast', example: '我早餐喝豆浆。' },
     { hanzi: '豆浆', pinyin: 'dòujiāng', meaning: 'soy milk', example: '一杯豆浆。' },
     { hanzi: '油条', pinyin: 'yóutiáo', meaning: 'fried dough stick', example: '一根油条。' },
     { hanzi: '茶叶蛋', pinyin: 'cháyèdàn', meaning: 'tea egg', example: '一个茶叶蛋。' },
-    { hanzi: '甜', pinyin: 'tián', meaning: 'sweet', example: '甜的。' },
+    { hanzi: '甜', pinyin: 'tián', meaning: 'sweet', example: '我要甜的。' },
   ];
   rows.forEach((row, i) => {
     const y = 522 + i * 125;
@@ -139,7 +139,7 @@ ENGINE.visual('p08', (P) => {
     });
   });
 
-  P.text('早饭我要一杯甜豆浆，一根油条，一个茶叶蛋。', {
+  P.text('我早餐喝甜豆浆，吃油条和茶叶蛋。', {
     x: 120, y: 1118, w: 840, size: 34, color: 'ink', weight: 700, at: tr + 0.45, mode: 'fade',
   });
   P.text('5 words · 1 sentence', {

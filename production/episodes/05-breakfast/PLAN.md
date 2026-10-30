@@ -16,7 +16,7 @@ After this video, the learner can order a classic Chinese breakfast — sweet so
 
 | # | 词 | Pinyin | English |
 |---|---|---|---|
-| 1 | 早饭 | zǎofàn | breakfast |
+| 1 | 早餐 | zǎocān | breakfast |
 | 2 | 豆浆 | dòujiāng | soy milk |
 | 3 | 油条 | yóutiáo | fried dough stick |
 | 4 | 茶叶蛋 | cháyèdàn | tea egg |
@@ -25,9 +25,9 @@ After this video, the learner can order a classic Chinese breakfast — sweet so
 ## Sentence
 
 ```text
-早饭我要一杯甜豆浆，一根油条，一个茶叶蛋。
-Zǎofàn wǒ yào yì bēi tián dòujiāng, yì gēn yóutiáo, yí gè cháyèdàn.
-For breakfast, I’d like a sweet soy milk, one youtiao, and one tea egg.
+我早餐喝甜豆浆，吃油条和茶叶蛋。
+Wǒ zǎocān hē tián dòujiāng, chī yóutiáo hé cháyèdàn.
+For breakfast, I drink sweet soy milk and eat youtiao and a tea egg.
 ```
 
 ## 8 页
@@ -35,12 +35,12 @@ For breakfast, I’d like a sweet soy milk, one youtiao, and one tea egg.
 | 页 | 内容 | 问题 | 回答 |
 |---|---|---|---|
 | p01 | 早餐摊钩子 + 拿油条的 Momo | What do people eat for breakfast in China? | — |
-| p02 | 早饭 | 你早饭吃什么？ | 我早饭吃豆浆和油条。 |
+| p02 | 早餐 | 你早餐吃什么？ | 我早餐喝豆浆，吃油条。 |
 | p03 | 豆浆 | 你要喝什么？ | 一杯豆浆。 |
 | p04 | 油条 | 还要什么？ | 一根油条。 |
 | p05 | 茶叶蛋 | 要不要茶叶蛋？ | 一个茶叶蛋。 |
-| p06 | 甜 | 豆浆要甜的还是咸的？ | 甜的。 |
-| p07 | 整句 | — | 早饭我要一杯甜豆浆，一根油条，一个茶叶蛋。 |
+| p06 | 甜 | 豆浆要甜的吗？ | 我要甜的。 |
+| p07 | 整句 | — | 我早餐喝甜豆浆，吃油条和茶叶蛋。 |
 | p08 | 5/5 小票 | — | 截图保存 |
 
 ## Momo 姿态表

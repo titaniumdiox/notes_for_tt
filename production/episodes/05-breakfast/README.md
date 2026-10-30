@@ -5,7 +5,7 @@
 
 ## 成片
 
-- [breakfast-v1.mp4](out/breakfast-v1.mp4) — **60.5s**，1080×1920，30fps
+- [breakfast-v1.mp4](out/breakfast-v1.mp4) — **60.4s**，1080×1920，30fps
 - [cover.png](out/cover.png) — 1080×1920
 - [企划](PLAN.md)
 - [场景素材](assets/mascot/scenes/)
@@ -14,16 +14,16 @@
 
 | 词 | Pinyin | English |
 |---|---|---|
-| 早饭 | zǎofàn | breakfast |
+| 早餐 | zǎocān | breakfast |
 | 豆浆 | dòujiāng | soy milk |
 | 油条 | yóutiáo | fried dough stick |
 | 茶叶蛋 | cháyèdàn | tea egg |
 | 甜 | tián | sweet |
 
 ```text
-早饭我要一杯甜豆浆，一根油条，一个茶叶蛋。
-Zǎofàn wǒ yào yì bēi tián dòujiāng, yì gēn yóutiáo, yí gè cháyèdàn.
-For breakfast, I’d like a sweet soy milk, one youtiao, and one tea egg.
+我早餐喝甜豆浆，吃油条和茶叶蛋。
+Wǒ zǎocān hē tián dòujiāng, chī yóutiáo hé cháyèdàn.
+For breakfast, I drink sweet soy milk and eat youtiao and a tea egg.
 ```
 
 ## 时间轴
@@ -31,13 +31,13 @@ For breakfast, I’d like a sweet soy milk, one youtiao, and one tea egg.
 | 时间 | 页面 | 内容 |
 |---|---|---|
 | 0–3.6s | p01 | 早餐摊钩子 + 拿油条的 Momo |
-| 3.6–12.3s | p02 | 早饭 zǎofàn |
-| 12.3–20.1s | p03 | 豆浆 dòujiāng |
-| 20.1–28.1s | p04 | 油条 yóutiáo |
-| 28.1–36.3s | p05 | 茶叶蛋 cháyèdàn |
-| 36.3–44.7s | p06 | 甜 tián |
-| 44.7–50.7s | p07 | 整句 |
-| 50.7–60.5s | p08 | 5/5 + 小票 |
+| 3.6–13.3s | p02 | 早餐 zǎocān |
+| 13.3–21.1s | p03 | 豆浆 dòujiāng |
+| 21.1–29.1s | p04 | 油条 yóutiáo |
+| 29.1–37.2s | p05 | 茶叶蛋 cháyèdàn |
+| 37.2–45.3s | p06 | 甜 tián |
+| 45.3–49.7s | p07 | 整句 |
+| 49.7–60.4s | p08 | 5/5 + 小票 |
 
 ## 配音
 
@@ -48,7 +48,7 @@ For breakfast, I’d like a sweet soy milk, one youtiao, and one tea egg.
 | 词 | speed 0.95 |
 | 问句 / 答句 / 整句 | speed 0.92 |
 | 奖励 | speed 1.08，pitch +2 |
-| 音轨 | 24 cues，约 28.05s |
+| 音轨 | 24 cues，约 27.05s |
 | BGM / SFX | **无** |
 
 ## 页面结构

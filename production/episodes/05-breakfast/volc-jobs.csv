@@ -1,7 +1,7 @@
 job_id,text,out,speed,pitch
-p02-c00,早饭。,production/episodes/05-breakfast/audio/p02-c00.mp3,0.95,0
-p02-c01,你早饭吃什么？,production/episodes/05-breakfast/audio/p02-c01.mp3,0.92,0
-p02-c02,我早饭吃豆浆和油条。,production/episodes/05-breakfast/audio/p02-c02.mp3,0.92,0
+p02-c00,早餐。,production/episodes/05-breakfast/audio/p02-c00.mp3,0.95,0
+p02-c01,你早餐吃什么？,production/episodes/05-breakfast/audio/p02-c01.mp3,0.92,0
+p02-c02,我早餐喝豆浆，吃油条。,production/episodes/05-breakfast/audio/p02-c02.mp3,0.92,0
 p02-c03,早餐开动！,production/episodes/05-breakfast/audio/p02-c03.mp3,1.08,2
 p03-c00,豆浆。,production/episodes/05-breakfast/audio/p03-c00.mp3,0.95,0
 p03-c01,你要喝什么？,production/episodes/05-breakfast/audio/p03-c01.mp3,0.92,0
@@ -16,9 +16,9 @@ p05-c01,要不要茶叶蛋？,production/episodes/05-breakfast/audio/p05-c01.mp3
 p05-c02,一个茶叶蛋。,production/episodes/05-breakfast/audio/p05-c02.mp3,0.92,0
 p05-c03,入味！,production/episodes/05-breakfast/audio/p05-c03.mp3,1.08,2
 p06-c00,甜。,production/episodes/05-breakfast/audio/p06-c00.mp3,0.95,0
-p06-c01,豆浆要甜的还是咸的？,production/episodes/05-breakfast/audio/p06-c01.mp3,0.92,0
-p06-c02,甜的。,production/episodes/05-breakfast/audio/p06-c02.mp3,0.92,0
+p06-c01,豆浆要甜的吗？,production/episodes/05-breakfast/audio/p06-c01.mp3,0.92,0
+p06-c02,我要甜的。,production/episodes/05-breakfast/audio/p06-c02.mp3,0.92,0
 p06-c03,甜到心里！,production/episodes/05-breakfast/audio/p06-c03.mp3,1.08,2
-p07-c00,早饭我要一杯甜豆浆，一根油条，一个茶叶蛋。,production/episodes/05-breakfast/audio/p07-c00.mp3,0.92,0
+p07-c00,我早餐喝甜豆浆，吃油条和茶叶蛋。,production/episodes/05-breakfast/audio/p07-c00.mp3,0.92,0
 p08-c00,恭喜你，今天又学会了五个词！,production/episodes/05-breakfast/audio/p08-c00.mp3,1.0,0
 p08-c01,这是今天的小票，暂停读一下。,production/episodes/05-breakfast/audio/p08-c01.mp3,1.0,0

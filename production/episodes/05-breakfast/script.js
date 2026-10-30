@@ -11,13 +11,13 @@
   };
 
   const PAGES = [
-    { id: 'p01', section: '开场', title: 'What do people eat for breakfast in China?', after: 1.2, cues: [
+    { id: 'p01', section: '开场', title: 'What do people eat for breakfast in China?', after: 1.7, cues: [
       { t: 'What do people eat for breakfast in China?', hold: 1.2 },
     ] },
-    { id: 'p02', section: '5 个词', title: '早饭', after: 0.9, cues: [
-      { t: '早饭。', hold: 1.0 },
-      { t: '你早饭吃什么？', hold: 1.6 },
-      { t: '我早饭吃豆浆和油条。', hold: 1.1 },
+    { id: 'p02', section: '5 个词', title: '早餐', after: 0.9, cues: [
+      { t: '早餐。', hold: 1.0 },
+      { t: '你早餐吃什么？', hold: 1.6 },
+      { t: '我早餐喝豆浆，吃油条。', hold: 1.1 },
       { t: '早餐开动！', hold: 0.4 },
     ] },
     { id: 'p03', section: '5 个词', title: '豆浆', after: 0.9, cues: [
@@ -40,14 +40,14 @@
     ] },
     { id: 'p06', section: '5 个词', title: '甜', after: 0.9, cues: [
       { t: '甜。', hold: 1.0 },
-      { t: '豆浆要甜的还是咸的？', hold: 1.6 },
-      { t: '甜的。', hold: 1.1 },
+      { t: '豆浆要甜的吗？', hold: 1.6 },
+      { t: '我要甜的。', hold: 1.1 },
       { t: '甜到心里！', hold: 0.4 },
     ] },
     { id: 'p07', section: '成句', title: 'Put it together', after: 1.2, cues: [
-      { t: '早饭我要一杯甜豆浆，一根油条，一个茶叶蛋。', hold: 2.2 },
+      { t: '我早餐喝甜豆浆，吃油条和茶叶蛋。', hold: 2.2 },
     ] },
-    { id: 'p08', section: '复习', title: "Today's receipt", after: 1.2, cues: [
+    { id: 'p08', section: '复习', title: "Today's receipt", after: 1.6, cues: [
       { t: '恭喜你，今天又学会了五个词！', hold: 0.3 },
       { t: '这是今天的小票，暂停读一下。', hold: 3.2 },
     ] },

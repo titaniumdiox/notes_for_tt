@@ -5,13 +5,11 @@ ENGINE.visual('p06', (P) => {
     hanzi: '甜',
     pinyin: 'tián',
     meaning: 'sweet',
-    question: '豆浆要甜的还是咸的？',
-    questionPinyin: 'dòujiāng yào tián de hái shì xián de?',
-    questionSize: 34,
-    questionPinyinSize: 21,
+    question: '豆浆要甜的吗？',
+    questionPinyin: 'dòujiāng yào tián de ma?',
     blankAnswer: true,
-    fullAnswer: '甜的。',
-    answerPinyin: 'tián de。',
+    fullAnswer: '我要甜的。',
+    answerPinyin: 'wǒ yào tián de。',
     reward: '甜到心里！',
   });
 });
