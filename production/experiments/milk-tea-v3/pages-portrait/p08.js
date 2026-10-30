@@ -53,9 +53,7 @@ ENGINE.visual('p08', (P) => {
   P.text('你今天又学会了 5 个词', {
     x: 540, y: 236, w: 900, align: 'c', size: 38, color: 'ink', weight: 600, at: t0 + 0.2, mode: 'fade',
   });
-  P.text('Congratulations!', {
-    x: 540, y: 292, w: 900, align: 'c', size: 28, color: 'green', weight: 600, at: t0 + 0.4, mode: 'fade',
-  });
+
 
   P.canvas(70, 320, 940, 1280, (ctx, lt) => {
     ctx.clearRect(0, 0, 940, 1280);
@@ -98,18 +96,18 @@ ENGINE.visual('p08', (P) => {
 
     // Learned stamp.
     ctx.save();
-    ctx.translate(830, 392);
+    ctx.translate(785, 400);
     ctx.rotate((-8 * Math.PI) / 180);
     ctx.strokeStyle = '#C95845';
+    ctx.lineWidth = 8;
+    ctx.strokeRect(-144, -52, 288, 104);
     ctx.lineWidth = 4;
-    ctx.strokeRect(-72, -26, 144, 52);
-    ctx.lineWidth = 2;
-    ctx.strokeRect(-66, -20, 132, 40);
+    ctx.strokeRect(-132, -40, 264, 80);
     ctx.fillStyle = '#C95845';
-    ctx.font = '700 22px Arial';
+    ctx.font = '700 44px Arial';
     ctx.textAlign = 'center';
     ctx.textBaseline = 'middle';
-    ctx.fillText('LEARNED', 0, 2);
+    ctx.fillText('LEARNED', 0, 4);
     ctx.restore();
     ctx.globalAlpha = 1;
   });
@@ -153,8 +151,11 @@ ENGINE.visual('p08', (P) => {
   P.text('You can order a milk tea in Chinese now.', {
     x: 120, y: 1262, w: 840, size: 24, color: 'green', weight: 600, at: tr + 0.65, mode: 'fade',
   });
+  P.text('Congratulations!', {
+    x: 760, y: 1408, w: 430, align: 'c', size: 34, color: 'green', weight: 600, at: tr + 0.7, mode: 'fade',
+  });
   P.text('PAUSE TO READ / 截图保存', {
-    x: 540, y: 1375, w: 900, align: 'c', size: 26, color: 'red', weight: 600, at: tr + 0.8, mode: 'fade',
+    x: 540, y: 1518, w: 900, align: 'c', size: 26, color: 'red', weight: 600, at: tr + 0.8, mode: 'fade',
   });
 
   P.canvas(720, 1738, 310, 36, (ctx) => {
