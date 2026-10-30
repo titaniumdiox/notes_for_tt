@@ -145,13 +145,13 @@ ENGINE.visual('p08', (P) => {
   });
 
   P.text('一杯奶茶，半糖少冰，打包，谢谢。', {
-    x: 120, y: 1164, w: 840, size: 28, color: 'ink', weight: 600, at: tr + 0.45, mode: 'fade',
+    x: 120, y: 1148, w: 840, size: 42, color: 'ink', weight: 700, at: tr + 0.45, mode: 'fade',
   });
   P.text('5 words · 1 sentence', {
-    x: 120, y: 1218, w: 500, size: 22, color: 'muted', at: tr + 0.55, mode: 'fade',
+    x: 120, y: 1222, w: 500, size: 22, color: 'muted', at: tr + 0.55, mode: 'fade',
   });
   P.text('You can order a milk tea in Chinese now.', {
-    x: 120, y: 1256, w: 840, size: 24, color: 'green', weight: 600, at: tr + 0.65, mode: 'fade',
+    x: 120, y: 1262, w: 840, size: 24, color: 'green', weight: 600, at: tr + 0.65, mode: 'fade',
   });
   P.text('PAUSE TO READ / 截图保存', {
     x: 540, y: 1375, w: 900, align: 'c', size: 26, color: 'red', weight: 600, at: tr + 0.8, mode: 'fade',
