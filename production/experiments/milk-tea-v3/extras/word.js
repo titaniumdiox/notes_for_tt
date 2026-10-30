@@ -175,23 +175,47 @@
       }
     });
 
-    // Erased/faded paper block behind word + pinyin + English.
-    P.canvas(40, 120, 1000, 470, (ctx) => {
-      ctx.clearRect(0, 0, 1000, 470);
+    // Irregular eraser block behind word + pinyin + English.
+    P.canvas(30, 110, 1020, 490, (ctx) => {
+      ctx.clearRect(0, 0, 1020, 490);
+      const pts = [
+        [44, 62], [170, 36], [320, 48], [468, 26], [616, 40], [760, 28],
+        [896, 44], [966, 72], [952, 168], [966, 280], [944, 418],
+        [824, 440], [666, 428], [514, 446], [360, 434], [214, 446],
+        [72, 430], [44, 334], [58, 200],
+      ];
       ctx.save();
-      ctx.filter = 'blur(13px)';
-      ctx.fillStyle = 'rgba(244,233,216,.96)';
-      rr(ctx, 34, 24, 932, 422, 38);
+      ctx.filter = 'blur(10px)';
+      ctx.fillStyle = 'rgba(244,233,216,.80)';
+      ctx.strokeStyle = 'rgba(244,233,216,.80)';
+      ctx.lineWidth = 34;
+      ctx.lineJoin = 'round';
+      ctx.lineCap = 'round';
+      ctx.beginPath();
+      ctx.moveTo(pts[0][0], pts[0][1]);
+      for (let i = 1; i < pts.length; i++) ctx.lineTo(pts[i][0], pts[i][1]);
+      ctx.closePath();
       ctx.fill();
+      ctx.stroke();
       ctx.restore();
+
+      // A few eraser streaks with softer edges.
       ctx.save();
-      ctx.filter = 'blur(2.5px)';
-      ctx.fillStyle = 'rgba(244,233,216,.86)';
-      rr(ctx, 34, 24, 932, 422, 38);
-      ctx.fill();
+      ctx.globalAlpha = 0.35;
+      ctx.strokeStyle = '#F4E9D8';
+      ctx.lineWidth = 16;
+      ctx.lineCap = 'round';
+      ctx.filter = 'blur(6px)';
+      for (const [x1, y1, x2, y2] of [
+        [76, 74, 210, 52], [842, 58, 936, 86], [78, 412, 206, 426],
+        [826, 420, 926, 398], [60, 220, 82, 300],
+      ]) {
+        ctx.beginPath();
+        ctx.moveTo(x1, y1);
+        ctx.lineTo(x2, y2);
+        ctx.stroke();
+      }
       ctx.restore();
-      ctx.fillStyle = 'rgba(201,88,69,.55)';
-      ctx.fillRect(64, 438, 360, 4);
     });
 
     P.text(data.hanzi, {
@@ -234,34 +258,42 @@
       x: 825, y: 754, w: 430, align: 'c', size: 24, color: 'red', weight: 600, at: t1 + 0.5, mode: 'fade',
     });
 
-    // Answer card, centre-right and slightly lower.
-    P.canvas(610, 930, 450, 290, (ctx) => {
-      ctx.clearRect(0, 0, 450, 290);
-      ctx.fillStyle = 'rgba(255,249,239,.97)';
-      ctx.strokeStyle = '#22304A';
-      ctx.lineWidth = 6;
-      rr(ctx, 10, 8, 430, 270, 28);
-      ctx.fill();
-      ctx.stroke();
+    // Frosted-glass answer card, bottom centre; same width as the word block.
+    const glass = document.createElement('div');
+    Object.assign(glass.style, {
+      position: 'absolute',
+      left: '74px',
+      top: '1350px',
+      width: '932px',
+      height: '240px',
+      borderRadius: '26px',
+      background: 'rgba(255,249,239,.52)',
+      backdropFilter: 'blur(12px) saturate(1.08)',
+      WebkitBackdropFilter: 'blur(12px) saturate(1.08)',
+      border: '1.5px solid rgba(255,255,255,.75)',
+      boxShadow: 'inset 0 1px 0 rgba(255,255,255,.9), 0 18px 42px rgba(34,48,74,.16)',
+      pointerEvents: 'none',
     });
+    P.html.appendChild(glass);
+
     const blankA = P.text(data.answerLine, {
-      x: 835, y: 1035, w: 420, align: 'c', size: 54, color: 'ink', weight: 700, at: t1 + 0.4, cps: 10,
+      x: 540, y: 1386, w: 900, align: 'c', size: 48, color: 'ink', weight: 700, at: t1 + 0.4, cps: 10,
     });
     const blankP = P.text(data.answerPinyinBlank, {
-      x: 835, y: 1107, w: 420, align: 'c', size: 24, color: 'red', weight: 600, at: t1 + 0.5, mode: 'fade',
+      x: 540, y: 1458, w: 900, align: 'c', size: 26, color: 'red', weight: 600, at: t1 + 0.5, mode: 'fade',
     });
     blankA.hide(t2, 0.18);
     blankP.hide(t2, 0.18);
     P.text(data.fullAnswer, {
-      x: 835, y: 1035, w: 420, align: 'c', size: 54, color: 'ink', weight: 700, at: t2, cps: 10,
+      x: 540, y: 1386, w: 900, align: 'c', size: 48, color: 'ink', weight: 700, at: t2, cps: 10,
     });
     P.text(data.answerPinyin, {
-      x: 835, y: 1107, w: 420, align: 'c', size: 24, color: 'red', weight: 600, at: t2 + 0.08, mode: 'fade',
+      x: 540, y: 1458, w: 900, align: 'c', size: 26, color: 'red', weight: 600, at: t2 + 0.08, mode: 'fade',
     });
 
     const qEnd = P.ce(1);
     const aStart = P.c(2);
-    P.canvas(880, 1280, 190, 190, (ctx, lt) => {
+    P.canvas(890, 1110, 190, 190, (ctx, lt) => {
       ctx.clearRect(0, 0, 190, 190);
       if (lt < qEnd || lt > aStart) return;
       const total = Math.max(0.01, aStart - qEnd);
@@ -285,10 +317,10 @@
 
     if (data.reward) {
       P.text('★', {
-        x: 760, y: 1510, w: 54, align: 'c', size: 28, color: 'orange', at: t3, mode: 'fade',
+        x: 474, y: 1512, w: 54, align: 'c', size: 28, color: 'orange', at: t3, mode: 'fade',
       });
       P.text(data.reward, {
-        x: 890, y: 1510, w: 300, align: 'c', size: 29, color: 'red', weight: 700, at: t3, mode: 'fade',
+        x: 560, y: 1512, w: 300, align: 'c', size: 29, color: 'red', weight: 700, at: t3, mode: 'fade',
       });
     }
 
