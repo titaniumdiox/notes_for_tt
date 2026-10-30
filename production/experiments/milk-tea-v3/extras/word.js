@@ -227,6 +227,11 @@
     P.text(data.meaning, {
       x: 520, y: 526, w: 860, align: 'c', size: 40, color: 'ink', weight: 600, at: t0 + 0.3, mode: 'fade',
     });
+    if (data.note) {
+      P.text(data.note, {
+        x: 520, y: 574, w: 860, align: 'c', size: 22, color: 'red', weight: 600, at: t1, mode: 'fade',
+      });
+    }
 
     // Opaque bubble mat + bubble; the mat kills any background line at the edge.
     P.canvas(560, 620, 500, 280, (ctx, lt) => {
@@ -276,14 +281,35 @@
     });
     P.html.appendChild(glass);
 
-    const blankA = P.text(data.answerLine, {
-      x: 540, y: 1352, w: 900, align: 'c', size: 96, color: 'ink', weight: 800, at: t1 + 0.4, cps: 10,
-    });
-    const blankP = P.text(data.answerPinyinBlank, {
-      x: 540, y: 1470, w: 900, align: 'c', size: 38, color: 'red', weight: 600, at: t1 + 0.5, mode: 'fade',
-    });
-    blankA.hide(t2, 0.18);
-    blankP.hide(t2, 0.18);
+    if (data.blankAnswer) {
+      P.canvas(300, 1350, 480, 100, (ctx, lt) => {
+        ctx.clearRect(0, 0, 480, 100);
+        if (lt < t1 + 0.35 || lt > t2) return;
+        const a = Math.min(1, (lt - (t1 + 0.35)) / 0.25);
+        ctx.globalAlpha = a;
+        ctx.strokeStyle = '#22304A';
+        ctx.lineWidth = 6;
+        ctx.lineCap = 'round';
+        ctx.beginPath();
+        ctx.moveTo(40, 62);
+        ctx.lineTo(430, 62);
+        ctx.stroke();
+        ctx.beginPath();
+        ctx.arc(445, 62, 5, 0, Math.PI * 2);
+        ctx.fillStyle = '#22304A';
+        ctx.fill();
+        ctx.globalAlpha = 1;
+      });
+    } else {
+      const blankA = P.text(data.answerLine, {
+        x: 540, y: 1352, w: 900, align: 'c', size: 96, color: 'ink', weight: 800, at: t1 + 0.4, cps: 10,
+      });
+      const blankP = P.text(data.answerPinyinBlank, {
+        x: 540, y: 1470, w: 900, align: 'c', size: 38, color: 'red', weight: 600, at: t1 + 0.5, mode: 'fade',
+      });
+      blankA.hide(t2, 0.18);
+      blankP.hide(t2, 0.18);
+    }
     P.text(data.fullAnswer, {
       x: 540, y: 1352, w: 900, align: 'c', size: 96, color: 'ink', weight: 800, at: t2, cps: 10,
     });
