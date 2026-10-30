@@ -1,0 +1,150 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 800" width="600" height="800">
+  <defs>
+    <style>
+      .ink { fill: none; stroke: #22304A; stroke-linecap: round; stroke-linejoin: round; }
+      .cream { fill: #F7EBD8; }
+      .cream-light { fill: #FFF9EF; }
+      .terracotta { fill: #C95845; }
+      .terracotta-dark { fill: #B84B3B; }
+      .sage { fill: #8A9A86; }
+      .mustard { fill: #D8B26A; }
+      .inner-ear { fill: #E8B9A6; }
+      .ink-fill { fill: #22304A; }
+    </style>
+  </defs>
+
+  <!-- tail: thick, behind body, cream tip -->
+  <g id="tail">
+    <path d="M 210 560
+             C 150 610, 70 580, 70 500
+             C 70 440, 120 420, 130 380
+             C 134 364, 130 350, 122 342
+             C 145 350, 160 368, 158 388
+             C 154 430, 110 455, 112 505
+             C 114 550, 160 570, 205 545 Z"
+          class="cream" stroke="#22304A" stroke-width="10"/>
+    <path d="M 122 342 C 132 350, 137 362, 136 376 C 128 368, 122 356, 122 342 Z"
+          class="cream-light" stroke="#22304A" stroke-width="5"/>
+  </g>
+
+  <!-- legs and feet -->
+  <g id="legs">
+    <rect x="206" y="636" width="82" height="88" rx="40" class="cream" stroke="#22304A" stroke-width="10"/>
+    <rect x="312" y="636" width="82" height="88" rx="40" class="cream" stroke="#22304A" stroke-width="10"/>
+    <path d="M 228 694 L 228 716" class="ink" stroke-width="7"/>
+    <path d="M 268 694 L 268 716" class="ink" stroke-width="7"/>
+    <path d="M 332 694 L 332 716" class="ink" stroke-width="7"/>
+    <path d="M 372 694 L 372 716" class="ink" stroke-width="7"/>
+  </g>
+
+  <!-- body -->
+  <g id="body">
+    <path d="M 218 344
+             C 188 392, 178 486, 186 566
+             C 192 636, 238 680, 300 680
+             C 362 680, 408 636, 414 566
+             C 422 486, 412 392, 382 344
+             C 356 382, 244 382, 218 344 Z"
+          class="cream" stroke="#22304A" stroke-width="11"/>
+  </g>
+
+  <!-- apron straps, behind bib -->
+  <g id="apron-straps">
+    <path d="M 244 356 L 248 430" class="ink" stroke-width="13"/>
+    <path d="M 356 356 L 352 430" class="ink" stroke-width="13"/>
+  </g>
+
+  <!-- apron -->
+  <g id="apron">
+    <path d="M 238 414
+             C 262 402, 338 402, 362 414
+             L 366 486
+             C 396 500, 410 548, 408 600
+             C 406 654, 372 680, 300 680
+             C 228 680, 194 654, 192 600
+             C 190 548, 204 500, 234 486 Z"
+          class="terracotta" stroke="#22304A" stroke-width="10"/>
+    <path d="M 236 500 C 270 490, 330 490, 364 500" class="ink" stroke-width="8"/>
+    <path d="M 250 544
+             C 278 534, 322 534, 350 544
+             L 346 596
+             C 322 606, 278 606, 254 596 Z"
+          class="terracotta-dark" stroke="#22304A" stroke-width="7"/>
+    <!-- cup badge -->
+    <g id="cup-badge">
+      <rect x="326" y="418" width="38" height="34" rx="8" fill="#FFF9EF" stroke="#22304A" stroke-width="6"/>
+      <path d="M 334 426 L 352 426 L 349 443 L 337 443 Z" class="mustard" stroke="#22304A" stroke-width="4"/>
+      <path d="M 352 430 C 362 430, 362 440, 352 440" fill="none" stroke="#22304A" stroke-width="4"/>
+      <path d="M 340 422 C 338 416, 344 416, 342 410" fill="none" stroke="#22304A" stroke-width="3"/>
+      <path d="M 347 422 C 345 416, 351 416, 349 410" fill="none" stroke="#22304A" stroke-width="3"/>
+    </g>
+  </g>
+
+  <!-- arms: in front of apron, cream paws visible -->
+  <g id="arms">
+    <path d="M 220 382
+             C 184 414, 166 478, 172 528
+             C 176 558, 200 570, 218 552
+             C 236 534, 236 506, 232 480
+             C 228 448, 236 414, 250 394"
+          class="cream" stroke="#22304A" stroke-width="10"/>
+    <path d="M 380 382
+             C 416 414, 434 478, 428 528
+             C 424 558, 400 570, 382 552
+             C 364 534, 364 506, 368 480
+             C 372 448, 364 414, 350 394"
+          class="cream" stroke="#22304A" stroke-width="10"/>
+    <ellipse cx="188" cy="548" rx="25" ry="22" class="cream" stroke="#22304A" stroke-width="10"/>
+    <ellipse cx="412" cy="548" rx="25" ry="22" class="cream" stroke="#22304A" stroke-width="10"/>
+  </g>
+
+  <!-- scarf -->
+  <g id="scarf">
+    <path d="M 208 336
+             C 244 364, 356 364, 392 336
+             L 388 380
+             C 350 404, 250 404, 212 380 Z"
+          class="sage" stroke="#22304A" stroke-width="9"/>
+    <!-- knot -->
+    <path d="M 212 372 C 198 380, 192 396, 198 410 L 226 398 L 232 376 Z"
+          class="sage" stroke="#22304A" stroke-width="7"/>
+    <!-- short tails -->
+    <path d="M 202 398 C 198 418, 192 432, 184 442" fill="none" stroke="#22304A" stroke-width="8"/>
+    <path d="M 218 398 C 220 416, 220 430, 216 442" fill="none" stroke="#22304A" stroke-width="8"/>
+  </g>
+
+  <!-- ears, behind head -->
+  <g id="ears">
+    <path d="M 170 154 L 136 60 C 132 46, 144 38, 158 44 L 242 94 Z"
+          class="cream" stroke="#22304A" stroke-width="10"/>
+    <path d="M 430 154 L 464 60 C 468 46, 456 38, 442 44 L 358 94 Z"
+          class="cream" stroke="#22304A" stroke-width="10"/>
+    <path d="M 176 132 L 156 78 L 218 108 Z" class="inner-ear"/>
+    <path d="M 424 132 L 444 78 L 382 108 Z" class="inner-ear"/>
+  </g>
+
+  <!-- head -->
+  <g id="head">
+    <path d="M 152 232
+             C 148 146, 208 98, 300 98
+             C 392 98, 452 146, 448 232
+             C 445 302, 388 338, 300 338
+             C 212 338, 155 302, 152 232 Z"
+          class="cream" stroke="#22304A" stroke-width="11"/>
+  </g>
+
+  <!-- face -->
+  <g id="face">
+    <ellipse cx="242" cy="226" rx="14" ry="18" class="ink-fill"/>
+    <ellipse cx="358" cy="226" rx="14" ry="18" class="ink-fill"/>
+    <path d="M 300 254 L 288 270 L 312 270 Z" class="terracotta" stroke="#22304A" stroke-width="5"/>
+    <path d="M 300 270 C 300 282, 286 286, 280 278" fill="none" stroke="#22304A" stroke-width="6"/>
+    <path d="M 300 270 C 300 282, 314 286, 320 278" fill="none" stroke="#22304A" stroke-width="6"/>
+    <path d="M 196 238 C 168 230, 140 226, 112 228" class="ink" stroke-width="5"/>
+    <path d="M 196 258 C 166 258, 138 262, 110 270" class="ink" stroke-width="5"/>
+    <path d="M 196 278 C 168 286, 142 296, 118 308" class="ink" stroke-width="5"/>
+    <path d="M 404 238 C 432 230, 460 226, 488 228" class="ink" stroke-width="5"/>
+    <path d="M 404 258 C 434 258, 462 262, 490 270" class="ink" stroke-width="5"/>
+    <path d="M 404 278 C 432 286, 458 296, 482 308" class="ink" stroke-width="5"/>
+  </g>
+</svg>
