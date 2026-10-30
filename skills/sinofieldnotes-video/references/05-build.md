@@ -23,6 +23,7 @@ Copy the canonical pattern from `production/episodes/04-milk-tea-order/`. Do not
 - `META.pace.maxHold = 3.0`
 - portrait 1080×1920
 - 8 pages: hook, 5 words, sentence, receipt
+- **p01 = 2–3s only**: blurred Momo background + title + one English hook + sharp thinking Momo in the lower cream area; one thought bubble; no Chinese VO on p01
 - p02 full-sentence answer; p03–p06 short answers
 - answer hold 1.1s; reward stamp at t3
 

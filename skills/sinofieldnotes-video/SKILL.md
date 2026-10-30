@@ -10,7 +10,7 @@ One episode = **one scene, one transaction/dialogue, 5 words, 1 full sentence, 6
 ## Hard rules
 
 1. **No BGM. No sound effects.** Voice + silence only. Reward is visual.
-2. Vertical **1080×1920, 30fps, 55–60s**.
+2. Vertical **1080×1920, 30fps, 55–60s**; first scene must start by **3s**.
 3. Exactly **5 words + 1 sentence**; the sentence must use all 5 words.
 4. One scene, one situation; do not cut across unrelated locations.
 5. Chinese text, pinyin, and English are **always code overlays** — never generated inside an AI image.
