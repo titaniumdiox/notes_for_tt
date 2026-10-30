@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 420 620" width="420" height="620">
+  <g fill="#D8D1C5" stroke="#8C8579" stroke-width="6" stroke-linejoin="round" stroke-dasharray="10 8">
+    <path d="M300 470 C378 452 392 520 346 542 C376 510 350 480 310 492" fill="none" />
+    <rect x="110" y="285" width="200" height="235" rx="92" />
+    <ellipse cx="165" cy="530" rx="48" ry="21" />
+    <ellipse cx="255" cy="530" rx="48" ry="21" />
+    <path d="M112 172 L92 96 L166 126 Z" />
+    <path d="M308 172 L328 96 L254 126 Z" />
+    <path d="M100 248 C100 150 142 100 210 100 C278 100 320 150 320 248 C320 314 276 348 210 348 C144 348 100 314 100 248 Z" />
+  </g>
+
+  <g stroke="#6F6A60" stroke-width="7" stroke-linecap="round" fill="none">
+    <path d="M170 232 q 12 12 24 0" />
+    <path d="M226 232 q 12 12 24 0" />
+    <path d="M204 258 L216 258 L210 266 Z" fill="#6F6A60" />
+    <path d="M210 266 q -10 12 -20 2 M210 266 q 10 12 20 2" />
+  </g>
+
+  <rect x="150" y="380" width="120" height="44" rx="8" fill="#FFF9EF" stroke="#8C8579" stroke-width="4" stroke-dasharray="6 5" />
+  <text x="210" y="409" text-anchor="middle" font-family="Arial, sans-serif" font-size="20" font-weight="700" fill="#6F6A60">MOMO</text>
+  <text x="210" y="580" text-anchor="middle" font-family="Arial, sans-serif" font-size="15" font-weight="700" fill="#8C8579" letter-spacing="2">PLACEHOLDER</text>
+</svg>

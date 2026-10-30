@@ -91,6 +91,14 @@ v2 的故事稿（`script-v2.md`）保留作对照，但**不是当前方向**�
 - 运动/比赛套组更短更冲；教学套组更平静；食物/旅行有场景词
 - 脚本只引用 `R01`–`R36`，不直接写句子
 
+## v2 占位 Demo
+
+- [milk-tea-v2-demo.mp4](experiments/milk-tea-v2/out/milk-tea-v2-demo.mp4)：55.7s
+- [README](experiments/milk-tea-v2/README.md)：双语开场、Momo 滑入、Q/A 分栏、奖励语、已知缺口
+- 英文开场 Bella + 中文 Xiaoxiao；p04「少冰」用 Huihui 占位
+- **纸色擦除还没接好**，当前仍是页面过渡
+- Momo 是 `PLACEHOLDER`，不是最终角色
+
 ## 视觉系统
 
 - 画幅：9:16，1080×1920，30fps
