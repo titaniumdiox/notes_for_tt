@@ -107,6 +107,15 @@ v2 的故事稿（`script-v2.md`）保留作对照，但**不是当前方向**�
 - **纸色擦除还没接好**，当前仍是页面过渡
 - Momo 是 `PLACEHOLDER`，不是最终角色
 
+## v3 火山 TTS Demo
+
+- [milk-tea-v3-demo.mp4](experiments/milk-tea-v3/out/milk-tea-v3-demo.mp4)：60.3s
+- [README](experiments/milk-tea-v3/README.md)：火山音色、完整答句、奖励停顿、已知问题
+- 中文全部换成火山 `zh_female_meilinvyou_uranus_bigtts`
+- 第一句回答改为 `我要一杯奶茶。`；答句后留 1.1 秒再出奖励
+- 少冰仍用同一音色，带多音字提示
+- **纸色擦除仍未接好**，Momo 仍是占位
+
 ## 视觉系统
 
 - 画幅：9:16，1080×1920，30fps
