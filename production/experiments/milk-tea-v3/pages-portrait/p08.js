@@ -152,7 +152,7 @@ ENGINE.visual('p08', (P) => {
     x: 120, y: 1262, w: 840, size: 24, color: 'green', weight: 600, at: tr + 0.65, mode: 'fade',
   });
   P.text('CONGRATULATIONS!', {
-    x: 700, y: 346, w: 340, align: 'c', size: 36, color: 'green', weight: 800,
+    x: 700, y: 358, w: 340, align: 'c', size: 36, color: 'green', weight: 900,
     font: 'latin', rot: -3, at: tr + 0.3, mode: 'fade',
   });
   P.text('PAUSE TO READ / 截图保存', {
