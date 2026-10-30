@@ -31,9 +31,9 @@
 
 Prompt：
 
-- [avatar-wink-prompt.txt](../../avatar-wink-prompt.txt)
-- [avatar-grin-prompt.txt](../../avatar-grin-prompt.txt)
-- [avatar-curious-prompt.txt](../../avatar-curious-prompt.txt)
+- [avatar-wink-prompt.txt](../avatar-wink-prompt.txt)
+- [avatar-grin-prompt.txt](../avatar-grin-prompt.txt)
+- [avatar-curious-prompt.txt](../avatar-curious-prompt.txt)
 
 ## 使用注意
 

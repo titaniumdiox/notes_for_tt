@@ -86,8 +86,20 @@ def main() -> int:
         print(exc.read().decode("utf-8", errors="replace")[:2500])
         return 1
     obj = json.loads(raw.decode("utf-8"))
+
+    def scrub(value):
+        if isinstance(value, dict):
+            return {
+                k: scrub(v)
+                for k, v in value.items()
+                if k.lower() not in {"authorization", "api_key", "x-api-key", "token"}
+            }
+        if isinstance(value, list):
+            return [scrub(v) for v in value]
+        return value
+
     meta = out.with_suffix(".json")
-    meta.write_text(json.dumps(obj, ensure_ascii=False, indent=2), encoding="utf-8")
+    meta.write_text(json.dumps(scrub(obj), ensure_ascii=False, indent=2), encoding="utf-8")
     data = obj.get("data") or []
     if not data or not data[0].get("url"):
         print(json.dumps(obj, ensure_ascii=False)[:1500])
