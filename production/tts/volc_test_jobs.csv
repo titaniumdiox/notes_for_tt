@@ -1,0 +1,5 @@
+job_id,kind,text,out,speed,pitch,volume,voice
+shao,word,少冰。,.runtime/volc-test/shao.mp3,0.92,0,0,
+p02-answer,answer,我要一杯奶茶。,.runtime/volc-test/p02-answer.mp3,0.92,0,0,
+p01-zh,opening,当你走进一家奶茶店，如何使用汉语点单？,.runtime/volc-test/p01-zh.mp3,0.92,0,0,
+reward-r07,reward,真棒！,.runtime/volc-test/reward-r07.mp3,1.08,2,0,

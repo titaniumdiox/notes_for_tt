@@ -91,6 +91,14 @@ v2 的故事稿（`script-v2.md`）保留作对照，但**不是当前方向**�
 - 运动/比赛套组更短更冲；教学套组更平静；食物/旅行有场景词
 - 脚本只引用 `R01`–`R36`，不直接写句子
 
+## 火山引擎 TTS
+
+- [volc_tts.py](tts/volc_tts.py)：HTTP/SSE V3，API Key + Resource ID
+- [测试任务表](tts/volc_test_jobs.csv)：少冰 / 完整答句 / 中文开场 / 奖励语
+- [README](tts/volc_README.md)：env 字段、语速、多音字处理
+- 音色：`zh_female_meilinvyou_uranus_bigtts`
+- 少冰测试已通过；等确认三声后再批量 25 条
+
 ## v2 占位 Demo
 
 - [milk-tea-v2-demo.mp4](experiments/milk-tea-v2/out/milk-tea-v2-demo.mp4)：55.7s
