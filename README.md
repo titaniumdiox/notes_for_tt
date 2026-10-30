@@ -1,126 +1,54 @@
 # Sinofieldnotes
 
-Chinese culture, daily life, travel, and cross-cultural observations for an overseas audience. The working format is short vertical video (9:16), with 2D illustration/light animation, English voiceover, and one lightweight Chinese keyword per episode.
+Short vertical Chinese-learning videos for an overseas audience: **one scene, 5 words, 1 full sentence, 60 seconds**. Illustration/light animation, Chinese voice, English hook. **No BGM, no sound effects.**
+
+## Watch
+
+- [04 · Milk Tea Order — full scene cut](production/episodes/04-milk-tea-order/out/milk-tea-v3-scenes-demo.mp4) — 60.3s, 1080×1920
+- [Cover](production/assets/mascot/cover.png)
+- [Episode notes](production/episodes/04-milk-tea-order/README.md)
+- [Scene bank](production/assets/mascot/scenes/README.md)
+
+## Production skill
+
+The reusable workflow lives at [skills/sinofieldnotes-video/SKILL.md](skills/sinofieldnotes-video/SKILL.md):
+
+1. topic selection
+2. 5-word vocabulary + 1 sentence
+3. tone/palette
+4. Momo scene redraw
+5. Volcengine voice
+6. Frametell build
+7. QA + archive
+
+## Structure
+
+| Path | Contents |
+|---|---|
+| `production/episodes/04-milk-tea-order/` | current demo: script, pages, audio, scenes, cover, final MP4 |
+| `production/episodes/01-us-vs-china/` | legacy episode script |
+| `production/episodes/02-lunch-nap/` | legacy episode script |
+| `production/episodes/03-marriage-pressure/` | legacy episode script |
+| `production/archive/` | v2 demo, first animatic, Frametell test |
+| `production/assets/mascot/` | Momo character bible, reference sheet, scene bank, cover |
+| `production/assets/rewards/` | 36 reward phrases by category |
+| `production/tts/` | Volcengine TTS adapter and jobs |
+| `skills/sinofieldnotes-video/` | full video-production skill |
+| `poc/` | earlier discovery/research archive; not the current format |
 
 ## Status
 
-_Last updated: 2026-10-26_
+- Channel renamed: **Sinofieldnotes**
+- Episode 04: demo complete
+- Format: 5 words + 1 sentence, 60s, 9:16, no BGM/SFX
+- Known gaps: paper wipe not implemented; p02 has no straw; p04/p06/p08 use counter half-body while p03/p05/p07 are full-body
+- Next: run the skill on episode 05; keep episode 04 frozen as the reference build
 
-- Discovery PoC: **validated** across 8 keyword runs (plus one repeat run).
-- Deduped content pool: **1,248 unique videos / 930 creators**.
-- Production: **3 episode scripts, shotlists, scratch voiceovers, and scratch SRTs**.
-- Next: 01 animatic, final voice, then 3 sample videos.
+## Reproduce
 
-## What is in this repo
+See [production/README.md](production/README.md) and [the skill](skills/sinofieldnotes-video/SKILL.md).  
+Final render uses Frametell portrait, `--fps 30 --skip-subs --workers 3`.
 
-| Path | Contents |
-| --- | --- |
-| `poc/discovery-01/` | `Chinese daily life` baseline: raw pages, manifest, normalized JSONL, metrics, relevance review |
-| `poc/discovery-01-repeat/` | Same keyword repeat; overlap comparison |
-| `poc/discovery-02-living-in-china/` | `living in China` run |
-| `poc/culture-differences-01/` | `China culture shock` run + repeat comparison |
-| `poc/culture-differences-02/` | `cultural differences China` run (leans traditional culture) |
-| `poc/discovery-03-chinese-street-food/` | `Chinese street food` run |
-| `poc/discovery-04-chinese-family-life/` | `Chinese family life` run |
-| `poc/discovery-05-china-travel/` | `China travel` run |
-| `poc/content-pool/` | Deduped 1,248-video pool with heuristic pillars and candidates |
-| `poc/content-strategy.md` | 8 content pillars, keyword matrix, format rules |
-| `poc/topic-shortlist.md` | 12 candidate topics; first 3 selected for production |
-| `production/` | 3 episode packages, scratch audio/SRT, TTS and assembly pipeline |
-| `poc/discovery-01/scripts/` | Collector, normalizer, relevance sampling, run comparison |
+## Research archive
 
-## Key findings
-
-1. **The search endpoint works through a local signed-out TikTok API + proxy.**  
-   Direct `www.tiktok.com` access is blocked on this network. `undici` + Clash proxy reached `/tiktok/search/general` successfully. `node-tls-client` was not used for search.
-
-2. **HTTP 200 + `status_code: 203` is not automatically a failure.**  
-   Pages with 203 still returned usable data. But 203 can appear on any page and may signal a degraded/soft-blocked upstream, so gate on `data` count, pagination, and relevance, not the status alone.
-
-3. **`count` is not exact; `cursor` is authoritative.**  
-   A request for 50 items returned 49–105. The next `offset` must use the response `cursor` (which advances by the requested count), not `len(data)`.
-
-4. **Filter non-video rows.**  
-   Some pages include `type: 4` user cards without an `item`; the normalizer skips them.
-
-5. **Keyword pools are finite.**  
-   Each keyword exhausted after 172–255 unique videos. The “5 pages × 50” target was not reached because `has_more` became 0, not because requests failed.
-
-6. **Repeat stability is moderate-to-good.**  
-   `Chinese daily life` repeat: 81.7% video overlap. `China culture shock` repeat after ~1 hour: 87.1% overlap, identical page/status structure.
-
-7. **Culture difference is a lens, not the whole account.**  
-   Keep daily life, travel, food, language, family, work/consumption, and rural/nature pillars. Culture-difference framing can be applied across all of them.
-
-## Reproduce discovery
-
-### Prerequisites
-
-- Node.js 22+ and pnpm
-- Python 3
-- Docker (optional)
-- A working proxy/egress route to TikTok (this repo was run with Clash at `127.0.0.1:7890`)
-
-Upstream service used: [`sangzun-han/Tiktok-Api`](https://github.com/sangzun-han/Tiktok-Api), commit `d438d72fa903aa0ecb6f104fa9b915928134fe0a` (2026-10-15). It is not vendored here to keep the repo readable.
-
-```powershell
-git clone https://github.com/sangzun-han/Tiktok-Api.git vendor/Tiktok-Api
-cd vendor/Tiktok-Api
-pnpm install --frozen-lockfile
-pnpm run build
-
-$env:NODE_PATH = (Resolve-Path 'node_modules\.pnpm\node_modules').Path
-$env:TIKTOK_TRANSPORT = 'undici'
-$env:TIKTOK_PROXY_URL = 'http://127.0.0.1:7890'
-$env:TIKTOK_MAX_RETRIES = '0'
-$env:TIKTOK_MIN_REQUEST_INTERVAL_MS = '1500'
-node dist/main.js
-```
-
-On Windows, `pnpm run setup` calls `python3`, which may resolve to the Microsoft Store stub. If you need the `curl_cffi` TLS bridge, install it manually into a Python environment and set `TIKTOK_PYTHON`.
-
-Health check:
-
-```powershell
-curl.exe --noproxy "*" http://127.0.0.1:3000/internal/health
-```
-
-Collect:
-
-```powershell
-python poc\discovery-01\scripts\collect.py `
-  --out poc\discovery-01-new `
-  --pages 5 --count 50 --keyword "Chinese daily life"
-```
-
-Normalize:
-
-```powershell
-python poc\discovery-01\scripts\normalize.py poc\discovery-01-new
-```
-
-## Production
-
-See [production/README.md](production/README.md) and [production/pipeline.md](production/pipeline.md).
-
-- 01: [3 Things Normal in the US, Surprising in China](production/episodes/01-us-vs-china/script.md) — 50.75s scratch
-- 02: [Why Chinese Offices Go Quiet After Lunch](production/episodes/02-lunch-nap/script.md) — 56.17s scratch
-- 03: [29, Unmarried, and Home for the Holidays](production/episodes/03-marriage-pressure/script.md) — 59.92s scratch
-
-Scratch voiceovers use Windows SAPI/Zira and are **not publishable**; they exist only for timing and animatic. Final voice and subtitles must be redone from the final track.
-
-## Data and compliance
-
-- Raw search responses are stored under each run's `raw/` directory for auditability.
-- Only public video/profile metadata is stored; no private account data or comments are collected.
-- Request pacing was kept at ~1.5s minimum interval; no attempt was made to bypass access controls.
-- This is a research/PoC repository. TikTok's terms and applicable law still apply; do not use it for spam or large-scale personal-data collection.
-- Third-party TikTok content/metadata remains subject to TikTok's terms. Code license: TBD; upstream Tiktok-Api is MIT.
-
-## Known limitations
-
-- Single machine, single egress IP, one proxy.
-- No comment analysis, no DTK integration, no video-generation pipeline yet.
-- No cross-day stability test.
-- `ffmpeg` is not installed in the current environment; final assembly needs it.
-- Heuristic pillar tags in `poc/content-pool` are noisy; use them for navigation, not editorial truth.
+The `poc/` folder holds the earlier TikTok discovery work: keyword runs, deduped content pool, and content strategy. It is kept for reference, not as the current production direction.

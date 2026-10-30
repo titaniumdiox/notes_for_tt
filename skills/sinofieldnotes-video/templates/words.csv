@@ -1,0 +1,9 @@
+page,cue,kind,hanzi,pinyin,meaning,question,question_pinyin,answer_full,answer_pinyin,reward_id,speed,pitch
+p02,0,word,奶茶,nǎichá,milk tea,,,,,,0.95,0
+p02,1,question,,,,你要喝什么？,nǐ yào hē shénme?,,,,0.92,0
+p02,2,answer,奶茶,nǎichá,milk tea,,,我要一杯奶茶。,wǒ yào yì bēi nǎichá。,,0.92,0
+p02,3,reward,,,,,,,,,R07,1.08,2
+p03,0,word,半糖,bàntáng,half sugar,,,,,,0.95,0
+p03,1,question,,,,糖度要多少？,tángdù yào duōshao?,,,,0.92,0
+p03,2,answer,半糖,bàntáng,half sugar,,,半糖。,bàntáng。,,0.92,0
+p03,3,reward,,,,,,,,,R08,1.08,2

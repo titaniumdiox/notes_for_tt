@@ -1,0 +1,7 @@
+job_id,page,cue,kind,text,out,speed,pitch,volume,voice
+p01-c01,p01,1,opening,当你走进一家奶茶店，如何使用汉语点单？,audio/p01-c01.wav,0.92,0,0,
+p02-c00,p02,0,word,奶茶。,audio/p02-c00.wav,0.95,0,0,
+p02-c01,p02,1,question,你要喝什么？,audio/p02-c01.wav,0.92,0,0,
+p02-c02,p02,2,answer,我要一杯奶茶。,audio/p02-c02.wav,0.92,0,0,
+p02-c03,p02,3,reward,真棒！,audio/p02-c03.wav,1.08,2,0,
+p07-c00,p07,0,final,一杯奶茶，半糖少冰，打包，谢谢。,audio/p07-c00.wav,0.92,0,0,
