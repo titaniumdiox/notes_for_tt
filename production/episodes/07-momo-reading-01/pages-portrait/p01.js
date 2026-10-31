@@ -59,18 +59,22 @@ ENGINE.visual('p01', (P) => {
     x: 540, y: 318, w: 900, align: 'c', size: 36, color: 'ink', weight: 700, at: t0 + 0.35, mode: 'fade',
   });
   P.text('静夜思', {
-    x: 540, y: 382, w: 900, align: 'c', size: 38, color: 'red', weight: 700, at: t0 + 0.5, mode: 'fade',
+    x: 540, y: 372, w: 900, align: 'c', size: 58, color: 'red', weight: 700, at: t0 + 0.5, mode: 'fade',
+  });
+  P.text('Quiet Night Thoughts', {
+    x: 540, y: 434, w: 900, align: 'c', size: 24, color: 'soft', weight: 600,
+    font: 'latin', at: t0 + 0.65, mode: 'fade',
   });
   P.text('唐 · 李白', {
-    x: 540, y: 430, w: 900, align: 'c', size: 30, color: 'ink', weight: 600, at: t0 + 0.65, mode: 'fade',
+    x: 540, y: 480, w: 900, align: 'c', size: 38, color: 'ink', weight: 700, at: t0 + 0.75, mode: 'fade',
   });
   P.text('LiBai from Tang Dynasty', {
-    x: 540, y: 472, w: 900, align: 'c', size: 21, color: 'soft', weight: 600,
-    font: 'latin', at: t0 + 0.8, mode: 'fade',
+    x: 540, y: 532, w: 900, align: 'c', size: 22, color: 'soft', weight: 600,
+    font: 'latin', at: t0 + 0.9, mode: 'fade',
   });
   P.text('A little poem, a little peace.', {
-    x: 540, y: 522, w: 900, align: 'c', size: 22, color: 'soft', weight: 600,
-    font: 'latin', at: t0 + 0.9, mode: 'fade',
+    x: 540, y: 580, w: 900, align: 'c', size: 20, color: 'soft', weight: 600,
+    font: 'latin', at: t0 + 1.0, mode: 'fade',
   });
 
   P.text('SINOFIELDNOTES · 静夜思', {

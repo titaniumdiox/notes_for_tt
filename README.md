@@ -4,7 +4,7 @@ Short vertical Chinese-learning videos for an overseas audience: **one scene, 5 
 
 ## Watch
 
-- [07 · Momo's Afternoon Reading 01 · 静夜思](production/episodes/07-momo-reading-01/out/momo-reading-01-v1.mp4) — 82.0s, 1080×1920
+- [07 · Momo's Afternoon Reading 01 · 静夜思](production/episodes/07-momo-reading-01/out/momo-reading-01-v1.mp4) — 78.0s, 1080×1920
 - [06 · Momo Wants Hotpot Today!](production/episodes/06-hotpot/out/hotpot-v1.mp4) — 60.4s, 1080×1920
 - [05 · Breakfast in China](production/episodes/05-breakfast/out/breakfast-v1.mp4) — 60.5s, 1080×1920
 - [04 · Milk Tea Order — full scene cut](production/episodes/04-milk-tea-order/out/milk-tea-v3-scenes-demo.mp4) — 60.3s, 1080×1920

@@ -4,7 +4,7 @@
 
 - title: Momo's Afternoon Reading 01 · 静夜思
 - 5 words: 明月 / 霜 / 举头 / 低头 / 故乡
-- duration: 82.0s
+- duration: 78.0s
 - palette: 月白 / 灰蓝 / 墨蓝 / 燕麦 / 暖灯黄
 
 ## Assets
@@ -30,7 +30,7 @@
 ## Render
 
 - project: production/episodes/07-momo-reading-01 (in place)
-- duration: 82.0s
+- duration: 78.0s
 - QA contact sheet: out/qa-contact-sheet.png
 
 ## Next action
