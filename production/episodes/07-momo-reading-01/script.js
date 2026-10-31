@@ -12,7 +12,7 @@
 
   const PAGES = [
     { id: 'p01', section: '开场', title: "Momo's Afternoon Reading", after: 0.1, cues: [
-      { t: "Momo's Afternoon Reading.", hold: 2.5 },
+      { t: "Momo's Afternoon Reading.", hold: 0.7 },
       { t: '静夜思。', hold: 0.1 },
       { t: 'Quiet Night Thoughts.', hold: 0.2 },
       { t: '唐。', hold: 0.2 },
@@ -49,9 +49,9 @@
       { t: '床前明月光，疑是地上霜。举头望明月，低头思故乡。', hold: 0.2 },
       { t: 'Before my bed the moonlight streams. And on the ground like frost it gleams. I raise my head the moon is bright. I lower my head and home fills the night.', hold: 0.2 },
     ] },
-    { id: 'p07', section: '词汇小票', title: 'Vocabulary receipt', after: 1.8, cues: [
-      { t: '这是今天的词汇小票。', hold: 0.3 },
-      { t: '今天学会了一首唐诗。', hold: 0.2 },
+    { id: 'p07', section: '词汇小票', title: 'Vocabulary receipt', after: 0.5, cues: [
+      { t: '这是今天的词汇小票。', hold: 0.2 },
+      { t: '今天学会了一首唐诗。', hold: 0.1 },
     ] },
     { id: 'p08', section: '收尾', title: 'A little peace', after: 2.5, cues: [
       { t: 'A little poem, a little peace.', hold: 0.2 },
