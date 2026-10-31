@@ -1,0 +1,12 @@
+job_id,text,out,speed,pitch
+p02-c00,床前明月光。,production/episodes/07-momo-reading-01/audio/p02-c00.mp3,0.92,0
+p02-c02,明月。,production/episodes/07-momo-reading-01/audio/p02-c02.mp3,0.95,0
+p03-c00,疑是地上霜。,production/episodes/07-momo-reading-01/audio/p03-c00.mp3,0.92,0
+p03-c02,霜。,production/episodes/07-momo-reading-01/audio/p03-c02.mp3,0.95,0
+p04-c00,举头望明月。,production/episodes/07-momo-reading-01/audio/p04-c00.mp3,0.92,0
+p04-c02,举头。,production/episodes/07-momo-reading-01/audio/p04-c02.mp3,0.95,0
+p05-c00,低头思故乡。,production/episodes/07-momo-reading-01/audio/p05-c00.mp3,0.92,0
+p05-c02,低头。,production/episodes/07-momo-reading-01/audio/p05-c02.mp3,0.95,0
+p05-c03,故乡。,production/episodes/07-momo-reading-01/audio/p05-c03.mp3,0.95,0
+p06-c00,床前明月光，疑是地上霜。举头望明月，低头思故乡。,production/episodes/07-momo-reading-01/audio/p06-c00.mp3,0.9,0
+p07-c00,这是今天的词汇小票。,production/episodes/07-momo-reading-01/audio/p07-c00.mp3,0.92,0

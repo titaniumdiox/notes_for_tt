@@ -4,7 +4,7 @@
 
 - title: Momo's Afternoon Reading 01 · 静夜思
 - 5 words: 明月 / 霜 / 举头 / 低头 / 故乡
-- duration: 82s
+- duration: 82.0s
 - palette: 月白 / 灰蓝 / 墨蓝 / 燕麦 / 暖灯黄
 
 ## Assets
@@ -17,21 +17,22 @@
 - p06: reuse p04-moon-gaze-v1.png
 - p07: reuse p01-reading-nook-v2.png
 - p08: p08-close-book-v2.png
+- cover: reading-cover-v1.png
 
 ## Audio
 
-- cues: not recorded
-- total: -
+- cues: 23
+- total: 49.86s
 - voice: volc + Bella
-- rule: p05 first word Chinese only, second Chinese + English
-- sync checked: no
+- rule: p02-p04 4 cues; p05 6 cues; both p05 words keep CN/EN
+- sync checked: yes (check_voice_assets OK)
 
 ## Render
 
-- project: not built
-- duration: -
-- QA contact sheet: -
+- project: production/episodes/07-momo-reading-01 (in place)
+- duration: 82.0s
+- QA contact sheet: out/qa-contact-sheet.png
 
 ## Next action
 
-- record 22 cues, build voice.js, pages, 82s timing
+- completed; archive and tag

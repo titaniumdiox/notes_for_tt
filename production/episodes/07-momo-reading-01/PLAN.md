@@ -1,6 +1,6 @@
 # EP.07 · Momo's Afternoon Reading 01 · 静夜思
 
-状态：**企划锁定；待出 3 张 style frame**。
+状态：**v1 成片完成**；见 [README](README.md)。
 
 ## 栏目
 

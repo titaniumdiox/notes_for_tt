@@ -4,6 +4,7 @@ Short vertical Chinese-learning videos for an overseas audience: **one scene, 5 
 
 ## Watch
 
+- [07 · Momo's Afternoon Reading 01 · 静夜思](production/episodes/07-momo-reading-01/out/momo-reading-01-v1.mp4) — 82.0s, 1080×1920
 - [06 · Momo Wants Hotpot Today!](production/episodes/06-hotpot/out/hotpot-v1.mp4) — 60.4s, 1080×1920
 - [05 · Breakfast in China](production/episodes/05-breakfast/out/breakfast-v1.mp4) — 60.5s, 1080×1920
 - [04 · Milk Tea Order — full scene cut](production/episodes/04-milk-tea-order/out/milk-tea-v3-scenes-demo.mp4) — 60.3s, 1080×1920
@@ -44,9 +45,10 @@ The reusable workflow lives at [skills/sinofieldnotes-video/SKILL.md](skills/sin
 - Episode 04: **v1.0 demo frozen** (`v1.0-demo` tag)
 - Episode 05: **Breakfast in China — complete** (60.5s)
 - Episode 06: **Momo Wants Hotpot Today! — complete** (60.4s)
-- Format: 5 words + 1 sentence, 60s, 9:16, no BGM/SFX
-- Known gaps: paper wipe not implemented; EP.05 p02 answer card covers the table edge; p04 bubble touches Momo's ear
-- Next: run the skill on episode 07
+- Episode 07: **Momo's Afternoon Reading 01 · 静夜思 — complete** (82.0s)
+- Format: 5 words + 1 sentence, 60s regular / 82s Reading, 9:16, no BGM/SFX
+- Known gaps: paper wipe not implemented; EP.05 p02 answer card covers the table edge; EP.07 p06 poem card covers Momo's head
+- Next: run the skill on episode 08
 
 ## Reproduce
 

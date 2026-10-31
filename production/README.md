@@ -6,8 +6,9 @@
 
 ## 当前成片
 
-> 状态：**04 冻结；05/06 新片完成**。
+> 状态：**04 冻结；05/06/07 新片完成**。
 
+- 07 · 午后阅读 01 · 静夜思：[成片](episodes/07-momo-reading-01/out/momo-reading-01-v1.mp4) · [制作说明](episodes/07-momo-reading-01/README.md)
 - 06 · 火锅点单：[成片](episodes/06-hotpot/out/hotpot-v1.mp4) · [制作说明](episodes/06-hotpot/README.md)
 - 05 · 中国早餐：[成片](episodes/05-breakfast/out/breakfast-v1.mp4) · [制作说明](episodes/05-breakfast/README.md)
 - 04 · 奶茶点单：[完整场景版](episodes/04-milk-tea-order/out/milk-tea-v3-scenes-demo.mp4)
