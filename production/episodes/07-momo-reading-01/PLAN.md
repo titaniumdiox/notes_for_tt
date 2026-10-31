@@ -6,7 +6,7 @@
 
 Momo's Afternoon Reading｜Momo的午后阅读时间  
 首期：静夜思 · 李白 · 唐  
-规格：**72 秒**，无 BGM、无音效。
+规格：**68 秒（1:08）**，无 BGM、无音效。
 
 ## 5 words
 
@@ -47,7 +47,7 @@ I lower my head — home fills the night.
 | p05 | 低头思故乡；低头/故乡高亮 | 9.6s |
 | p06 | 全诗：先中文一遍，再英文一遍 | 19.6s |
 | p07 | 词汇小票：5 词 + 今天学会了一首唐诗 | 4.5s |
-| p08 | 合书，A little poem, a little peace. | 6.2s |
+| p08 | 合书，A little poem, a little peace. | 2.2s |
 
 ## 词页布局
 

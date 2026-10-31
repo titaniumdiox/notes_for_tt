@@ -4,7 +4,7 @@
 
 ## 成片
 
-- [momo-reading-01-v1.mp4](out/momo-reading-01-v1.mp4) — **72.0s**，1080×1920，30fps
+- [momo-reading-01-v1.mp4](out/momo-reading-01-v1.mp4) — **68.0s**，1080×1920，30fps
 - [cover.png](out/cover.png) — 1080×1920
 - [QA contact sheet](out/qa-contact-sheet.png)
 - [企划](PLAN.md)
@@ -54,7 +54,7 @@ I lower my head — home fills the night.
 | 32.1–41.7s | p05 | 低头思故乡；低头 + 故乡 |
 | 41.7–61.3s | p06 | 全诗：中文一遍，英文一遍 |
 | 61.3–65.8s | p07 | 词汇小票 + 今天学会了一首唐诗 |
-| 65.8–72.0s | p08 | 合书 |
+| 65.8–68.0s | p08 | 合书（1:08 截尾） |
 
 ## 音轨
 
