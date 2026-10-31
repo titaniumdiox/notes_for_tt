@@ -56,7 +56,8 @@ ENGINE.visual('p07', (P) => {
     <div style="font:600 19px/1.4 Arial;color:#7C8FA3;margin-top:4px">静夜思 · 5 words · 1 poem</div>
     <div style="margin-top:20px">${rows}</div>
     <div style="margin-top:24px;font:700 25px/1.4 'Microsoft YaHei';color:#2B3440">床前明月光，疑是地上霜。<br>举头望明月，低头思故乡。</div>
-    <div style="margin-top:10px;font:600 18px/1.4 Arial;color:#7C8FA3">A little poem, a little moment of peace.</div>`;
+    <div style="margin-top:12px;font:700 24px/1.4 'Microsoft YaHei';color:#B85C4A">今天学会了一首唐诗。</div>
+    <div style="margin-top:6px;font:600 18px/1.4 Arial;color:#7C8FA3">A little poem, a little moment of peace.</div>`;
   P.html.appendChild(card);
 
   P.text('SINOFIELDNOTES · 静夜思', { x: 540, y: 1844, w: 900, align: 'c', size: 20, color: 'soft', at: 0, mode: 'fade' });

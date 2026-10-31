@@ -4,9 +4,39 @@ SCRIPT.VOICE = {
   "pages": [
     [
       {
-        "t": "Momo's Afternoon Reading. Quiet Night Thoughts.",
+        "t": "Momo's Afternoon Reading.",
         "f": "audio/p01-c00.wav",
-        "d": 2.75,
+        "d": 1.27,
+        "o": 0.0
+      },
+      {
+        "t": "静夜思。",
+        "f": "audio/p01-c02.wav",
+        "d": 1.13,
+        "o": 0.0
+      },
+      {
+        "t": "Quiet Night Thoughts.",
+        "f": "audio/p01-c03.wav",
+        "d": 1.1,
+        "o": 0.0
+      },
+      {
+        "t": "唐。",
+        "f": "audio/p01-c04.wav",
+        "d": 0.54,
+        "o": 0.0
+      },
+      {
+        "t": "李白。",
+        "f": "audio/p01-c05.wav",
+        "d": 0.72,
+        "o": 0.0
+      },
+      {
+        "t": "LiBai from Tang Dynasty.",
+        "f": "audio/p01-c06.wav",
+        "d": 1.38,
         "o": 0.0
       }
     ],
@@ -145,6 +175,12 @@ SCRIPT.VOICE = {
         "t": "这是今天的词汇小票。",
         "f": "audio/p07-c00.wav",
         "d": 1.74,
+        "o": 0.0
+      },
+      {
+        "t": "今天学会了一首唐诗。",
+        "f": "audio/p07-c01.wav",
+        "d": 1.73,
         "o": 0.0
       }
     ],

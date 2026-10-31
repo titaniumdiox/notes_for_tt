@@ -11,13 +11,13 @@ FFMPEG = Path(".runtime/pydeps/imageio_ffmpeg/binaries/ffmpeg-win-x86_64-v7.1.ex
 
 # Each page: [(text, mp3 stem)] — English sentence audio is only on p01/p06/p08.
 PAGES = [
-    [("Momo's Afternoon Reading. Quiet Night Thoughts.", "p01-c00")],
+    [("Momo's Afternoon Reading.", "p01-c00"), ("静夜思。", "p01-c02"), ("Quiet Night Thoughts.", "p01-c03"), ("唐。", "p01-c04"), ("李白。", "p01-c05"), ("LiBai from Tang Dynasty.", "p01-c06")],
     [("床前明月光。", "p02-c00"), ("Before my bed the moonlight streams.", "p02-c01"), ("明月。", "p02-c02"), ("bright moon.", "p02-c03")],
     [("疑是地上霜。", "p03-c00"), ("And on the ground, like frost, it gleams.", "p03-c01"), ("霜。", "p03-c02"), ("frost.", "p03-c03")],
     [("举头望明月。", "p04-c00"), ("I raise my head — the moon is bright.", "p04-c01"), ("举头。", "p04-c02"), ("raise one's head.", "p04-c03")],
     [("低头思故乡。", "p05-c00"), ("I lower my head — home fills the night.", "p05-c01"), ("低头。", "p05-c02"), ("lower one's head.", "p05-c05"), ("故乡。", "p05-c03"), ("hometown.", "p05-c04")],
     [("床前明月光，疑是地上霜。举头望明月，低头思故乡。", "p06-c00"), ("Before my bed the moonlight streams. And on the ground like frost it gleams. I raise my head the moon is bright. I lower my head and home fills the night.", "p06-c01")],
-    [("这是今天的词汇小票。", "p07-c00")],
+    [("这是今天的词汇小票。", "p07-c00"), ("今天学会了一首唐诗。", "p07-c01")],
     [("A little poem, a little peace.", "p08-c00")],
 ]
 

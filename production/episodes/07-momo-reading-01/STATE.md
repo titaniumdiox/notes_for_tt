@@ -21,10 +21,10 @@
 
 ## Audio
 
-- cues: 23
-- total: 49.86s
+- cues: 29
+- total: 54.98s
 - voice: volc + Bella
-- rule: p02-p04 4 cues; p05 6 cues; both p05 words keep CN/EN
+- rule: p01 6 cues; p02-p04 4 cues; p05 6 cues; p07 2 cues
 - sync checked: yes (check_voice_assets OK)
 
 ## Render
