@@ -13,7 +13,7 @@
 - p02: p02-craving-v1.png
 - p03: p03-flour-wrapper-v1.png
 - p04: p04-meat-filling-v1.png
-- p05: p05-wrap-dumpling-v1.png
+- p05: p05-wrap-dumpling-v2.png
 - p06: p06-boil-v2.png
 - p07: p07-eat-v1.png
 - p08: p08-after-meal-v1.png

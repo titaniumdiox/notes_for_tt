@@ -1,7 +1,7 @@
 ENGINE.visual('p05', (P) => {
   renderSceneWordPage(P, {
     index: 4,
-    scene: 'assets/mascot/scenes/p05-wrap-dumpling-v1.png',
+    scene: 'assets/mascot/scenes/p05-wrap-dumpling-v2.png',
     hanzi: '包',
     pinyin: 'bāo',
     meaning: 'to wrap',
