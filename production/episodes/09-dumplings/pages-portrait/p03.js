@@ -1,7 +1,7 @@
 ENGINE.visual('p03', (P) => {
   renderSceneWordPage(P, {
     index: 2,
-    scene: 'assets/mascot/scenes/p03-flour-wrapper-v1.png',
+    scene: 'assets/mascot/scenes/p03-flour-wrapper-v2.png',
     hanzi: '面粉',
     pinyin: 'miànfěn',
     meaning: 'flour',
