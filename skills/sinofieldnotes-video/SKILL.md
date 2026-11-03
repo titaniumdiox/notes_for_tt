@@ -1,6 +1,6 @@
 ---
 name: sinofieldnotes-video
-description: Produce a 55–60s vertical Chinese-learning episode for Sinofieldnotes — topic selection, 5-word vocabulary, tone/palette, Momo scene redraw, Volcengine voice, Frametell build, QA, and archive. No BGM, no sound effects.
+description: Produce a 60–61s regular vertical Chinese-learning episode for Sinofieldnotes — topic selection, 5-word vocabulary, tone/palette, Momo scene redraw, Volcengine voice, Frametell build, QA, and archive. No BGM, no sound effects. Reading-series episodes use a separate 68s spec.
 ---
 
 # Sinofieldnotes Video
@@ -23,6 +23,88 @@ One episode = **one scene, one transaction/dialogue, 5 words, 1 full sentence, 6
 12. **Render in place**: use `scripts/setup_render.ps1` and render inside `production/episodes/NN-slug/`. Never ship from a stale mirrored runtime copy.
 13. **Cover is a separate design**: title + full-body Momo + scene + number/name badge. Never use a video frame or the intro page as the cover.
 14. **QA cheaply but fully**: render once, inspect one contact sheet, then open only failing frames at full resolution.
+
+## Regular episode standard（EP.04 / 05 / 06 / 08）
+
+This is the standard for **non-Reading** episodes. Reading 01 uses 68s and its own poem layout; do not mix the two.
+
+### Format
+
+| Item | Standard |
+|---|---|
+| Duration | **60.2–60.5s** |
+| Frame | 1080×1920, 30fps |
+| Pages | **8** |
+| Vocabulary | **5 words + 1 full sentence** |
+| Sentence | must use all 5 words |
+| Audio | **24 cues** |
+| BGM / SFX | **none** |
+| Character | one Momo; new action on every page |
+
+### 8-page beat sheet
+
+| Page | Role |
+|---|---|
+| p01 | Hook: scene-specific Momo + title + English hook |
+| p02–p06 | One word per page, in story order |
+| p07 | Full sentence + pinyin + English |
+| p08 | `5 / 5`, receipt, `LEARNED`, pause-to-read |
+
+### Word page（p02–p06）
+
+- Header: `THEME · n/5` + five progress dots.
+- Big Hanzi, pinyin, English meaning.
+- Question bubble: **Chinese + pinyin + English**.
+- Answer card: **Chinese + pinyin + English**.
+- English under pinyin is **the same size as that pinyin**:
+  - question pinyin / English: 24px
+  - answer pinyin / English: 34px
+- Reward stamp sits **above or outside** the answer card; never cover the English.
+- Four audio cues: word → question → answer → reward.
+- Answer may be short; only p07 must be a full sentence.
+
+`EP.04/05/06` were archived before the bilingual question/answer layer. Use them for structure, but **new episodes follow EP.08's bilingual word-page standard**.
+
+### p07 / p08
+
+- p07: one glass card; sentence split into 3 short lines; pinyin 3 lines; English 3 lines; green check; `You can … now.`
+- p08: receipt card with 5 rows; each row Hanzi + pinyin + English + example; full sentence; `5 words · 1 sentence`; `You can … now.`; `LEARNED`; `PAUSE TO READ / 截图保存`.
+- Never end on a poetic tagline. Closing is always a capability sentence: `You can talk about rainy days now.`
+
+### Cover
+
+Regular cover is not a video frame and not the Reading cover:
+
+```text
+5 个词，60 秒
+[scene subtitle]
+MOMO / [episode action]
+```
+
+- Number badge: `08 RAIN`, `06 HOTPOT`, etc.
+- Full-body Momo + scene.
+- No `A little rain, a little adventure.`-style tagline.
+- No `READING 01` typography unless it is actually a Reading episode.
+
+### Audio
+
+- p01: 1 English cue (Bella).
+- p02–p06: 4 cues each (Chinese word, Chinese question, Chinese answer, Chinese reward).
+- p07: 1 Chinese full-sentence cue.
+- p08: 2 Chinese cues.
+- Total 24; typical 33–36s of voice.
+- Chinese: Volcengine `zh_female_meilinvyou_uranus_bigtts`.
+- English: ElevenLabs Bella.
+- No BGM, no rain/wind/cup SFX. Atmosphere comes from image only.
+
+### QA
+
+- Duration 60.2–60.5s.
+- `check_voice_assets.py` must pass.
+- p01 word scene starts by ~4.5s.
+- English under pinyin is legible at full resolution and does not collide with reward stamps.
+- p07/p08 text must not overlap; check full-res if the contact sheet looks dense.
+- Cover: `5 个词，60 秒` visible, full-body Momo, badge, bottom `MOMO / …`.
 
 ## Cost control
 
@@ -107,14 +189,17 @@ Read `references/06-qa-archive.md`.
 
 ## Acceptance
 
-- [ ] 55–60s, 1080×1920, 30fps
+- [ ] 60–61s regular, 1080×1920, 30fps
 - [ ] 5 words + 1 sentence, all words in the sentence
+- [ ] 8 pages, 24 cues
 - [ ] No BGM/SFX
 - [ ] No generated text in images
 - [ ] Momo consistent across pages
 - [ ] Momo pose changes page to page; no repeated chin-tap/standing sticker
 - [ ] p01 has a scene-specific intro Momo, not a generic sticker
 - [ ] Pinyin correct; polyphonic words verified
+- [ ] Question and answer both have Chinese + pinyin + English
+- [ ] English under pinyin is the same size as the pinyin
 - [ ] First answer full; later answers short
 - [ ] Reward stamp appears after 1.1s pause, outside the glass card
 - [ ] Top/bottom brand and watermark on every page
@@ -123,14 +208,22 @@ Read `references/06-qa-archive.md`.
 - [ ] Contact sheet reviewed; only failures opened full-res
 - [ ] Cover + final MP4 + README archived
 
-## Canonical example
+## Canonical examples
+
+Use **EP.08** for the current regular-episode standard, including the bilingual question/answer layer:
+
+`production/episodes/08-rainy-day/`
+
+- Final: `out/rainy-day-v1.mp4`
+- Cover: `out/cover.png`
+- Build: `extras/word.js`, `pages-portrait/`
+- Jobs: `volc-jobs.csv`
+
+Use **EP.04** only as the frozen structural reference:
 
 `production/episodes/04-milk-tea-order/`
 
 - Final: `out/milk-tea-v3-scenes-demo.mp4`
-- Cover: `out/cover.png`
-- Scenes: `assets/mascot/scenes/`
 - Build: `extras/word.js`, `pages-portrait/`
-- Jobs: `volc-jobs.csv`
 
-Do not copy its content blindly; copy its **structure and gates**.
+Do not copy content blindly; copy **structure and gates**. EP.05/06 are pre-bilingual archives; do not copy their missing English rows into new work.

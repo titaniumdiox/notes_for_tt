@@ -263,7 +263,7 @@
       x: 825, y: 754, w: 430, align: 'c', size: data.questionPinyinSize || 24, color: 'red', weight: 600, at: t1 + 0.5, mode: 'fade',
     });
     P.text(data.questionEnglish, {
-      x: 825, y: 792, w: 430, align: 'c', size: 19, color: 'soft', weight: 600,
+      x: 825, y: 792, w: 430, align: 'c', size: 24, color: 'soft', weight: 600,
       font: 'latin', at: t1 + 0.55, mode: 'fade',
     });
 
@@ -321,7 +321,7 @@
       x: 540, y: 1585, w: 900, align: 'c', size: 34, color: 'red', weight: 600, at: t2 + 0.08, mode: 'fade',
     });
     P.text(data.answerEnglish, {
-      x: 540, y: 1632, w: 820, align: 'c', size: 20, color: 'ink', weight: 600,
+      x: 540, y: 1632, w: 820, align: 'c', size: 34, color: 'ink', weight: 600,
       font: 'latin', at: t2 + 0.14, mode: 'fade',
     });
 
