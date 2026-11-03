@@ -1,7 +1,7 @@
 ENGINE.visual('p01', (P) => {
   const t0 = P.c(0);
 
-  P.img('assets/mascot/scenes/p01-window-rain-v1.png', 0, 0, 1080, 1920, {
+  P.img('assets/mascot/scenes/p01-window-rain-v3.png', 0, 0, 1080, 1920, {
     fit: 'cover', r: 0, border: false, shadow: false, at: 0,
   });
 

@@ -1,4 +1,4 @@
-# EP.08 state
+﻿# EP.08 state
 
 ## Locked
 
@@ -9,7 +9,7 @@
 
 ## Assets
 
-- p01: p01-window-rain-v1.png
+- p01: p01-window-rain-v3.png
 - p02: p02-rain-window-v1.png
 - p03: p03-test-weather-v1.png
 - p04: p04-put-on-raincoat-v1.png
@@ -35,3 +35,4 @@
 ## Next action
 
 - completed; archive and tag
+
