@@ -66,9 +66,38 @@ Cover at least:
 ### Render
 
 - [ ] 1080×1920, 30fps
-- [ ] 55–60s
+- [ ] 60–61s regular (Reading 01 is 68s)
 - [ ] no black/blank frames at page transitions
 - [ ] cover exported separately
+
+## Finalize render output
+
+The renderer always writes an intermediate:
+
+```text
+out/<slug>-portrait-no-subtitles.mp4
+```
+
+It is **not** a deliverable. Always finish with one of these:
+
+```powershell
+# No trim
+Move-Item out/<slug>-portrait-no-subtitles.mp4 out/<slug>-v1.mp4
+
+# Trim / re-encode
+ffmpeg -i out/<slug>-portrait-no-subtitles.mp4 -t 68 `
+  -c:v libx264 -preset medium -crf 18 -pix_fmt yuv420p `
+  -c:a aac -b:a 192k out/<slug>-v1.mp4
+Remove-Item out/<slug>-portrait-no-subtitles.mp4
+```
+
+Verify:
+
+```powershell
+Get-ChildItem production/episodes/*/out -Filter '*portrait-no-subtitles*.mp4'
+```
+
+This must return nothing. `out/` should contain exactly one shipped MP4 plus `cover.png` and `qa-contact-sheet.png`.
 
 ## Archive
 
@@ -87,6 +116,7 @@ production/episodes/NN-slug/
   out/
     final.mp4
     cover.png
+    qa-contact-sheet.png
 ```
 
 Old experiments go to `production/archive/`. Keep rejected scene variants in `assets/mascot/scenes/` or move to `archive/rejected/`; never delete without recording.

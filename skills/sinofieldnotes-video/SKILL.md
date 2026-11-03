@@ -20,7 +20,7 @@ One episode = **one scene, one transaction/dialogue, 5 words, 1 full sentence, 6
 9. Every page has top/bottom `SINOFIELDNOTES` branding and a small watermark.
 10. Archive all versions; never delete a rejected variant without moving it to an archive folder.
 11. **Intro Momo is scene-specific**: p01 gets one Momo pose that reacts to this episode's situation (thinking, checking a map, holding a ticket, etc.), not a generic mascot sticker.
-12. **Render in place**: use `scripts/setup_render.ps1` and render inside `production/episodes/NN-slug/`. Never ship from a stale mirrored runtime copy.
+12. **Render in place**: use `scripts/setup_render.ps1` and render inside `production/episodes/NN-slug/`. Never ship from a stale mirrored runtime copy. The renderer writes `out/<slug>-portrait-no-subtitles.mp4`; after QA, **move** it to the final name, or trim/convert and **delete** the intermediate. Never leave both in `out/`.
 13. **Cover is a separate design**: title + full-body Momo + scene + number/name badge. Never use a video frame or the intro page as the cover.
 14. **QA cheaply but fully**: render once, inspect one contact sheet, then open only failing frames at full resolution.
 
@@ -206,6 +206,7 @@ Read `references/06-qa-archive.md`.
 - [ ] Audio files match `voice.js` durations
 - [ ] Cover is designed, not an intro frame
 - [ ] Contact sheet reviewed; only failures opened full-res
+- [ ] `out/` contains exactly one shipped MP4; no `*-portrait-no-subtitles.mp4`
 - [ ] Cover + final MP4 + README archived
 
 ## Canonical examples

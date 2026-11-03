@@ -17,3 +17,5 @@ production/episodes/*/assets/mascot/scenes/*.json
 production/episodes/*/assets/mascot/*.json
 production/episodes/*/engine
 production/episodes/*/engine_modules
+# Renderer intermediate; final MP4 is the only shipped video.
+production/episodes/*/out/*-portrait-no-subtitles.mp4
