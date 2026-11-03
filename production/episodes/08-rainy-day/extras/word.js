@@ -262,6 +262,10 @@
     P.text(data.questionPinyin, {
       x: 825, y: 754, w: 430, align: 'c', size: data.questionPinyinSize || 24, color: 'red', weight: 600, at: t1 + 0.5, mode: 'fade',
     });
+    P.text(data.questionEnglish, {
+      x: 825, y: 792, w: 430, align: 'c', size: 19, color: 'soft', weight: 600,
+      font: 'latin', at: t1 + 0.55, mode: 'fade',
+    });
 
     // Frosted-glass answer card, bottom centre; same width as the word block.
     const glass = document.createElement('div');
@@ -316,6 +320,10 @@
     P.text(data.answerPinyin, {
       x: 540, y: 1585, w: 900, align: 'c', size: 34, color: 'red', weight: 600, at: t2 + 0.08, mode: 'fade',
     });
+    P.text(data.answerEnglish, {
+      x: 540, y: 1632, w: 820, align: 'c', size: 20, color: 'ink', weight: 600,
+      font: 'latin', at: t2 + 0.14, mode: 'fade',
+    });
 
     const qEnd = P.ce(1);
     const aStart = P.c(2);
@@ -342,7 +350,7 @@
     });
 
     if (data.reward) {
-      P.canvas(690, 1550, 330, 140, (ctx, lt) => {
+      P.canvas(700, 1310, 330, 140, (ctx, lt) => {
         ctx.clearRect(0, 0, 330, 140);
         const k = PV.K(lt, t3, 0.32);
         if (k <= 0) return;

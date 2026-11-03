@@ -7,9 +7,11 @@ ENGINE.visual('p03', (P) => {
     meaning: 'weather',
     question: '今天天气怎么样？',
     questionPinyin: 'jīntiān tiānqì zěnmeyàng?',
+    questionEnglish: "How's the weather today?",
     blankAnswer: true,
     fullAnswer: '今天天气不好。',
     answerPinyin: 'jīntiān tiānqì bù hǎo。',
+    answerEnglish: 'The weather is bad today.',
     reward: '阴天。',
   });
 });

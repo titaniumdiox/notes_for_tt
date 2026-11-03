@@ -7,9 +7,11 @@ ENGINE.visual('p06', (P) => {
     meaning: 'raindrop',
     question: '雨滴落在哪里？',
     questionPinyin: 'yǔdī luò zài nǎlǐ?',
+    questionEnglish: 'Where do the raindrops fall?',
     blankAnswer: true,
     fullAnswer: '雨滴落在伞上。',
     answerPinyin: 'yǔdī luò zài sǎn shàng。',
+    answerEnglish: 'The raindrops fall on the umbrella.',
     reward: '滴答滴答！',
   });
 });

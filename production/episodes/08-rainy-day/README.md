@@ -58,6 +58,13 @@ Raindrops fall on my umbrella.
 | 音轨 | 24 cues，约 33.03s |
 | BGM / SFX | **无** |
 
+## 中英对照
+
+- 气泡：中文问句 + 拼音 + 英文
+- 答句卡：中文答句 + 拼音 + 英文
+- 例：`外面怎么了？ / wàimiàn zěnme le? / What's going on outside?`
+- 例：`下雨了。 / xiàyǔ le. / It's raining.`
+
 ## 制作
 
 - 8 页场景，Momo 动作：窗边 → 接雨 → 穿雨衣 → 撑伞 → 看雨滴 → 走路 → 收伞

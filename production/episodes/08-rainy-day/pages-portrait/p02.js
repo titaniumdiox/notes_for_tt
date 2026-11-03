@@ -7,9 +7,11 @@ ENGINE.visual('p02', (P) => {
     meaning: 'to rain',
     question: '外面怎么了？',
     questionPinyin: 'wàimiàn zěnme le?',
+    questionEnglish: "What's going on outside?",
     blankAnswer: true,
     fullAnswer: '下雨了。',
     answerPinyin: 'xiàyǔ le。',
+    answerEnglish: "It's raining.",
     reward: '雨好大！',
   });
 });
