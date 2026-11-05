@@ -4,6 +4,7 @@ Short vertical Chinese-learning videos for an overseas audience: **one scene, 5 
 
 ## Watch
 
+- [10 · Momo Takes Care of Plants｜Momo照顾植物](production/episodes/10-plants/out/plants-v1.mp4) — 60.4s, 1080×1920
 - [09 · Momo Makes Dumplings｜Momo包饺子！](production/episodes/09-dumplings/out/dumplings-v1.mp4) — 60.4s, 1080×1920
 - [08 · Momo's Rainy Day｜下雨天](production/episodes/08-rainy-day/out/rainy-day-v1.mp4) — 60.2s, 1080×1920
 - [07 · Momo's Afternoon Reading 01 · 静夜思](production/episodes/07-momo-reading-01/out/momo-reading-01-v1.mp4) — 68.0s, 1080×1920
@@ -50,9 +51,10 @@ The reusable workflow lives at [skills/sinofieldnotes-video/SKILL.md](skills/sin
 - Episode 07: **Momo's Afternoon Reading 01 · 静夜思 — complete** (68.0s)
 - Episode 08: **Momo's Rainy Day｜下雨天 — complete** (60.2s)
 - Episode 09: **Momo Makes Dumplings｜Momo包饺子！ — complete** (60.4s)
+- Episode 10: **Momo Takes Care of Plants｜Momo照顾植物 — complete** (60.4s)
 - Format: 5 words + 1 sentence, 60s regular / 68s Reading, 9:16, no BGM/SFX
 - Known gaps: paper wipe not implemented; EP.05 p02 answer card covers the table edge; EP.07 p06 poem card covers Momo's head
-- Next: run the skill on episode 10
+- Next: run the skill on episode 11
 
 ## Reproduce
 
