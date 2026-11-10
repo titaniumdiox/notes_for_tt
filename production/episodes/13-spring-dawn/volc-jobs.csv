@@ -1,0 +1,16 @@
+job_id,text,out,speed,pitch
+p01-c02,春晓。,production/episodes/13-spring-dawn/audio/p01-c02.mp3,0.92,0
+p01-c04,唐。,production/episodes/13-spring-dawn/audio/p01-c04.mp3,0.85,0
+p01-c05,孟浩然。,production/episodes/13-spring-dawn/audio/p01-c05.mp3,0.9,0
+p02-c00,春眠不觉晓。,production/episodes/13-spring-dawn/audio/p02-c00.mp3,0.92,0
+p02-c02,春眠。,production/episodes/13-spring-dawn/audio/p02-c02.mp3,0.95,0
+p03-c00,处处闻啼鸟。,production/episodes/13-spring-dawn/audio/p03-c00.mp3,0.92,0
+p03-c02,啼鸟。,production/episodes/13-spring-dawn/audio/p03-c02.mp3,0.95,0
+p04-c00,夜来风雨声。,production/episodes/13-spring-dawn/audio/p04-c00.mp3,0.92,0
+p04-c02,风雨。,production/episodes/13-spring-dawn/audio/p04-c02.mp3,0.95,0
+p05-c00,花落知多少。,production/episodes/13-spring-dawn/audio/p05-c00.mp3,0.92,0
+p05-c02,花落。,production/episodes/13-spring-dawn/audio/p05-c02.mp3,0.95,0
+p05-c03,知多少。,production/episodes/13-spring-dawn/audio/p05-c03.mp3,0.95,0
+p06-c00,春眠不觉晓，处处闻啼鸟。夜来风雨声，花落知多少。,production/episodes/13-spring-dawn/audio/p06-c00.mp3,0.9,0
+p07-c00,这是今天的词汇小票。,production/episodes/13-spring-dawn/audio/p07-c00.mp3,0.92,0
+p07-c01,今天学会了一首唐诗。,production/episodes/13-spring-dawn/audio/p07-c01.mp3,0.92,0

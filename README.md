@@ -4,6 +4,7 @@ Short vertical Chinese-learning videos for an overseas audience: **one scene, 5 
 
 ## Watch
 
+- [13 · Momo's Afternoon Reading 02 · 春晓](production/episodes/13-spring-dawn/out/spring-dawn-v1.mp4) — 68.5s, 1080×1920
 - [12 · Momo Goes Shopping｜Momo买东西](production/episodes/12-shopping/out/shopping-v1.mp4) — 60.4s, 1080×1920
 - [11 · Momo Takes a High-Speed Train｜Momo坐高铁](production/episodes/11-high-speed-train/out/high-speed-train-v1.mp4) — 60.5s, 1080×1920
 - [10 · Momo Takes Care of Plants｜Momo照顾植物](production/episodes/10-plants/out/plants-v1.mp4) — 60.4s, 1080×1920
@@ -56,6 +57,7 @@ The reusable workflow lives at [skills/sinofieldnotes-video/SKILL.md](skills/sin
 - Episode 10: **Momo Takes Care of Plants｜Momo照顾植物 — complete** (60.4s)
 - Episode 11: **Momo Takes a High-Speed Train｜Momo坐高铁 — complete** (60.5s)
 - Episode 12: **Momo Goes Shopping｜Momo买东西 — complete** (60.4s)
+- Episode 13: **Momo's Afternoon Reading 02 · 春晓 — complete** (68.5s)
 - Format: 5 words + 1 sentence, 60s regular / 68s Reading, 9:16, no BGM/SFX
 - Known gaps: paper wipe not implemented; EP.05 p02 answer card covers the table edge; EP.07 p06 poem card covers Momo's head
 - Next: run the skill on episode 13

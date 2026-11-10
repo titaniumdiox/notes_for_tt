@@ -6,8 +6,9 @@
 
 ## 当前成片
 
-> 状态：**04 冻结；05/06/07/08/09/10/11/12 新片完成**。
+> 状态：**04 冻结；05–12 新片完成；13 Reading 02 完成**。
 
+- 13 · 午后阅读 02 · 春晓：[成片](episodes/13-spring-dawn/out/spring-dawn-v1.mp4) · [制作说明](episodes/13-spring-dawn/README.md)
 - 12 · 买东西：[成片](episodes/12-shopping/out/shopping-v1.mp4) · [制作说明](episodes/12-shopping/README.md)
 - 11 · 坐高铁：[成片](episodes/11-high-speed-train/out/high-speed-train-v1.mp4) · [制作说明](episodes/11-high-speed-train/README.md)
 - 10 · 照顾植物：[成片](episodes/10-plants/out/plants-v1.mp4) · [制作说明](episodes/10-plants/README.md)
