@@ -1,0 +1,1 @@
+ENGINE.visual('p06',(P)=>{renderSceneWordPage(P,{index:5,scene:'assets/mascot/scenes/p06-pay-v1.png',hanzi:'付款',pinyin:'fùkuǎn',meaning:'to pay',question:'怎么付款？',questionPinyin:'zěnme fùkuǎn?',questionEnglish:'How do you pay?',blankAnswer:true,fullAnswer:'手机付款。',answerPinyin:'shǒujī fùkuǎn。',answerEnglish:'Pay by phone.',reward:'付好了！'});});

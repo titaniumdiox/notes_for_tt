@@ -1,0 +1,1 @@
+ENGINE.visual('p05',(P)=>{renderSceneWordPage(P,{index:4,scene:'assets/mascot/scenes/p05-how-much-v2.png',hanzi:'多少钱',pinyin:'duōshao qián',meaning:'how much',question:'这个多少钱？',questionPinyin:'zhège duōshao qián?',questionEnglish:'How much is this?',blankAnswer:true,fullAnswer:'五块钱。',answerPinyin:'wǔ kuài qián。',answerEnglish:'Five yuan.',reward:'五块！'});});

@@ -1,0 +1,1 @@
+ENGINE.visual('p03',(P)=>{renderSceneWordPage(P,{index:2,scene:'assets/mascot/scenes/p03-fruit-v1.png',hanzi:'水果',pinyin:'shuǐguǒ',meaning:'fruit',question:'你买什么？',questionPinyin:'nǐ mǎi shénme?',questionEnglish:'What are you buying?',blankAnswer:true,fullAnswer:'我买水果。',answerPinyin:'wǒ mǎi shuǐguǒ。',answerEnglish:'I am buying fruit.',reward:'好多水果！'});});

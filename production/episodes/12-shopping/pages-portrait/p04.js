@@ -1,0 +1,1 @@
+ENGINE.visual('p04',(P)=>{renderSceneWordPage(P,{index:3,scene:'assets/mascot/scenes/p04-apples-v2.png',hanzi:'苹果',pinyin:'píngguǒ',meaning:'apple',question:'你要哪种水果？',questionPinyin:'nǐ yào nǎ zhǒng shuǐguǒ?',questionEnglish:'Which fruit do you want?',blankAnswer:true,fullAnswer:'我要苹果。',answerPinyin:'wǒ yào píngguǒ。',answerEnglish:'I want apples.',reward:'红红的！'});});

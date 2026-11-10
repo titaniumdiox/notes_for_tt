@@ -1,0 +1,1 @@
+ENGINE.visual('p02',(P)=>{renderSceneWordPage(P,{index:1,scene:'assets/mascot/scenes/p02-store-v2.png',hanzi:'商店',pinyin:'shāngdiàn',meaning:'shop',question:'这是哪里？',questionPinyin:'zhè shì nǎlǐ?',questionEnglish:'Where is this?',blankAnswer:true,fullAnswer:'这是商店。',answerPinyin:'zhè shì shāngdiàn。',answerEnglish:'This is a shop.',reward:'水果店！'});});
