@@ -6,8 +6,9 @@
 
 ## 当前成片
 
-> 状态：**04 冻结；05/06/07/08/09/10 新片完成**。
+> 状态：**04 冻结；05/06/07/08/09/10/11 新片完成**。
 
+- 11 · 坐高铁：[成片](episodes/11-high-speed-train/out/high-speed-train-v1.mp4) · [制作说明](episodes/11-high-speed-train/README.md)
 - 10 · 照顾植物：[成片](episodes/10-plants/out/plants-v1.mp4) · [制作说明](episodes/10-plants/README.md)
 - 09 · 包饺子：[成片](episodes/09-dumplings/out/dumplings-v1.mp4) · [制作说明](episodes/09-dumplings/README.md)
 - 08 · 下雨天：[成片](episodes/08-rainy-day/out/rainy-day-v1.mp4) · [制作说明](episodes/08-rainy-day/README.md)

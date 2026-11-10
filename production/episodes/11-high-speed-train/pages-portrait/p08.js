@@ -1,0 +1,20 @@
+ENGINE.visual('p08', (P) => {
+  const t0=P.c(0), tr=t0+1.2;
+  const bg=P.img('assets/mascot/scenes/p06-seat-v1.png',0,0,1080,1920,{fit:'cover',at:0}); if(bg&&bg.el)bg.el.style.filter='blur(8px) saturate(.92)';
+  P.canvas(0,0,1080,1920,(ctx)=>{ctx.clearRect(0,0,1080,1920);ctx.fillStyle='rgba(233,222,205,.52)';ctx.fillRect(0,0,1080,1920);});
+  P.canvas(0,0,1080,106,(ctx)=>{ctx.clearRect(0,0,1080,106);ctx.fillStyle='rgba(233,222,205,.94)';ctx.fillRect(0,0,1080,106);ctx.fillStyle='rgba(43,52,64,.12)';ctx.fillRect(0,103,1080,3);});
+  P.canvas(0,1810,1080,110,(ctx)=>{ctx.clearRect(0,0,1080,110);ctx.fillStyle='rgba(233,222,205,.94)';ctx.fillRect(0,0,1080,110);ctx.fillStyle='rgba(43,52,64,.12)';ctx.fillRect(0,0,1080,3);});
+  P.text('SINOFIELDNOTES',{x:64,y:34,w:620,align:'l',size:30,color:'ink',weight:700,at:t0}); P.text('EP.11',{x:1016,y:44,w:160,align:'r',size:22,color:'soft',at:t0});
+  P.text('5 / 5',{x:540,y:112,w:600,align:'c',size:100,color:'red',weight:700,at:t0,cps:6});
+  P.text('你今天又学会了 5 个词',{x:540,y:236,w:900,align:'c',size:38,color:'ink',weight:600,at:t0+0.2,mode:'fade'});
+  P.canvas(70,320,940,1280,(ctx,lt)=>{ctx.clearRect(0,0,940,1280);const k=PV.K(lt,tr-0.25,0.35);if(k<=0)return;ctx.globalAlpha=k;ctx.fillStyle='#FFF9EF';ctx.strokeStyle='#2B3440';ctx.lineWidth=4;ctx.beginPath();ctx.roundRect?ctx.roundRect(8,8,924,1264,18):ctx.rect(8,8,924,1264);ctx.fill();ctx.stroke();ctx.globalAlpha=1;ctx.save();ctx.translate(785,1080);ctx.rotate(-8*Math.PI/180);ctx.strokeStyle='#B85C4A';ctx.lineWidth=8;ctx.strokeRect(-144,-52,288,104);ctx.fillStyle='#B85C4A';ctx.font='700 44px Arial';ctx.textAlign='center';ctx.textBaseline='middle';ctx.fillText('LEARNED',0,4);ctx.restore();});
+  P.text("TODAY'S RECEIPT",{x:120,y:354,w:600,size:34,color:'ink',weight:700,at:tr,mode:'fade'}); P.text('今日学习小票 · EP.11',{x:120,y:400,w:600,size:22,color:'muted',at:tr+0.05,mode:'fade'});
+  const rows=[['高铁','gāotiě','high-speed train','这是高铁。'],['车站','chēzhàn','train station','这是车站。'],['车票','chēpiào','ticket','要车票。'],['行李','xíngli','luggage','我带行李。'],['座位','zuòwèi','seat','我的座位在这里。']];
+  rows.forEach((r,i)=>{const y=510+i*115; P.text(r[0],{x:120,y,w:170,size:46,color:'red',weight:700,at:tr+0.1+i*0.05,mode:'fade'}); P.text(r[1],{x:300,y:y+6,w:210,size:22,color:'red',weight:600,at:tr+0.12+i*0.05,mode:'fade'}); P.text(r[2],{x:530,y:y+2,w:320,size:24,color:'ink',at:tr+0.14+i*0.05,mode:'fade'}); P.text(r[3],{x:530,y:y+40,w:380,size:19,color:'muted',at:tr+0.16+i*0.05,mode:'fade'});});
+  P.text('我坐高铁去旅行：带行李、拿车票，在车站找座位。',{x:120,y:1100,w:840,size:23,color:'ink',weight:700,at:tr+0.45,mode:'fade'});
+  P.text('5 words · 1 sentence',{x:120,y:1170,w:500,size:22,color:'muted',at:tr+0.55,mode:'fade'});
+  P.text('You can take a high-speed train now.',{x:120,y:1210,w:840,size:23,color:'green',weight:600,at:tr+0.65,mode:'fade'});
+  P.text('CONGRATULATIONS!',{x:700,y:358,w:340,align:'c',size:34,color:'green',weight:900,font:'latin',rot:-3,at:tr+0.3,mode:'fade'});
+  P.text('PAUSE TO READ / 截图保存',{x:540,y:1518,w:900,align:'c',size:26,color:'red',weight:600,at:tr+0.8,mode:'fade'});
+  P.text('SINOFIELDNOTES · 坐高铁',{x:540,y:1844,w:900,align:'c',size:22,color:'soft',at:0,mode:'fade'});
+});
